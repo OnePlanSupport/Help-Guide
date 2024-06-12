@@ -9,13 +9,13 @@
   <param name="algolia.custom.index.name" select=""/>
   <param name="use.fuse.search" select="1"/>
   <param name="use.multilingual.default.search" select="0"/>
-  <param name="custom.css.source" select=""/>
-  <param name="portal.logo.filename" select="css/image/corporate-logo-white.svg"/>
+  <param name="custom.css.source" select="/var/www/ccms/usr/oneplan/xsl/custom/assets/layout-38827/666a07334256c.css"/>
+  <param name="portal.logo.filename" select="/var/www/ccms/usr/oneplan/xsl/custom/assets/layout-38827/666a070519cfc.png"/>
   <param name="portal.background.filename" select=""/>
-  <param name="portal.background.filename.out" select="/paligo/tmp/oneplan/production-6669c6772f5181.52317923/36043-New_In_Product_Help-html5/out/css/image/portal-bg.jpg"/>
-  <param name="company.name" select=""/>
+  <param name="portal.background.filename.out" select="/paligo/tmp/oneplan/production-666a09ef36bea5.97386876/36043-New_In_Product_Help-html5/out/css/image/portal-bg.jpg"/>
+  <param name="company.name" select="OnePlan"/>
   <param name="copyright.year" select=""/>
-  <param name="copyright"> © 2024  </param>
+  <param name="copyright"> © 2024 OnePlan </param>
   <param name="sticky.header" select="0"/>
   <param name="full.width.header" select="0"/>
   <param name="cookie.consent" select="0"/>
@@ -38,9 +38,9 @@
   <param name="custom.meta.tag.separator" select=":"/>
   <param name="custom.meta.tag.pair.separator" select=";"/>
   <param name="last.modified.text" select="Last modified: "/>
-  <param name="categories.shown" select="4"/>
+  <param name="categories.shown" select="1000"/>
   <param name="single.topic.permalink" select=""/>
-  <param name="logo.link" select=""/>
+  <param name="logo.link" select="https://support.oneplan.ai/hc/en-us"/>
   <param name="feedback.toggle" select="no-button"/>
   <param name="bootstrap.version" select="340"/>
   <param name="layout.custom.style.persistent.name" select="0"/>
@@ -53,7 +53,7 @@
   <param name="use.separate.relationship.toc" select="1"/>
   <param name="in.this.section.string" select="In this section"/>
   <param name="seealso.string" select="See also"/>
-  <param name="use.section.toc" select="after"/>
+  <param name="use.section.toc" select="none"/>
   <param name="taxonomies.relationship" select=""/>
   <param name="use.top.nav" select="0"/>
   <param name="external.top.nav.links" select=""/>
@@ -66,7 +66,7 @@
   <param name="fuse.threshold" select="0.3"/>
   <param name="use.print.icon" select="0"/>
   <param name="portal.publication.title" select="New In Product Help"/>
-  <param name="collapsible.toc" select="0"/>
+  <param name="collapsible.toc" select="1"/>
   <param name="focus.on.current.toc.section" select="1"/>
   <param name="use.resource.version.suffix" select="0"/>
   <param name="create.search.page.for.algolia" select="0"/>
@@ -100,11 +100,11 @@
   <param name="slides.revealjs.theme.custom" select=""/>
   <param name="slides.revealjs.background.image.opacity" select="1"/>
   <param name="slides.revealjs.default.background.image" select=""/>
-  <param name="slides.revealjs.default.background.image.out" select="/paligo/tmp/oneplan/production-6669c6772f5181.52317923/36043-New_In_Product_Help-html5/out/css/image/default_slide_background.png"/>
+  <param name="slides.revealjs.default.background.image.out" select="/paligo/tmp/oneplan/production-666a09ef36bea5.97386876/36043-New_In_Product_Help-html5/out/css/image/default_slide_background.png"/>
   <param name="slides.revealjs.logo" select=""/>
-  <param name="slides.revealjs.logo.out" select="/paligo/tmp/oneplan/production-6669c6772f5181.52317923/36043-New_In_Product_Help-html5/out/css/image/logo-light.png"/>
+  <param name="slides.revealjs.logo.out" select="/paligo/tmp/oneplan/production-666a09ef36bea5.97386876/36043-New_In_Product_Help-html5/out/css/image/logo-light.png"/>
   <param name="slides.revealjs.logo.alt" select=""/>
-  <param name="slides.revealjs.logo.alt.out" select="/paligo/tmp/oneplan/production-6669c6772f5181.52317923/36043-New_In_Product_Help-html5/out/css/image/logo-dark.png"/>
+  <param name="slides.revealjs.logo.alt.out" select="/paligo/tmp/oneplan/production-666a09ef36bea5.97386876/36043-New_In_Product_Help-html5/out/css/image/logo-dark.png"/>
   <param name="delayed.algolia.search" select="0"/>
   <param name="use.breadcrumbs.for.algolia.searchresults" select="0"/>
   <param name="choose.startpage.by.role" select="0"/>
