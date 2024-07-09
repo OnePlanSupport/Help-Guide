@@ -108,6 +108,8 @@ $(document).ready(function () {
 
         /* Adjusting position in view for internal page toc links. */
         if($(this).closest('.section-nav-container').length){
+            var id = this.hash;
+            displayAccordionTarget(id);
             $(clickedhref).scrollView();
             event.preventDefault();
         }
