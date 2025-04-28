@@ -1,294 +1,265 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" dir="ltr">
+<html
+	xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<meta http-equiv="x-ua-compatible" content="IE=edge"></meta>
+		<meta name="format-detection" content="telephone=no"></meta>
+		<meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+		<meta name="search" content="default"></meta>
+		<meta name="use.ic" content="no"></meta>
+		<meta name="tocstandalone" content="no"></meta>
+		<meta name="theme" content="1"></meta>
+		<meta name="search.placeholder" content="Search"></meta>
+		<meta name="search.results" content="Search results"></meta>
+		<meta name="no.search.results" content="No results found"></meta>
+		<script type="text/javascript">
+var theme = '1';
 
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<meta http-equiv="x-ua-compatible" content="IE=edge">
-	</meta>
-	<meta name="format-detection" content="telephone=no">
-	</meta>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	</meta>
-	<meta name="search" content="default">
-	</meta>
-	<meta name="use.ic" content="no">
-	</meta>
-	<meta name="tocstandalone" content="no">
-	</meta>
-	<meta name="theme" content="1">
-	</meta>
-	<meta name="search.placeholder" content="Search">
-	</meta>
-	<meta name="search.results" content="Search results">
-	</meta>
-	<meta name="no.search.results" content="No results found">
-	</meta>
-	<script type="text/javascript">
-		var theme = '1';
+			
+			window.versionsfile = '';
 
 
-		window.versionsfile = '';
-
-
-		window.indexDict = new Array();
-		window.store = {};
-		window.portalLanguage = 'en';
-		window.enterKey = 'select';
-
-
-		var fuse_threshold = 0.3;
-
-		var local_csh = false;
-
-		var anchoroption = true;
-		var instantsearch_minlength = 1;
-
-		var useanchorlinks = false;
-
-		var collapseTocSectionOnLinkTitleClick = false;
-	</script>
-	<title>My Value Stream</title>
-	<link rel="stylesheet" type="text/css" href="../css/docbook.css">
-	</link>
-	<link rel="stylesheet" type="text/css" href="../css/font-awesome.css">
-	</link>
-	<link rel="stylesheet" type="text/css" href="../css/roboto.font.css">
-	</link>
-	<link rel="stylesheet" type="text/css" href="../css/theme1.css">
-	</link>
-	<link rel="stylesheet" type="text/css" href="../css/theme1-colors.css">
-	</link>
-	<link rel="stylesheet" type="text/css" href="../css/content-theme2.css">
-	</link>
-	<link rel="stylesheet" type="text/css" href="../css/sm-core-css.css">
-	</link>
-	<link rel="stylesheet" type="text/css" href="../css/sm-simple.css">
-	</link>
-	<link rel="stylesheet" type="text/css" href="../css/style-print.css">
-	</link>
-	<link rel="stylesheet" type="text/css" href="../css/style-common.css">
-	</link>
-	<link rel="stylesheet" type="text/css" href="../css/style-modern-tables.css">
-	</link>
-	<link rel="stylesheet" type="text/css" href="../css/graphical-lists.css">
-	</link>
-	<link rel="stylesheet" type="text/css" href="../css/666a07334256c.css">
-	</link>
-	<script src="../js/jquery-3/jquery-3.4.1.min.js" type="text/javascript"></script>
-	<script src="../js/jquery-migrate-3.4.1.min.js" type="text/javascript"></script>
-	<script src="../js/materialize.min.js" type="text/javascript"></script>
-	<script src="../js/bootstrap.min.js" type="text/javascript"></script>
-	<script src="../js/purl.js" type="text/javascript"></script>
-	<script src="../js/jquery.smartmenus.js" type="text/javascript"></script>
-	<script src="../js/html5-2-mp-common.js" type="text/javascript"></script>
-	<script src="../js/html5-2.js" type="text/javascript"></script>
-	<script src="../js/checklist.js" type="text/javascript"></script>
-	<script src="../js/clipboard.min.js" type="text/javascript"></script>
-	<script src="../js/fuse.min.js" type="text/javascript"></script>
-	<script src="../js/jquery.mark.min.js" type="text/javascript"></script>
-	<script src="../js/html5.fuse.search.js" type="text/javascript"></script>
-	<script src="js/fuzzydata.js" type="text/javascript"></script>
-	<script src="../js/csh.js" type="text/javascript"></script>
-	<meta xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:util="http://www.paligo.net/xsl1/functions/utility"
-		name="generator" content="Paligo">
-	</meta>
-	<link rel="prev" href="product-portfolio.html#UUID-52e76968-f160-47d4-1716-5a3c52795bad_section-idm23436272522578"
-		title="My Products Roadmap">
-	</link>
-	<link rel="next" href="my-value-stream.html#UUID-f4b6651a-66bb-a119-07f5-4d01ff8acac3_section-idm234362740808945"
-		title="Value Stream Portfolio">
-	</link>
-	<script type="text/javascript"
-		src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"
-		async="async"></script>
-	<link rel="icon" href="/favicon.ico" type="image/x-icon">
-	</link>
-	<script type="text/javascript" src="../js/cookie-consent.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function () {
-			$(".mediaobject img").addClass('materialboxed');
-			//Exclude images with links
-			$(".mediaobject a img").removeClass('materialboxed');
-			if (!document.documentMode) {
-				$('.materialboxed').materialbox();
-			}
-		});
-	</script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/googlecode.min.css">
-	</link>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function () {
-
-			$('pre:not(.embedcode)').each(function () {
-				/**
-				 * @type {string}
-				 */
-				var language = $(this).data('language');
-
-				if (language === 'plaintext' || language === 'text') {
-					$(this).addClass(language).addClass('hljs');
-					return true;
-				}
-				else {
-					var clone = this.cloneNode(true);
-					hljs.highlightBlock(clone);
-					$(this).empty().append($(clone).contents());
-					$(this).attr("class", $(clone).attr("class"));
-				}
-			});
-		});
-	</script>
-</head>
-
-<body class="theme1 collapsible-sidebar-nav current-toc-section-focus" data-link-prefix="">
-	<style type="text/css">
-		div.skipnav {}
-
-		div.skipnav a {
-			position: fixed;
-			left: -10000px;
-			top: 1.5em;
-			width: 1px;
-			height: 1px;
-			overflow: hidden;
-		}
-
-		div.skipnav a:focus,
-		div.skipnav a:active,
-		div.skipnav a:hover {
-			background: white;
-			color: black;
-			box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
-			position: fixed;
-			left: 2em;
-			top: 1.5em;
-			width: auto;
-			height: auto;
-			overflow: visible;
-			text-decoration: underline;
-			z-index: 99999;
-			/* has to be higher than the side panel */
-		}
-	</style>
-	<div class="skipnav"><a href="#content-wrapper">Skip to main content</a></div>
-	<header class="site-header">
-		<nav class="site-header-navbar navbar navbar-fixed-top">
-			<div class="navbar-container">
-				<div class="navbar-header"><button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-						data-target=".site-sidebar" aria-expanded="false" aria-controls="navbar"><span
-							class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
-							class="icon-bar"></span><span class="icon-bar"></span></button>
-					<div id="logotype-container" class="pull-left"><a class="navbar-brand"
-							href="https://support.oneplan.ai/hc/en-us" target="_blank" rel="noopener"><img
-								id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype"
-								data-role="logotype" class="logo"></img></a></div>
-				</div>
-				<div class="navbar-collapse collapse" id="navbar"></div>
-			</div>
-		</nav>
-	</header>
-	<div class="site-body">
-		<div class="site-body-container">
-			<div class="site-body-row">
+			window.indexDict = new Array();
+			window.store = {};
+			window.portalLanguage = 'en';
+			window.enterKey = 'select';
+			
+			
+				var fuse_threshold = 0.3;
+			
+					var local_csh = false;
 				
-				<div class="site-content">
-					<h1 class="publication-title">New In Product Help</h1>
-					
-					<main>
-						<div id="top-pager">
-							<ul class="pager">
-								<li class="previous"><a accesskey="p" class="prev pull-left prev visible-lg visible-md"
-										id="header-navigation-prev"
-										href="product-portfolio.html#UUID-52e76968-f160-47d4-1716-5a3c52795bad_section-idm23436272522578">Prev</a>
-								</li>
-								<li class="next"><a accesskey="n" class="pull-right next visible-lg visible-md"
-										id="header-navigation-next"
-										href="my-value-stream.html#UUID-f4b6651a-66bb-a119-07f5-4d01ff8acac3_section-idm234362740808945">Next</a>
-								</li>
-							</ul>
+					var anchoroption = true;
+				var instantsearch_minlength = 1;
+						
+			var useanchorlinks = false;
+			
+					var collapseTocSectionOnLinkTitleClick = false;
+				</script>
+		<title>My Value Stream</title>
+		<link rel="stylesheet" type="text/css" href="../css/docbook.css"></link>
+		<link rel="stylesheet" type="text/css" href="../css/font-awesome.css"></link>
+		<link rel="stylesheet" type="text/css" href="../css/roboto.font.css"></link>
+		<link rel="stylesheet" type="text/css" href="../css/theme1.css"></link>
+		<link rel="stylesheet" type="text/css" href="../css/theme1-colors.css"></link>
+		<link rel="stylesheet" type="text/css" href="../css/content-theme2.css"></link>
+		<link rel="stylesheet" type="text/css" href="../css/sm-core-css.css"></link>
+		<link rel="stylesheet" type="text/css" href="../css/sm-simple.css"></link>
+		<link rel="stylesheet" type="text/css" href="../css/style-print.css"></link>
+		<link rel="stylesheet" type="text/css" href="../css/style-common.css"></link>
+		<link rel="stylesheet" type="text/css" href="../css/style-modern-tables.css"></link>
+		<link rel="stylesheet" type="text/css" href="../css/graphical-lists.css"></link>
+		<link rel="stylesheet" type="text/css" href="../css/666a07334256c.css"></link>
+		<script src="../js/jquery-3/jquery-3.4.1.min.js" type="text/javascript"></script>
+		<script src="../js/jquery-migrate-3.4.1.min.js" type="text/javascript"></script>
+		<script src="../js/materialize.min.js" type="text/javascript"></script>
+		<script src="../js/bootstrap.min.js" type="text/javascript"></script>
+		<script src="../js/purl.js" type="text/javascript"></script>
+		<script src="../js/jquery.smartmenus.js" type="text/javascript"></script>
+		<script src="../js/html5-2-mp-common.js" type="text/javascript"></script>
+		<script src="../js/html5-2.js" type="text/javascript"></script>
+		<script src="../js/checklist.js" type="text/javascript"></script>
+		<script src="../js/clipboard.min.js" type="text/javascript"></script>
+		<script src="../js/fuse.min.js" type="text/javascript"></script>
+		<script src="../js/jquery.mark.min.js" type="text/javascript"></script>
+		<script src="../js/html5.fuse.search.js" type="text/javascript"></script>
+		<script src="js/fuzzydata.js" type="text/javascript"></script>
+		<script src="../js/csh.js" type="text/javascript"></script>
+		<script src="../js/highlight-mergehtml-plugin.js" type="text/javascript"></script>
+		<meta name="generator" content="Paligo"></meta>
+		<link rel="prev" href="my-products.html#UUID-52e76968-f160-47d4-1716-5a3c52795bad_section-idm23436272522578" title="My Products Roadmap"></link>
+		<link rel="next" href="my-value-streams.html#UUID-f4b6651a-66bb-a119-07f5-4d01ff8acac3_section-idm234362740808945" title="Value Stream Portfolio"></link>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script>
+		<link rel="icon" href="/favicon.ico" type="image/x-icon"></link>
+		<script type="text/javascript" src="../js/cookie-consent.js"></script>
+		<script type="text/javascript">
+				$(document).ready(function () {
+				$(".mediaobject img").addClass('materialboxed');
+				//Exclude images with links
+				$(".mediaobject a img").removeClass('materialboxed');
+				if (!document.documentMode) {
+				$('.materialboxed').materialbox();
+				}});
+			</script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/googlecode.min.css"></link>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+		<script type="text/javascript">
+			$(document).on('ready ajaxComplete', function() {
+				
+				hljs.addPlugin(mergeHTMLPlugin);
+				hljs.configure({'ignoreUnescapedHTML': true});
+				
+				$('pre:not(.embedcode)').each(function() {
+					/**
+					 * @type {string}
+					 */
+					var language = $(this).data('language');
+
+					if (language === 'plaintext' || language === 'text') {
+						$(this).addClass(language).addClass('hljs');
+						return true;
+					}
+					else {
+						var clone = this.cloneNode(true);
+						hljs.highlightElement(clone);
+						$(this).empty().append($(clone).contents());
+						$(this).attr("class", $(clone).attr("class"));
+					}
+				});
+			});
+			</script>
+	</head>
+	<body class="theme1 current-toc-section-focus" data-link-prefix="">
+		<style type="text/css">
+            div.skipnav {
+            }
+            div.skipnav a {
+                position: fixed;
+                left: -10000px;
+                top: 1.5em;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            div.skipnav a:focus, div.skipnav a:active, div.skipnav a:hover {
+                background: white;
+                color: black;
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+                position: fixed;
+                left: 2em;
+                top: 1.5em;
+                width: auto;
+                height: auto;
+                overflow: visible;
+                text-decoration: underline;
+                z-index: 99999; /* has to be higher than the side panel */
+    }
+          </style>
+		<div class="skipnav">
+			<a href="#content-wrapper">Skip to main content</a>
+		</div>
+		<header class="site-header">
+			<nav class="site-header-navbar navbar navbar-fixed-top">
+				<div class="navbar-container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".site-sidebar" aria-expanded="false" aria-controls="navbar">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<div id="logotype-container" class="pull-left">
+							<a class="navbar-brand" href="https://support.oneplan.ai/hc/en-us" target="_blank" rel="noopener">
+								<img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" class="logo"></img>
+							</a>
 						</div>
-						<article class="topic content-container" id="content-wrapper">
-							<div id="topic-content" class="topic-content">
-								<section xml:lang="en" lang="en" dir="ltr" class="section"
-									data-origin-id="UUID-25d3b50b-fa78-cd66-b17e-890a44f6279a"
-									data-permalink="my-value-stream.html" data-topic-level="1" data-relative-prefix=""
-									data-publication-date="" id="UUID-f4b6651a-66bb-a119-07f5-4d01ff8acac3">
-									<div class="titlepage">
-										<div>
-											<div class="title">
-												<h2 class="title" style="clear: both">My Value Stream</h2>
-											</div>
-										</div>
-									</div>
-									<p>Value Streams are the backbone of strategic alignment. Let's dive into how
-										OnePlan ensures alignment.</p>
-									<section dir="ltr" class="section" data-origin-id="" data-publication-date=""
-										id="UUID-f4b6651a-66bb-a119-07f5-4d01ff8acac3_section-idm234362740808945">
+					</div>
+					<div class="navbar-collapse collapse" id="navbar"></div>
+				</div>
+			</nav>
+		</header>
+		<div class="site-body">
+			<div class="site-body-container">
+				<div class="site-body-row">
+					<div class="site-content">
+						<h1 class="publication-title">New In Product Help</h1>
+						<main>
+							<div id="top-pager">
+								<ul class="pager">
+									<li class="previous">
+										<a accesskey="p" class="prev pull-left prev visible-lg visible-md" id="header-navigation-prev" href="my-products.html#UUID-52e76968-f160-47d4-1716-5a3c52795bad_section-idm23436272522578">Prev</a>
+									</li>
+									<li class="next">
+										<a accesskey="n" class="pull-right next visible-lg visible-md" id="header-navigation-next" href="my-value-streams.html#UUID-f4b6651a-66bb-a119-07f5-4d01ff8acac3_section-idm234362740808945">Next</a>
+									</li>
+								</ul>
+							</div>
+							<article class="topic content-container" id="content-wrapper">
+								<div id="topic-content" class="topic-content">
+									<section xml:lang="en" lang="en" dir="ltr" class="section" data-origin-id="UUID-25d3b50b-fa78-cd66-b17e-890a44f6279a" data-permalink="my-value-streams.html" data-topic-level="1" data-relative-prefix="" data-publication-date="" id="UUID-f4b6651a-66bb-a119-07f5-4d01ff8acac3">
 										<div class="titlepage">
 											<div>
 												<div class="title">
-													<h3 class="title">Value Stream Portfolio</h3>
+													<h2 class="title" style="clear: both">My Value Stream</h2>
 												</div>
 											</div>
 										</div>
-										<p>Click the <span class="bold"><strong>List</strong></span> drop-down and
-											select <span class="bold"><strong>Value Stream Summary</strong></span> view.
-										</p>
-										<p>This view offers an overview of value streams by business unit, lifecycle
-											stage, status, and budget.</p>
-										<div class="mediaobject"><img src="image/1668fed6e3594d.png" style=""
-												alt="Value_Stream_1.png"></img></div>
-										<p>Click on the <span class="bold"><strong>IT
-													Infrastructure</strong></span> Value Stream.</p>
-										<div class="mediaobject"><img src="image/1668fed6e3841b.png" style=""
-												alt="Value_Stream_2.png"></img></div>
-										<p>Each value stream comes with an exhaustive detail page, you can manage the
-											stages of the application, metadata, Application vision, prioritization
-											scoring, financials, and linking associated projects, ideas, and even epics.
-										</p>
-										<div class="mediaobject"><img src="image/1668fed6dda972.png" style=""
-												alt="Value_Stream_3.png"></img></div>
+										<p>Value Streams are the backbone of strategic alignment. Let's dive into how OnePlan ensures alignment.</p>
+										<section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-f4b6651a-66bb-a119-07f5-4d01ff8acac3_section-idm234362740808945">
+											<div class="titlepage">
+												<div>
+													<div class="title">
+														<h3 class="title">Value Stream Portfolio</h3>
+													</div>
+												</div>
+											</div>
+											<p>Click the 
+												<span class="bold">
+													<strong>List</strong>
+												</span> drop-down and select 
+												<span class="bold">
+													<strong>Value Stream Summary</strong>
+												</span> view.
+											</p>
+											<p>This view offers an overview of value streams by business unit, lifecycle stage, status, and budget.</p>
+											<div class="mediaobject">
+												<img src="image/img-87f1b1aea35024cc05a32ad31c99e523.png" style="" alt="Value_Stream_1.png"></img>
+											</div>
+											<p>Click on the 
+												<span class="bold">
+													<strong>IT Infrastructure</strong>
+												</span> Value Stream.
+											</p>
+											<div class="mediaobject">
+												<img src="image/img-0832cc63b9eafd8a436daa8f0bd2620d.png" style="" alt="Value_Stream_2.png"></img>
+											</div>
+											<p>Each value stream comes with an exhaustive detail page, you can manage the stages of the application, metadata, Application vision, prioritization scoring, financials, and linking associated projects, ideas, and even epics.</p>
+											<div class="mediaobject">
+												<img src="image/img-bc3714b6f28fbe5dc1807e1c98c055b8.png" style="" alt="Value_Stream_3.png"></img>
+											</div>
+										</section>
 									</section>
-								</section>
-								<div class="footer-content">
-									<div class="glossary-definitions"></div>
+									<div class="footer-content">
+										<div class="glossary-definitions"></div>
+									</div>
+									<footer></footer>
 								</div>
-								<footer></footer>
-							</div>
-						</article>
-						<article id="search-result-wrapper">
-							<div class="search-container" style="display: none;">
-								<h2>Search results</h2>
-								<ul class="searchresults"></ul>
-								<p class="noresults">No results found</p>
-							</div>
-						</article>
-					</main>
-					<div id="bottom-pager">
-						<ul class="pager">
-							<li class="previous"><a accesskey="p" class="prev pull-left prev visible-lg visible-md"
-									id="header-navigation-prev"
-									href="product-portfolio.html#UUID-52e76968-f160-47d4-1716-5a3c52795bad_section-idm23436272522578">Prev</a>
-							</li>
-							<li class="next"><a accesskey="n" class="pull-right next visible-lg visible-md"
-									id="header-navigation-next"
-									href="my-value-stream.html#UUID-f4b6651a-66bb-a119-07f5-4d01ff8acac3_section-idm234362740808945">Next</a>
-							</li>
-						</ul>
-					</div>
-					<footer class="site-footer">
-						<div class="inner">
-							<div class="copyright"> © 2024 OnePlan </div>
-							<div class="publication-date"><span class="publication-date-text">Publication
-									date</span><span class="pubdate-delimiter">: </span><span
-									class="formatted-date"></span></div>
+							</article>
+							<article id="search-result-wrapper">
+								<div class="search-container" style="display: none;">
+									<h2>Search results</h2>
+									<ul class="searchresults"></ul>
+									<p class="noresults">No results found</p>
+								</div>
+							</article>
+						</main>
+						<div id="bottom-pager">
+							<ul class="pager">
+								<li class="previous">
+									<a accesskey="p" class="prev pull-left prev visible-lg visible-md" id="header-navigation-prev" href="my-products.html#UUID-52e76968-f160-47d4-1716-5a3c52795bad_section-idm23436272522578">Prev</a>
+								</li>
+								<li class="next">
+									<a accesskey="n" class="pull-right next visible-lg visible-md" id="header-navigation-next" href="my-value-streams.html#UUID-f4b6651a-66bb-a119-07f5-4d01ff8acac3_section-idm234362740808945">Next</a>
+								</li>
+							</ul>
 						</div>
-					</footer>
+						<footer class="site-footer">
+							<div class="inner">
+								<div>
+									<h3>Quick Links</h3>
+									<p><a href="https://support.oneplan.ai/hc/en-us/sections/360013711432-Release-Notes">Release Notes</a></p>
+									<p><a href="https://oneplanacademy.com/">Academy</a></p>
+									<p><a href="https://support.oneplan.ai/hc/en-us">Knowledge Base</a></p>
+									<p><a href="https://support.oneplan.ai/hc/en-us/community/topics">Community</a></p>
+									<p><a href="https://support.oneplan.ai/hc/en-us/requests/new">Support</a></p>
+								</div>
+								<div class="copyright"> © 2025 OnePlan </div>
+							</div>
+						</footer>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</body>
-
+	</body>
 </html>
