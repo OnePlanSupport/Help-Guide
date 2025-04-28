@@ -2,7 +2,6 @@ $(document).on('toc.ready', function () {
     setActiveTocline();
     chunkedPrevNext();
     buildSectionToc();
-    syntaxHighlight();
 
     if(useanchorlinks){
         setAnchors();
@@ -43,23 +42,14 @@ function updateCollapseTocListener() {
     }
 }
 
-function syntaxHighlight() {
-    /**
-     * Turn on syntax highlight if the hljs lib is available
-     */
-    if ("hljs" in window) {
-        $('pre').each(function (i, block) {
-            hljs.highlightBlock(block);
-        });
-    }
-}
 
 function addPopover() {
     //Bootstrap popovers for glossterms
     $('[data-toggle="popover"]').off();
 
     $('[data-toggle="popover"]').popover({
-        trigger: "manual", placement: "auto bottom",
+        trigger: "manual",
+        placement: "auto bottom",
         container: 'body',
         html: true,
         content: function () {
@@ -73,12 +63,17 @@ function addPopover() {
         $(".popover .mediaobject img").removeClass('materialboxed');
 
         $('.popover').on("mouseleave", function () {
-            $(_this).popover('hide');
+            setTimeout(function () {
+                if (! $('.popover:hover').length && ! $(_this).is(':hover')) {
+                    $(_this).popover("hide");
+                }
+            },
+            300);
         });
     }).on("mouseleave", function () {
         var _this = this;
         setTimeout(function () {
-            if (! $('.popover:hover').length) {
+            if (! $('.popover:hover').length && ! $(_this).is(':hover')) {
                 $(_this).popover("hide");
             }
         },
@@ -198,7 +193,7 @@ function loadContent(href, hash) {
     /*Hide popovers if switching to a new page:*/
     $('[data-toggle="popover"]').popover('hide');
 
-    var id = href.split('#')[1];
+    var id = escapeHtml(href.split('#')[1]);
     if (typeof (id) !== "undefined") {
         id = jqEscapeChars(id);
     }
@@ -209,11 +204,13 @@ function loadContent(href, hash) {
         var loadedtitle = $(this).find('main .topic-content .titlepage .title > .title').first().text();
         $('head title').text(loadedtitle);
 
-        //Needs to be initialized after page load for ajax variant
-        $(".mediaobject img:not(.materialboxed)").addClass('materialboxed');
-        //Exclude images with links
-		$(".mediaobject a img").removeClass('materialboxed');
-	    $('.materialboxed').materialbox();
+        if(typeof $('.materialboxed').materialbox === 'function') {
+            //Needs to be initialized after page load for ajax variant
+            $(".mediaobject img:not(.materialboxed)").addClass('materialboxed');
+            //Exclude images with links
+    		$(".mediaobject a img").removeClass('materialboxed');
+    	    $('.materialboxed').materialbox();
+        }
 
         displayAccordionTarget(hash);
 
@@ -255,7 +252,6 @@ function loadContent(href, hash) {
                 }
                 chunkedPrevNext();
                 buildSectionToc();
-                syntaxHighlight();
                 setActiveTocline();
                 updateCollapseTocListener()
                 return false;
@@ -292,7 +288,25 @@ function loadContent(href, hash) {
  * @returns {string} string with special characters secaped.
  */
 function jqEscapeChars(id) {
-    return id.replace( /(:|\.|\[|\]|,|=|@)/g, "\\$1" );
+    return id.replace( /([\\:|\.|\[|\]|,|=|@])/g, "\\$1" );
+}
+
+/**
+ * Escape user input in order to prevent XSS attacks
+ *
+ * @param unsafe
+ * @returns {*}
+ */
+function escapeHtml(unsafe) {
+    if (! unsafe) {
+        return unsafe;
+    }
+    return unsafe
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
 }
 
 window.addEventListener('popstate', function (e) {

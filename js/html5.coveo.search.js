@@ -1,6 +1,6 @@
 $(document).on('ready', function () {
     init();
-    if (window.location.hash) {
+    if (window.location.hash.startsWith('#q=')) {
         showSearch($resultcontainer);
     }
 });

@@ -1,836 +1,2534 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" dir="ltr">
+<html
+	xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<meta http-equiv="x-ua-compatible" content="IE=edge"></meta>
+		<meta name="format-detection" content="telephone=no"></meta>
+		<meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+		<meta name="search" content="default"></meta>
+		<meta name="use.ic" content="no"></meta>
+		<meta name="tocstandalone" content="no"></meta>
+		<meta name="theme" content="1"></meta>
+		<meta name="search.placeholder" content="Search"></meta>
+		<meta name="search.results" content="Search results"></meta>
+		<meta name="no.search.results" content="No results found"></meta>
+		<script type="text/javascript">
+var theme = '1';
 
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<meta http-equiv="x-ua-compatible" content="IE=edge">
-	</meta>
-	<meta name="format-detection" content="telephone=no">
-	</meta>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	</meta>
-	<meta name="search" content="default">
-	</meta>
-	<meta name="use.ic" content="no">
-	</meta>
-	<meta name="tocstandalone" content="no">
-	</meta>
-	<meta name="theme" content="1">
-	</meta>
-	<meta name="search.placeholder" content="Search">
-	</meta>
-	<meta name="search.results" content="Search results">
-	</meta>
-	<meta name="no.search.results" content="No results found">
-	</meta>
-	<script type="text/javascript">
-		var theme = '1';
+			
+			window.versionsfile = '';
 
 
-		window.versionsfile = '';
-
-
-		window.indexDict = new Array();
-		window.store = {};
-		window.portalLanguage = 'en';
-		window.enterKey = 'select';
-
-
-		var fuse_threshold = 0.3;
-
-		var local_csh = false;
-
-		var anchoroption = true;
-		var instantsearch_minlength = 1;
-
-		var useanchorlinks = false;
-
-		var collapseTocSectionOnLinkTitleClick = false;
-	</script>
-	<title>Use the OnePlan Resource Plan</title>
-	<link rel="stylesheet" type="text/css" href="../css/docbook.css">
-	</link>
-	<link rel="stylesheet" type="text/css" href="../css/font-awesome.css">
-	</link>
-	<link rel="stylesheet" type="text/css" href="../css/roboto.font.css">
-	</link>
-	<link rel="stylesheet" type="text/css" href="../css/theme1.css">
-	</link>
-	<link rel="stylesheet" type="text/css" href="../css/theme1-colors.css">
-	</link>
-	<link rel="stylesheet" type="text/css" href="../css/content-theme2.css">
-	</link>
-	<link rel="stylesheet" type="text/css" href="../css/sm-core-css.css">
-	</link>
-	<link rel="stylesheet" type="text/css" href="../css/sm-simple.css">
-	</link>
-	<link rel="stylesheet" type="text/css" href="../css/style-print.css">
-	</link>
-	<link rel="stylesheet" type="text/css" href="../css/style-common.css">
-	</link>
-	<link rel="stylesheet" type="text/css" href="../css/style-modern-tables.css">
-	</link>
-	<link rel="stylesheet" type="text/css" href="../css/graphical-lists.css">
-	</link>
-	<link rel="stylesheet" type="text/css" href="../css/666a07334256c.css">
-	</link>
-	<script src="../js/jquery-3/jquery-3.4.1.min.js" type="text/javascript"></script>
-	<script src="../js/jquery-migrate-3.4.1.min.js" type="text/javascript"></script>
-	<script src="../js/materialize.min.js" type="text/javascript"></script>
-	<script src="../js/bootstrap.min.js" type="text/javascript"></script>
-	<script src="../js/purl.js" type="text/javascript"></script>
-	<script src="../js/jquery.smartmenus.js" type="text/javascript"></script>
-	<script src="../js/html5-2-mp-common.js" type="text/javascript"></script>
-	<script src="../js/html5-2.js" type="text/javascript"></script>
-	<script src="../js/checklist.js" type="text/javascript"></script>
-	<script src="../js/clipboard.min.js" type="text/javascript"></script>
-	<script src="../js/fuse.min.js" type="text/javascript"></script>
-	<script src="../js/jquery.mark.min.js" type="text/javascript"></script>
-	<script src="../js/html5.fuse.search.js" type="text/javascript"></script>
-	<script src="js/fuzzydata.js" type="text/javascript"></script>
-	<script src="../js/csh.js" type="text/javascript"></script>
-	<meta xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:util="http://www.paligo.net/xsl1/functions/utility"
-		name="generator" content="Paligo">
-	</meta>
-	<link rel="prev" href="accounts-portfolio.html#UUID-39a4199e-0054-8629-c750-daf815f18b89_section-idm13441408822162"
-		title="Example Use Case">
-	</link>
-	<link rel="next"
-		href="use-the-oneplan-resource-plan.html#UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm13441412068914"
-		title="What is the Resource Plan Feature in OnePlan?">
-	</link>
-	<script type="text/javascript"
-		src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"
-		async="async"></script>
-	<link rel="icon" href="/favicon.ico" type="image/x-icon">
-	</link>
-	<script type="text/javascript" src="../js/cookie-consent.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function () {
-			$(".mediaobject img").addClass('materialboxed');
-			//Exclude images with links
-			$(".mediaobject a img").removeClass('materialboxed');
-			if (!document.documentMode) {
-				$('.materialboxed').materialbox();
-			}
-		});
-	</script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/googlecode.min.css">
-	</link>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function () {
-
-			$('pre:not(.embedcode)').each(function () {
-				/**
-				 * @type {string}
-				 */
-				var language = $(this).data('language');
-
-				if (language === 'plaintext' || language === 'text') {
-					$(this).addClass(language).addClass('hljs');
-					return true;
-				}
-				else {
-					var clone = this.cloneNode(true);
-					hljs.highlightBlock(clone);
-					$(this).empty().append($(clone).contents());
-					$(this).attr("class", $(clone).attr("class"));
-				}
-			});
-		});
-	</script>
-</head>
-
-<body class="theme1 collapsible-sidebar-nav current-toc-section-focus" data-link-prefix="">
-	<style type="text/css">
-		div.skipnav {}
-
-		div.skipnav a {
-			position: fixed;
-			left: -10000px;
-			top: 1.5em;
-			width: 1px;
-			height: 1px;
-			overflow: hidden;
-		}
-
-		div.skipnav a:focus,
-		div.skipnav a:active,
-		div.skipnav a:hover {
-			background: white;
-			color: black;
-			box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
-			position: fixed;
-			left: 2em;
-			top: 1.5em;
-			width: auto;
-			height: auto;
-			overflow: visible;
-			text-decoration: underline;
-			z-index: 99999;
-			/* has to be higher than the side panel */
-		}
-	</style>
-	<div class="skipnav"><a href="#content-wrapper">Skip to main content</a></div>
-	<header class="site-header">
-		<nav class="site-header-navbar navbar navbar-fixed-top">
-			<div class="navbar-container">
-				<div class="navbar-header"><button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-						data-target=".site-sidebar" aria-expanded="false" aria-controls="navbar"><span
-							class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
-							class="icon-bar"></span><span class="icon-bar"></span></button>
-					<div id="logotype-container" class="pull-left"><a class="navbar-brand"
-							href="https://support.oneplan.ai/hc/en-us" target="_blank" rel="noopener"><img
-								id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype"
-								data-role="logotype" class="logo"></img></a></div>
-				</div>
-				<div class="navbar-collapse collapse" id="navbar"></div>
-			</div>
-		</nav>
-	</header>
-	<div class="site-body">
-		<div class="site-body-container">
-			<div class="site-body-row">
+			window.indexDict = new Array();
+			window.store = {};
+			window.portalLanguage = 'en';
+			window.enterKey = 'select';
+			
+			
+				var fuse_threshold = 0.3;
+			
+					var local_csh = false;
 				
-				<div class="site-content">
-					<h1 class="publication-title">New In Product Help</h1>
-					
-					<main>
-						<div id="top-pager">
+					var anchoroption = true;
+				var instantsearch_minlength = 1;
+						
+			var useanchorlinks = false;
+			
+					var collapseTocSectionOnLinkTitleClick = false;
+				</script>
+		<title>Resource Plan</title>
+		<link rel="stylesheet" type="text/css" href="../css/docbook.css"></link>
+		<link rel="stylesheet" type="text/css" href="../css/font-awesome.css"></link>
+		<link rel="stylesheet" type="text/css" href="../css/roboto.font.css"></link>
+		<link rel="stylesheet" type="text/css" href="../css/theme1.css"></link>
+		<link rel="stylesheet" type="text/css" href="../css/theme1-colors.css"></link>
+		<link rel="stylesheet" type="text/css" href="../css/content-theme2.css"></link>
+		<link rel="stylesheet" type="text/css" href="../css/sm-core-css.css"></link>
+		<link rel="stylesheet" type="text/css" href="../css/sm-simple.css"></link>
+		<link rel="stylesheet" type="text/css" href="../css/style-print.css"></link>
+		<link rel="stylesheet" type="text/css" href="../css/style-common.css"></link>
+		<link rel="stylesheet" type="text/css" href="../css/style-modern-tables.css"></link>
+		<link rel="stylesheet" type="text/css" href="../css/graphical-lists.css"></link>
+		<link rel="stylesheet" type="text/css" href="../css/666a07334256c.css"></link>
+		<script src="../js/jquery-3/jquery-3.4.1.min.js" type="text/javascript"></script>
+		<script src="../js/jquery-migrate-3.4.1.min.js" type="text/javascript"></script>
+		<script src="../js/materialize.min.js" type="text/javascript"></script>
+		<script src="../js/bootstrap.min.js" type="text/javascript"></script>
+		<script src="../js/purl.js" type="text/javascript"></script>
+		<script src="../js/jquery.smartmenus.js" type="text/javascript"></script>
+		<script src="../js/html5-2-mp-common.js" type="text/javascript"></script>
+		<script src="../js/html5-2.js" type="text/javascript"></script>
+		<script src="../js/checklist.js" type="text/javascript"></script>
+		<script src="../js/clipboard.min.js" type="text/javascript"></script>
+		<script src="../js/fuse.min.js" type="text/javascript"></script>
+		<script src="../js/jquery.mark.min.js" type="text/javascript"></script>
+		<script src="../js/html5.fuse.search.js" type="text/javascript"></script>
+		<script src="js/fuzzydata.js" type="text/javascript"></script>
+		<script src="../js/csh.js" type="text/javascript"></script>
+		<script src="../js/highlight-mergehtml-plugin.js" type="text/javascript"></script>
+		<meta name="generator" content="Paligo"></meta>
+		<link rel="prev" href="professional-services-portfolio.html#UUID-912f47b2-b0ff-2ae6-cdb4-80b9948c7eb9_section-idm13441408822162" title="Example Use Case"></link>
+		<link rel="next" href="use-the-oneplan-resource-plan.html#UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm234911926628021" title="Watch a video"></link>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script>
+		<link rel="icon" href="/favicon.ico" type="image/x-icon"></link>
+		<script type="text/javascript" src="../js/cookie-consent.js"></script>
+		<script type="text/javascript">
+				$(document).ready(function () {
+				$(".mediaobject img").addClass('materialboxed');
+				//Exclude images with links
+				$(".mediaobject a img").removeClass('materialboxed');
+				if (!document.documentMode) {
+				$('.materialboxed').materialbox();
+				}});
+			</script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/googlecode.min.css"></link>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+		<script type="text/javascript">
+			$(document).on('ready ajaxComplete', function() {
+				
+				hljs.addPlugin(mergeHTMLPlugin);
+				hljs.configure({'ignoreUnescapedHTML': true});
+				
+				$('pre:not(.embedcode)').each(function() {
+					/**
+					 * @type {string}
+					 */
+					var language = $(this).data('language');
+
+					if (language === 'plaintext' || language === 'text') {
+						$(this).addClass(language).addClass('hljs');
+						return true;
+					}
+					else {
+						var clone = this.cloneNode(true);
+						hljs.highlightElement(clone);
+						$(this).empty().append($(clone).contents());
+						$(this).attr("class", $(clone).attr("class"));
+					}
+				});
+			});
+			</script>
+	</head>
+	<body class="theme1 current-toc-section-focus" data-link-prefix="">
+		<style type="text/css">
+            div.skipnav {
+            }
+            div.skipnav a {
+                position: fixed;
+                left: -10000px;
+                top: 1.5em;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            div.skipnav a:focus, div.skipnav a:active, div.skipnav a:hover {
+                background: white;
+                color: black;
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+                position: fixed;
+                left: 2em;
+                top: 1.5em;
+                width: auto;
+                height: auto;
+                overflow: visible;
+                text-decoration: underline;
+                z-index: 99999; /* has to be higher than the side panel */
+    }
+          </style>
+		<div class="skipnav">
+			<a href="#content-wrapper">Skip to main content</a>
+		</div>
+		<header class="site-header">
+			<nav class="site-header-navbar navbar navbar-fixed-top">
+				<div class="navbar-container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".site-sidebar" aria-expanded="false" aria-controls="navbar">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<div id="logotype-container" class="pull-left">
+							<a class="navbar-brand" href="https://support.oneplan.ai/hc/en-us" target="_blank" rel="noopener">
+								<img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" class="logo"></img>
+							</a>
+						</div>
+					</div>
+					<div class="navbar-collapse collapse" id="navbar"></div>
+				</div>
+			</nav>
+		</header>
+		<div class="site-body">
+			<div class="site-body-container">
+				<div class="site-body-row">
+					<aside class="site-sidebar">
+						<div class="site-sidebar-header">
+							<button type="button" class="navbar-toggle" aria-controls="nav-site-sidebar">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a href="https://support.oneplan.ai/hc/en-us" target="_blank" rel="noopener">
+								<img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" class="logo"></img>
+							</a>
+						</div>
+						<form class="site-sidebar-search" autocomplete="off">
+							<input type="text" placeholder="Search" class="form-control search-field" id="aa-search-input"></input>
+						</form>
+						<ul class="toc nav nav-site-sidebar">
+							<li>
+								<a href="help-guide.html" class="topic-link section" data-origin-id="UUID-a6f89488-1d48-d521-ecff-d733fe12d3fb" data-permalink="help-guide.html" data-topic-level="1" data-relative-prefix="" data-publication-date="">
+									<span class="glyphicon"></span> Help Guide
+								</a>
+								<ul>
+									<li>
+										<a href="help-guide.html#UUID-4d47b750-62fa-547b-0c76-fd32ee4971bb_section-idm13441410485012" class="topic-link section" data-origin-id="" data-publication-date="">What is the Help Guide Feature in OnePlan?</a>
+									</li>
+									<li>
+										<a href="help-guide.html#UUID-4d47b750-62fa-547b-0c76-fd32ee4971bb_section-idm13441410510810" class="topic-link section" data-origin-id="" data-publication-date="">Example Use Case</a>
+									</li>
+									<li>
+										<a href="help-guide.html#UUID-4d47b750-62fa-547b-0c76-fd32ee4971bb_section-idm234414105245563" class="topic-link section" data-origin-id="" data-publication-date="">Use the Help Guide</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="use-the-oneplan-homepage.html" class="topic-link section" data-origin-id="UUID-5a5eacb7-a067-d4ca-b0db-717a9e7787d1" data-permalink="use-the-oneplan-homepage.html" data-topic-level="1" data-relative-prefix="" data-publication-date="">
+									<span class="glyphicon"></span> Home Page
+								</a>
+								<ul>
+									<li>
+										<a href="use-the-oneplan-homepage.html#UUID-cf1b9171-bc33-25ac-3883-8c60dbeff524_section-idm234352292202433" class="topic-link section accordion" data-origin-id="" data-publication-date="">Watch a video</a>
+									</li>
+									<li>
+										<a href="use-the-oneplan-homepage.html#UUID-cf1b9171-bc33-25ac-3883-8c60dbeff524_section-idm234848152330569" class="topic-link section accordion" data-origin-id="" data-publication-date="">Take a feature tour</a>
+									</li>
+									<li>
+										<a href="use-the-oneplan-homepage.html#UUID-cf1b9171-bc33-25ac-3883-8c60dbeff524_section-idm234848153754945" class="topic-link section accordion" data-origin-id="" data-publication-date="">
+											<span class="glyphicon"></span> Read an article
+										</a>
+										<ul>
+											<li>
+												<a href="use-the-oneplan-homepage.html#UUID-cf1b9171-bc33-25ac-3883-8c60dbeff524_UUID-3c84c99e-6606-eafb-20dc-4ac544866c1e" class="topic-link section original-topic accordion" data-origin-id="" data-publication-date="">Home Page Insights</a>
+											</li>
+											<li>
+												<a href="use-the-oneplan-homepage.html#UUID-cf1b9171-bc33-25ac-3883-8c60dbeff524_UUID-65e08ccc-79dd-1e0c-c8e0-ef0f121d13dd" class="topic-link section accordion" data-origin-id="" data-publication-date="">Home Page Plans</a>
+											</li>
+											<li>
+												<a href="use-the-oneplan-homepage.html#UUID-cf1b9171-bc33-25ac-3883-8c60dbeff524_UUID-fa7cbb31-5352-673d-c67b-33e883a41f5b" class="topic-link section accordion" data-origin-id="" data-publication-date="">Home Page Recent Conversations</a>
+											</li>
+											<li>
+												<a href="use-the-oneplan-homepage.html#UUID-cf1b9171-bc33-25ac-3883-8c60dbeff524_UUID-3ae55a46-9ed6-0a3c-fc86-dc6bbf9e8bd2" class="topic-link section accordion" data-origin-id="" data-publication-date="">Home Page Due Soon</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="use-the-oneplan-homepage.html#UUID-cf1b9171-bc33-25ac-3883-8c60dbeff524_section-idm234352293924861" class="topic-link section accordion" data-origin-id="" data-publication-date="">Take a course</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="my-work-overview.html" class="topic-link section" data-origin-id="UUID-a3dc1a61-9b55-be7b-1aa4-ed86da1cc04e" data-permalink="my-work-overview.html" data-topic-level="1" data-relative-prefix="" data-publication-date="">
+									<span class="glyphicon"></span> My Work
+								</a>
+								<ul>
+									<li>
+										<a href="my-work-overview.html#UUID-182c8f04-4a81-7580-5b4e-e045fecb28c2_section-idm234911808393589" class="topic-link section accordion" data-origin-id="" data-publication-date="">Watch a video</a>
+									</li>
+									<li>
+										<a href="my-work-overview.html#UUID-182c8f04-4a81-7580-5b4e-e045fecb28c2_section-idm234911809232976" class="topic-link section accordion" data-origin-id="" data-publication-date="">Take a feature tour</a>
+									</li>
+									<li>
+										<a href="my-work-overview.html#UUID-182c8f04-4a81-7580-5b4e-e045fecb28c2_section-idm234911808999185" class="topic-link section accordion" data-origin-id="" data-publication-date="">
+											<span class="glyphicon"></span> Read an article
+										</a>
+										<ul>
+											<li>
+												<a href="my-work-overview.html#UUID-182c8f04-4a81-7580-5b4e-e045fecb28c2_UUID-b2c9bafd-2a21-4471-58a7-24a833f2787a" class="topic-link section original-topic accordion" data-origin-id="" data-publication-date="">My Work Overview</a>
+											</li>
+											<li>
+												<a href="my-work-overview.html#UUID-182c8f04-4a81-7580-5b4e-e045fecb28c2_UUID-5e8c1760-1ad8-1766-4280-179ade45bc38" class="topic-link section accordion" data-origin-id="" data-publication-date="">Select the Date Period in My Work</a>
+											</li>
+											<li>
+												<a href="my-work-overview.html#UUID-182c8f04-4a81-7580-5b4e-e045fecb28c2_UUID-87b2daf9-36af-112d-fd58-62905d5b1df9" class="topic-link section accordion" data-origin-id="" data-publication-date="">Add a Work Item in My Work</a>
+											</li>
+											<li>
+												<a href="my-work-overview.html#UUID-182c8f04-4a81-7580-5b4e-e045fecb28c2_UUID-a8dd74f1-02e5-4a9b-ff70-c75e77c36d0b" class="topic-link section accordion" data-origin-id="" data-publication-date="">Manage My Work in Lists</a>
+											</li>
+											<li>
+												<a href="my-work-overview.html#UUID-182c8f04-4a81-7580-5b4e-e045fecb28c2_UUID-e99de707-28d9-ffa6-3e99-60cb93891996" class="topic-link section accordion" data-origin-id="" data-publication-date="">Manage My Work in Boards</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="my-work-overview.html#UUID-182c8f04-4a81-7580-5b4e-e045fecb28c2_section-idm234911809654923" class="topic-link section accordion" data-origin-id="" data-publication-date="">Take a course</a>
+									</li>
+									<li>
+										<a href="my-work-overview.html#UUID-182c8f04-4a81-7580-5b4e-e045fecb28c2_section-idm234911858237299" class="topic-link section accordion" data-origin-id="" data-publication-date="">Even more resources</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="use-the-oneplan-timesheet.html" class="topic-link section" data-origin-id="UUID-d4fc435d-1149-2346-ac55-e0bd6cb5f099" data-permalink="use-the-oneplan-timesheet.html" data-topic-level="1" data-relative-prefix="" data-publication-date="">
+									<span class="glyphicon"></span> Timesheet
+								</a>
+								<ul>
+									<li>
+										<a href="use-the-oneplan-timesheet.html#UUID-6b57d504-8a21-d82d-be98-66b97325d47b_section-idm234911846632376" class="topic-link section accordion" data-origin-id="" data-publication-date="">Watch a video</a>
+									</li>
+									<li>
+										<a href="use-the-oneplan-timesheet.html#UUID-6b57d504-8a21-d82d-be98-66b97325d47b_section-idm234911846911232" class="topic-link section accordion" data-origin-id="" data-publication-date="">Take a feature tour</a>
+									</li>
+									<li>
+										<a href="use-the-oneplan-timesheet.html#UUID-6b57d504-8a21-d82d-be98-66b97325d47b_section-idm23491184705372" class="topic-link section accordion" data-origin-id="" data-publication-date="">
+											<span class="glyphicon"></span> Read an article
+										</a>
+										<ul>
+											<li>
+												<a href="use-the-oneplan-timesheet.html#UUID-6b57d504-8a21-d82d-be98-66b97325d47b_UUID-4e5374c2-c057-bfa1-b66d-7889793c9b7d" class="topic-link section original-topic accordion" data-origin-id="" data-publication-date="">Enter Time on My Timesheet</a>
+											</li>
+											<li>
+												<a href="use-the-oneplan-timesheet.html#UUID-6b57d504-8a21-d82d-be98-66b97325d47b_UUID-6f4fbdbc-4256-1c96-c57c-4bd08f3f3554" class="topic-link section accordion" data-origin-id="" data-publication-date="">Use the Stopwatch to Record Time in Your Timesheet</a>
+											</li>
+											<li>
+												<a href="use-the-oneplan-timesheet.html#UUID-6b57d504-8a21-d82d-be98-66b97325d47b_UUID-110cf635-e80e-4ed4-eda7-32da1fd0ad24" class="topic-link section accordion" data-origin-id="" data-publication-date="">Enter Time Off from the Timesheet</a>
+											</li>
+											<li>
+												<a href="use-the-oneplan-timesheet.html#UUID-6b57d504-8a21-d82d-be98-66b97325d47b_UUID-17c3384c-3c8e-1fb8-1259-2d10448c4363" class="topic-link section original-topic accordion" data-origin-id="" data-publication-date="">Review and Approve Timesheets</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="use-the-oneplan-timesheet.html#UUID-6b57d504-8a21-d82d-be98-66b97325d47b_section-idm234911847173855" class="topic-link section accordion" data-origin-id="" data-publication-date="">Take a course</a>
+									</li>
+									<li>
+										<a href="use-the-oneplan-timesheet.html#UUID-6b57d504-8a21-d82d-be98-66b97325d47b_section-idm234352316168445" class="topic-link section accordion" data-origin-id="" data-publication-date="">Even more resources</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="resource-center-overview.html" class="topic-link section" data-origin-id="UUID-479debba-5976-961a-2f64-a7fed0e53d78" data-permalink="resource-center-overview.html" data-topic-level="1" data-relative-prefix="" data-publication-date="">
+									<span class="glyphicon"></span> Resource Center
+								</a>
+								<ul>
+									<li>
+										<a href="resource-center-overview.html#UUID-0f7fda2a-f4b7-6973-99ec-63776988ade9_section-idm234352364756888" class="topic-link section accordion" data-origin-id="" data-publication-date="">Watch a video</a>
+									</li>
+									<li>
+										<a href="resource-center-overview.html#UUID-0f7fda2a-f4b7-6973-99ec-63776988ade9_section-idm234911861003203" class="topic-link section accordion" data-origin-id="" data-publication-date="">
+											<span class="glyphicon"></span> Read an article
+										</a>
+										<ul>
+											<li>
+												<a href="resource-center-overview.html#UUID-0f7fda2a-f4b7-6973-99ec-63776988ade9_UUID-e1c029b3-1102-8c71-1baa-36f2c3ec7385" class="topic-link section accordion" data-origin-id="" data-publication-date="">Add Users to OnePlan</a>
+											</li>
+											<li>
+												<a href="resource-center-overview.html#UUID-0f7fda2a-f4b7-6973-99ec-63776988ade9_UUID-55831839-df53-e679-e461-345539d6f4aa" class="topic-link section accordion" data-origin-id="" data-publication-date="">Create and Manage Teams in the Resource Center</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="resource-center-overview.html#UUID-0f7fda2a-f4b7-6973-99ec-63776988ade9_section-idm234911865036064" class="topic-link section accordion" data-origin-id="" data-publication-date="">Take a course</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="my-strategy-overview.html" class="topic-link section" data-origin-id="UUID-c11e640d-14bd-6879-00ae-b1c94179f5bf" data-permalink="my-strategy-overview.html" data-topic-level="1" data-relative-prefix="" data-publication-date="">
+									<span class="glyphicon"></span> My Strategy
+								</a>
+								<ul>
+									<li>
+										<a href="my-strategy-overview.html#UUID-505cfa30-0e26-1250-e1fc-0c0e625b5397_section-idm13441409510248" class="topic-link section accordion" data-origin-id="" data-publication-date="">Watch a video</a>
+									</li>
+									<li>
+										<a href="my-strategy-overview.html#UUID-505cfa30-0e26-1250-e1fc-0c0e625b5397_section-idm23491199303987" class="topic-link section accordion" data-origin-id="" data-publication-date="">Take a feature tour</a>
+									</li>
+									<li>
+										<a href="my-strategy-overview.html#UUID-505cfa30-0e26-1250-e1fc-0c0e625b5397_section-idm234911994726167" class="topic-link section accordion" data-origin-id="" data-publication-date="">
+											<span class="glyphicon"></span> Read an article
+										</a>
+										<ul>
+											<li>
+												<a href="my-strategy-overview.html#UUID-505cfa30-0e26-1250-e1fc-0c0e625b5397_section-idm234911994907177" class="topic-link section accordion" data-origin-id="" data-publication-date="">Intro to the My Strategy Area</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="my-strategy-overview.html#UUID-505cfa30-0e26-1250-e1fc-0c0e625b5397_section-idm2343537602357" class="topic-link section accordion" data-origin-id="" data-publication-date="">Even more resources</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="my-portfolio-overview.html" class="topic-link section" data-origin-id="UUID-5cfba4e4-433d-6e5d-be3d-bb2820cd9b02" data-permalink="my-portfolio-overview.html" data-topic-level="1" data-relative-prefix="" data-publication-date="">
+									<span class="glyphicon"></span> My Portfolio
+								</a>
+								<ul>
+									<li>
+										<a href="my-portfolio-overview.html#UUID-83be66f8-abc3-a979-bb74-694f40454d29_section-idm234353832933689" class="topic-link section accordion" data-origin-id="" data-publication-date="">Watch a video</a>
+									</li>
+									<li>
+										<a href="my-portfolio-overview.html#UUID-83be66f8-abc3-a979-bb74-694f40454d29_section-idm234912048779044" class="topic-link section accordion" data-origin-id="" data-publication-date="">Take a feature tour</a>
+									</li>
+									<li>
+										<a href="my-portfolio-overview.html#UUID-83be66f8-abc3-a979-bb74-694f40454d29_section-idm234912049027275" class="topic-link section accordion" data-origin-id="" data-publication-date="">
+											<span class="glyphicon"></span> Read an article
+										</a>
+										<ul>
+											<li>
+												<a href="my-portfolio-overview.html#UUID-83be66f8-abc3-a979-bb74-694f40454d29_section-idm23491205116401" class="topic-link section accordion" data-origin-id="" data-publication-date="">My Portfolio Overview</a>
+											</li>
+											<li>
+												<a href="my-portfolio-overview.html#UUID-83be66f8-abc3-a979-bb74-694f40454d29_UUID-070bb17b-2f9d-b09c-3fbf-8cb7400da10c" class="topic-link section original-topic accordion" data-origin-id="" data-publication-date="">Manage Plans in the My Portfolio List</a>
+											</li>
+											<li>
+												<a href="my-portfolio-overview.html#UUID-83be66f8-abc3-a979-bb74-694f40454d29_UUID-ba2f24c5-90cd-04db-90a0-c1cd9cb95fe2" class="topic-link section original-topic accordion" data-origin-id="" data-publication-date="">Portfolio Board</a>
+											</li>
+											<li>
+												<a href="my-portfolio-overview.html#UUID-83be66f8-abc3-a979-bb74-694f40454d29_UUID-a0d356ae-16fc-6338-3873-861092f7e1e4" class="topic-link section accordion" data-origin-id="" data-publication-date="">Portfolio Analysis - Roadmap</a>
+											</li>
+											<li>
+												<a href="my-portfolio-overview.html#UUID-83be66f8-abc3-a979-bb74-694f40454d29_UUID-b29caca4-2a8e-d452-9267-35485c81d10e" class="topic-link section original-topic accordion" data-origin-id="" data-publication-date="">Portfolio Dependencies: Manage Dependencies Between Plans</a>
+											</li>
+											<li>
+												<a href="my-portfolio-overview.html#UUID-83be66f8-abc3-a979-bb74-694f40454d29_UUID-528e0cca-14b3-c327-131f-75a31f24656a" class="topic-link section accordion" data-origin-id="" data-publication-date="">Save, Use, and Manage Views in the My Portfolio Area</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="my-portfolio-overview.html#UUID-83be66f8-abc3-a979-bb74-694f40454d29_section-idm234912067281814" class="topic-link section accordion" data-origin-id="" data-publication-date="">Even more resources</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="my-enterprise-architecture-overview.html" class="topic-link section" data-origin-id="UUID-dd8c07e8-28b7-23e1-9fe4-ac05d90dbc9b" data-permalink="my-enterprise-architecture-overview.html" data-topic-level="1" data-relative-prefix="" data-publication-date="">
+									<span class="glyphicon"></span> My Enterprise Architecture
+								</a>
+								<ul>
+									<li>
+										<a href="my-enterprise-architecture-overview.html#UUID-0bd6c214-1379-97dc-7bbf-f966fac21989_section-idm234352379913077" class="topic-link section accordion" data-origin-id="" data-publication-date="">Watch a video</a>
+									</li>
+									<li>
+										<a href="my-enterprise-architecture-overview.html#UUID-0bd6c214-1379-97dc-7bbf-f966fac21989_section-idm234352409672551" class="topic-link section accordion" data-origin-id="" data-publication-date="">
+											<span class="glyphicon"></span> Read an article
+										</a>
+										<ul>
+											<li>
+												<a href="my-enterprise-architecture-overview.html#UUID-0bd6c214-1379-97dc-7bbf-f966fac21989_section-idm234912076810206" class="topic-link section" data-origin-id="" data-publication-date="">Enterprise Architecture Overview</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="use-the-oneplan-innovation-portal.html" class="topic-link section" data-origin-id="UUID-979a832a-7d5a-6270-12f5-e728c3787914" data-permalink="use-the-oneplan-innovation-portal.html" data-topic-level="1" data-relative-prefix="" data-publication-date="">
+									<span class="glyphicon"></span> Innovation Portal
+								</a>
+								<ul>
+									<li>
+										<a href="use-the-oneplan-innovation-portal.html#UUID-662475de-6556-9df7-3982-d40d6067119c_section-idm13441416798444" class="topic-link section accordion" data-origin-id="" data-publication-date="">Watch a video</a>
+									</li>
+									<li>
+										<a href="use-the-oneplan-innovation-portal.html#UUID-662475de-6556-9df7-3982-d40d6067119c_section-idm234912086386407" class="topic-link section accordion" data-origin-id="" data-publication-date="">Take a feature tour</a>
+									</li>
+									<li>
+										<a href="use-the-oneplan-innovation-portal.html#UUID-662475de-6556-9df7-3982-d40d6067119c_section-idm23491208333337" class="topic-link section accordion" data-origin-id="" data-publication-date="">
+											<span class="glyphicon"></span> Read an article
+										</a>
+										<ul>
+											<li>
+												<a href="use-the-oneplan-innovation-portal.html#UUID-662475de-6556-9df7-3982-d40d6067119c_UUID-51c14702-5297-9abf-0f53-ecb05b1dc073" class="topic-link section" data-origin-id="" data-publication-date="">Submit an Idea with the Innovation App</a>
+											</li>
+											<li>
+												<a href="use-the-oneplan-innovation-portal.html#UUID-662475de-6556-9df7-3982-d40d6067119c_UUID-563e4403-6462-cb1c-86ee-eff7358cfce5" class="topic-link section" data-origin-id="" data-publication-date="">Vote on Ideas with the Innovation App</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="use-the-oneplan-innovation-portal.html#UUID-662475de-6556-9df7-3982-d40d6067119c_section-idm234362347932272" class="topic-link section accordion" data-origin-id="" data-publication-date="">Even more resources</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="my-application.html" class="topic-link section" data-origin-id="UUID-d5c6757e-103d-5d8b-8833-d51692ecb4c4" data-permalink="my-application.html" data-topic-level="1" data-relative-prefix="" data-publication-date="">
+									<span class="glyphicon"></span> Applications Portfolio
+								</a>
+								<ul>
+									<li>
+										<a href="my-application.html#UUID-eb86d8b5-091a-2a52-92e0-cccdf0a9d6d4_section-idm13441407395066" class="topic-link section" data-origin-id="" data-publication-date="">What is the Application Portfolio?</a>
+									</li>
+									<li>
+										<a href="my-application.html#UUID-eb86d8b5-091a-2a52-92e0-cccdf0a9d6d4_section-idm13441407426000" class="topic-link section" data-origin-id="" data-publication-date="">Example Use Case</a>
+									</li>
+									<li>
+										<a href="my-application.html#UUID-eb86d8b5-091a-2a52-92e0-cccdf0a9d6d4_section-idm23436270538355" class="topic-link section" data-origin-id="" data-publication-date="">Use the Applications Portfolio</a>
+									</li>
+									<li>
+										<a href="my-application.html#UUID-eb86d8b5-091a-2a52-92e0-cccdf0a9d6d4_section-idm234362706276636" class="topic-link section" data-origin-id="" data-publication-date="">
+											<span class="glyphicon"></span> Application Board
+										</a>
+										<ul>
+											<li>
+												<a href="my-application.html#UUID-eb86d8b5-091a-2a52-92e0-cccdf0a9d6d4_section-idm234362706616426" class="topic-link section" data-origin-id="" data-publication-date="">Configurable Views</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="my-products.html" class="topic-link section" data-origin-id="UUID-0f88ba4b-8ab6-12a5-91d1-7058a4410113" data-permalink="my-products.html" data-topic-level="1" data-relative-prefix="" data-publication-date="">
+									<span class="glyphicon"></span> Product Portfolio
+								</a>
+								<ul>
+									<li>
+										<a href="my-products.html#UUID-52e76968-f160-47d4-1716-5a3c52795bad_section-idm13441408327628" class="topic-link section" data-origin-id="" data-publication-date="">What is the Product Portfolio?</a>
+									</li>
+									<li>
+										<a href="my-products.html#UUID-52e76968-f160-47d4-1716-5a3c52795bad_section-idm13441408349106" class="topic-link section" data-origin-id="" data-publication-date="">Example Use Case</a>
+									</li>
+									<li>
+										<a href="my-products.html#UUID-52e76968-f160-47d4-1716-5a3c52795bad_section-idm234362724338407" class="topic-link section" data-origin-id="" data-publication-date="">Use the Products Portfolio</a>
+									</li>
+									<li>
+										<a href="my-products.html#UUID-52e76968-f160-47d4-1716-5a3c52795bad_section-idm234362724809433" class="topic-link section" data-origin-id="" data-publication-date="">My Products Board</a>
+									</li>
+									<li>
+										<a href="my-products.html#UUID-52e76968-f160-47d4-1716-5a3c52795bad_section-idm23436272522578" class="topic-link section" data-origin-id="" data-publication-date="">My Products Roadmap</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="my-value-streams.html" class="topic-link section" data-origin-id="UUID-25d3b50b-fa78-cd66-b17e-890a44f6279a" data-permalink="my-value-streams.html" data-topic-level="1" data-relative-prefix="" data-publication-date="">
+									<span class="glyphicon"></span> My Value Stream
+								</a>
+								<ul>
+									<li>
+										<a href="my-value-streams.html#UUID-f4b6651a-66bb-a119-07f5-4d01ff8acac3_section-idm234362740808945" class="topic-link section" data-origin-id="" data-publication-date="">Value Stream Portfolio</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="my-capabilities.html" class="topic-link section" data-origin-id="UUID-137d66a1-50c9-d453-1e63-e0319a13faca" data-permalink="my-capabilities.html" data-topic-level="1" data-relative-prefix="" data-publication-date="">
+									<span class="glyphicon"></span> My Capabilities
+								</a>
+								<ul>
+									<li>
+										<a href="my-capabilities.html#UUID-2a335d82-3afd-6c12-6ce0-221b7d7c0be5_section-idm234364146599903" class="topic-link section" data-origin-id="" data-publication-date="">My Capabilities Portfolio</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="my-accounts.html" class="topic-link section" data-origin-id="UUID-77d5b25e-2a5b-2828-59c4-47cf20812a4c" data-permalink="my-accounts.html" data-topic-level="1" data-relative-prefix="" data-publication-date="">
+									<span class="glyphicon"></span> Accounts Portfolio
+								</a>
+								<ul>
+									<li>
+										<a href="my-accounts.html#UUID-39a4199e-0054-8629-c750-daf815f18b89_section-idm13441408689432" class="topic-link section" data-origin-id="" data-publication-date="">What is the Accounts Portfolio OnePlan?</a>
+									</li>
+									<li>
+										<a href="my-accounts.html#UUID-39a4199e-0054-8629-c750-daf815f18b89_section-idm13441408822162" class="topic-link section" data-origin-id="" data-publication-date="">Example Use Case</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="professional-services-portfolio.html" class="topic-link section" data-origin-id="UUID-4f84e06a-b34d-697f-c64d-312dbcb17f5f" data-permalink="professional-services-portfolio.html" data-topic-level="1" data-relative-prefix="" data-publication-date="">
+									<span class="glyphicon"></span> Professional Services Portfolio
+								</a>
+								<ul>
+									<li>
+										<a href="professional-services-portfolio.html#UUID-912f47b2-b0ff-2ae6-cdb4-80b9948c7eb9_section-idm13441408689432" class="topic-link section" data-origin-id="" data-publication-date="">What is the Professional Services Portfolio?</a>
+									</li>
+									<li>
+										<a href="professional-services-portfolio.html#UUID-912f47b2-b0ff-2ae6-cdb4-80b9948c7eb9_section-idm13441408822162" class="topic-link section" data-origin-id="" data-publication-date="">Example Use Case</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="use-the-oneplan-resource-plan.html" class="topic-link section" data-origin-id="UUID-35dec534-f8c9-4209-f2c0-d8f71af3fd04" data-permalink="use-the-oneplan-resource-plan.html" data-topic-level="1" data-relative-prefix="" data-publication-date="">
+									<span class="glyphicon"></span> Resource Plan
+								</a>
+								<ul>
+									<li>
+										<a href="use-the-oneplan-resource-plan.html#UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm234911926628021" class="topic-link section accordion" data-origin-id="" data-publication-date="">Watch a video</a>
+									</li>
+									<li>
+										<a href="use-the-oneplan-resource-plan.html#UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm234911926938406" class="topic-link section accordion" data-origin-id="" data-publication-date="">Take a feature tour</a>
+									</li>
+									<li>
+										<a href="use-the-oneplan-resource-plan.html#UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm23491192789264" class="topic-link section accordion" data-origin-id="" data-publication-date="">
+											<span class="glyphicon"></span> Read an article
+										</a>
+										<ul>
+											<li>
+												<a href="use-the-oneplan-resource-plan.html#UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_UUID-c6fda736-f5e9-8887-b7ba-169fb9e1c570" class="topic-link section original-topic accordion" data-origin-id="" data-publication-date="">Resource Plans Overview</a>
+											</li>
+											<li>
+												<a href="use-the-oneplan-resource-plan.html#UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_UUID-3829406b-32b6-d4c9-ef5b-53c86823ac68" class="topic-link section internal accordion" data-origin-id="" data-publication-date="">Resource Plan Cost Types</a>
+											</li>
+											<li>
+												<a href="use-the-oneplan-resource-plan.html#UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_UUID-46f35fea-3342-bdc8-8088-6ebe753f7afd" class="topic-link section accordion" data-origin-id="" data-publication-date="">Resource Planning Units Mode</a>
+											</li>
+											<li>
+												<a href="use-the-oneplan-resource-plan.html#UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_UUID-713ca4e3-991b-3df6-7372-c60bfe590b07" class="topic-link section original-topic accordion" data-origin-id="" data-publication-date="">Build a Resource Plan</a>
+											</li>
+											<li>
+												<a href="use-the-oneplan-resource-plan.html#UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_UUID-d190a2ae-3fdf-d85e-8da6-88bcddd3d4cf" class="topic-link section original-topic accordion" data-origin-id="" data-publication-date="">Resource Plan Candidates List Overview</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="use-the-oneplan-resource-plan.html#UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm2349119280109" class="topic-link section accordion" data-origin-id="" data-publication-date="">Take a course</a>
+									</li>
+									<li>
+										<a href="use-the-oneplan-resource-plan.html#UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm234353934286616" class="topic-link section accordion" data-origin-id="" data-publication-date="">Even more resources</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="time-off-overview.html" class="topic-link section" data-origin-id="UUID-4e6861df-5023-a355-fe9f-15a34ceeeb2b" data-permalink="time-off-overview.html" data-topic-level="1" data-relative-prefix="" data-publication-date="">
+									<span class="glyphicon"></span> Time Off
+								</a>
+								<ul>
+									<li>
+										<a href="time-off-overview.html#UUID-e14854f9-cabb-c616-47e3-51be609789a6_UUID-838fcfba-0067-55ce-f5b3-620ef8312f74" class="topic-link section accordion" data-origin-id="" data-publication-date="">Enter a Time Off Request</a>
+									</li>
+									<li>
+										<a href="time-off-overview.html#UUID-e14854f9-cabb-c616-47e3-51be609789a6_UUID-110cf635-e80e-4ed4-eda7-32da1fd0ad24" class="topic-link section accordion" data-origin-id="" data-publication-date="">
+											<span class="glyphicon"></span> Enter Time Off from the Timesheet
+										</a>
+										<ul>
+											<li>
+												<a href="time-off-overview.html#UUID-e14854f9-cabb-c616-47e3-51be609789a6_section-idm234628614375653" class="topic-link section" data-origin-id="" data-publication-date="">Enter a New Time Off Request</a>
+											</li>
+											<li>
+												<a href="time-off-overview.html#UUID-e14854f9-cabb-c616-47e3-51be609789a6_section-idm234628614524768" class="topic-link section" data-origin-id="" data-publication-date="">Time Off Displays in the Timesheet</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="time-off-overview.html#UUID-e14854f9-cabb-c616-47e3-51be609789a6_UUID-88ce5842-bd86-c87e-92f2-5213c13f9b26" class="topic-link section accordion" data-origin-id="" data-publication-date="">
+											<span class="glyphicon"></span> Time off request notifications and approvals
+										</a>
+										<ul>
+											<li>
+												<a href="time-off-overview.html#UUID-e14854f9-cabb-c616-47e3-51be609789a6_section-idm4502317487276832815989482658" class="topic-link section" data-origin-id="" data-publication-date="">Time off request notifications</a>
+											</li>
+											<li>
+												<a href="time-off-overview.html#UUID-e14854f9-cabb-c616-47e3-51be609789a6_section-idm4653149600918432815989607774" class="topic-link section" data-origin-id="" data-publication-date="">Approve or reject a time off request</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="visualizer-overview.html" class="topic-link section" data-origin-id="UUID-66a2aabc-41a0-9e55-b71e-822521cf5138" data-permalink="visualizer-overview.html" data-topic-level="1" data-relative-prefix="" data-publication-date="">
+									<span class="glyphicon"></span> Visualizer
+								</a>
+								<ul>
+									<li>
+										<a href="visualizer-overview.html#UUID-605468a6-f042-1cb9-79e8-b9b7a460632b_section-idm234911957755251" class="topic-link section accordion" data-origin-id="" data-publication-date="">Watch a video</a>
+									</li>
+									<li>
+										<a href="visualizer-overview.html#UUID-605468a6-f042-1cb9-79e8-b9b7a460632b_section-idm23491196478864" class="topic-link section accordion" data-origin-id="" data-publication-date="">
+											<span class="glyphicon"></span> Read an article
+										</a>
+										<ul>
+											<li>
+												<a href="visualizer-overview.html#UUID-605468a6-f042-1cb9-79e8-b9b7a460632b_UUID-72838b8d-5314-f58a-8f21-57458a948666" class="topic-link section accordion" data-origin-id="" data-publication-date="">Visualizer Overview</a>
+											</li>
+											<li>
+												<a href="visualizer-overview.html#UUID-605468a6-f042-1cb9-79e8-b9b7a460632b_UUID-f2e53039-9b62-3121-8853-349407b1f737" class="topic-link section accordion" data-origin-id="" data-publication-date="">Use the Visualizer Dependencies View</a>
+											</li>
+											<li>
+												<a href="visualizer-overview.html#UUID-605468a6-f042-1cb9-79e8-b9b7a460632b_UUID-b299c311-d93c-0229-601e-94a0345281ca" class="topic-link section accordion" data-origin-id="" data-publication-date="">Use the Visualizer Runway View</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="use-the-portfolio-modeler.html" class="topic-link section" data-origin-id="UUID-ffc5d9a3-2a14-cae3-7c64-52258ef460a7" data-permalink="use-the-portfolio-modeler.html" data-topic-level="1" data-relative-prefix="" data-publication-date="">
+									<span class="glyphicon"></span> Portfolio Modeler
+								</a>
+								<ul>
+									<li>
+										<a href="use-the-portfolio-modeler.html#UUID-50188665-c407-29a3-7e93-2c40646f3fff_section-idm13441410811232" class="topic-link section accordion" data-origin-id="" data-publication-date="">Watch a video</a>
+									</li>
+									<li>
+										<a href="use-the-portfolio-modeler.html#UUID-50188665-c407-29a3-7e93-2c40646f3fff_section-idm23491209641952" class="topic-link section accordion" data-origin-id="" data-publication-date="">Take a feature tour</a>
+									</li>
+									<li>
+										<a href="use-the-portfolio-modeler.html#UUID-50188665-c407-29a3-7e93-2c40646f3fff_section-idm13441410828372" class="topic-link section accordion" data-origin-id="" data-publication-date="">
+											<span class="glyphicon"></span> Read an article
+										</a>
+										<ul>
+											<li>
+												<a href="use-the-portfolio-modeler.html#UUID-50188665-c407-29a3-7e93-2c40646f3fff_UUID-73f33c37-581a-a7c6-266a-5a8907e45c97" class="topic-link section accordion" data-origin-id="" data-publication-date="">Create a Modeler Model</a>
+											</li>
+											<li>
+												<a href="use-the-portfolio-modeler.html#UUID-50188665-c407-29a3-7e93-2c40646f3fff_UUID-84156f7f-3244-d6bf-f651-ae3b76acf025" class="topic-link section accordion" data-origin-id="" data-publication-date="">Create a Model Scenario</a>
+											</li>
+											<li>
+												<a href="use-the-portfolio-modeler.html#UUID-50188665-c407-29a3-7e93-2c40646f3fff_UUID-6db70b7c-296b-ab06-73f4-14cc27934872" class="topic-link section accordion" data-origin-id="" data-publication-date="">Analyze Model Scenarios</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="use-the-portfolio-modeler.html#UUID-50188665-c407-29a3-7e93-2c40646f3fff_section-idm234362334625301" class="topic-link section accordion" data-origin-id="" data-publication-date="">Even more resources</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="oneplan-sofia-gpt-overview.html" class="topic-link section" data-origin-id="UUID-0f613516-4850-ba57-8884-126d305478cf" data-permalink="oneplan-sofia-gpt-overview.html" data-topic-level="1" data-relative-prefix="" data-publication-date="">
+									<span class="glyphicon"></span> Sofia GPT
+								</a>
+								<ul>
+									<li>
+										<a href="oneplan-sofia-gpt-overview.html#UUID-5579b43b-dbe1-ab9c-fb8e-5581e3464b3c_section-idm234917142344224" class="topic-link section accordion" data-origin-id="" data-publication-date="">Watch a Video</a>
+									</li>
+									<li>
+										<a href="oneplan-sofia-gpt-overview.html#UUID-5579b43b-dbe1-ab9c-fb8e-5581e3464b3c_section-idm23491714380433" class="topic-link section accordion" data-origin-id="" data-publication-date="">
+											<span class="glyphicon"></span> Read an article
+										</a>
+										<ul>
+											<li>
+												<a href="oneplan-sofia-gpt-overview.html#UUID-5579b43b-dbe1-ab9c-fb8e-5581e3464b3c_UUID-bb136174-3efe-5683-4d41-e59f13ef46e7" class="topic-link section accordion accordion" data-origin-id="" data-publication-date="">What is Sofia GPT?</a>
+											</li>
+											<li>
+												<a href="oneplan-sofia-gpt-overview.html#UUID-5579b43b-dbe1-ab9c-fb8e-5581e3464b3c_UUID-76559f5a-25a1-f671-38b9-c9b2c106cad8" class="topic-link section accordion accordion" data-origin-id="" data-publication-date="">How do I Use Sofia GPT?</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="oneplan-sofia-gpt-overview.html#UUID-5579b43b-dbe1-ab9c-fb8e-5581e3464b3c_section-idm234917145698567" class="topic-link section accordion" data-origin-id="" data-publication-date="">Even more resources</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="status-reports.html" class="topic-link section" data-origin-id="UUID-0a1a1114-e0e4-05cf-7521-255d57d48328" data-permalink="status-reports.html" data-topic-level="1" data-relative-prefix="" data-publication-date="">
+									<span class="glyphicon"></span> Status Reports
+								</a>
+								<ul>
+									<li>
+										<a href="status-reports.html#UUID-f1224cb7-50f3-9479-c5f1-8544809e0b14_section-idm13441410997380" class="topic-link section accordion" data-origin-id="" data-publication-date="">Watch a video</a>
+									</li>
+									<li>
+										<a href="status-reports.html#UUID-f1224cb7-50f3-9479-c5f1-8544809e0b14_section-idm13441411014042" class="topic-link section accordion" data-origin-id="" data-publication-date="">
+											<span class="glyphicon"></span> Read an article
+										</a>
+										<ul>
+											<li>
+												<a href="status-reports.html#UUID-f1224cb7-50f3-9479-c5f1-8544809e0b14_UUID-41c3210d-63fe-2405-970d-37e9e7ee4bd2" class="topic-link section original-topic" data-origin-id="" data-publication-date="">Create, Update, and Submit Status Reports</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="status-reports.html#UUID-f1224cb7-50f3-9479-c5f1-8544809e0b14_section-idm23436275926881" class="topic-link section accordion" data-origin-id="" data-publication-date="">Even more resources</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="plan-details-overview.html" class="topic-link section" data-origin-id="UUID-556c64d6-34ad-a3a6-c2fd-3a550957d0a5" data-permalink="plan-details-overview.html" data-topic-level="1" data-relative-prefix="" data-publication-date="">
+									<span class="glyphicon"></span> Plan Details
+								</a>
+								<ul>
+									<li>
+										<a href="plan-details-overview.html#UUID-896654bd-2d3a-73d5-bdcd-01d8999c35bd_section-idm234912156171683" class="topic-link section accordion" data-origin-id="" data-publication-date="">Watch a Video</a>
+									</li>
+									<li>
+										<a href="plan-details-overview.html#UUID-896654bd-2d3a-73d5-bdcd-01d8999c35bd_section-idm234912158889709" class="topic-link section accordion" data-origin-id="" data-publication-date="">
+											<span class="glyphicon"></span> Read an article
+										</a>
+										<ul>
+											<li>
+												<a href="plan-details-overview.html#UUID-896654bd-2d3a-73d5-bdcd-01d8999c35bd_UUID-75e343de-0946-c9f3-ec9a-f2ba82a93717" class="topic-link section accordion" data-origin-id="" data-publication-date="">Plan Details Overview</a>
+											</li>
+											<li>
+												<a href="plan-details-overview.html#UUID-896654bd-2d3a-73d5-bdcd-01d8999c35bd_UUID-728cd1f1-4c02-844a-55b7-15f11c851184" class="topic-link section original-topic accordion" data-origin-id="" data-publication-date="">Edit the Plan Details Form</a>
+											</li>
+											<li>
+												<a href="plan-details-overview.html#UUID-896654bd-2d3a-73d5-bdcd-01d8999c35bd_UUID-79d33593-ff02-33bc-7337-5fadee4bff4c" class="topic-link section accordion" data-origin-id="" data-publication-date="">Use OnePlan Stage Gate Workflows for Process Steps</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="plan-details-overview.html#UUID-896654bd-2d3a-73d5-bdcd-01d8999c35bd_section-idm234912156433617" class="topic-link section accordion" data-origin-id="" data-publication-date="">Take a course</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="financial-plan.html" class="topic-link section" data-origin-id="UUID-5cf6122f-d1a1-0ca8-fa8f-f5143438f236" data-permalink="financial-plan.html" data-topic-level="1" data-relative-prefix="" data-publication-date="">
+									<span class="glyphicon"></span> Financial Plan
+								</a>
+								<ul>
+									<li>
+										<a href="financial-plan.html#UUID-6bda6906-0b71-1fa2-65aa-f1dd14b50950_section-idm13441410138676" class="topic-link section accordion" data-origin-id="" data-publication-date="">Watch a video</a>
+									</li>
+									<li>
+										<a href="financial-plan.html#UUID-6bda6906-0b71-1fa2-65aa-f1dd14b50950_section-idm234912209397449" class="topic-link section accordion" data-origin-id="" data-publication-date="">
+											<span class="glyphicon"></span> Read an article
+										</a>
+										<ul>
+											<li>
+												<a href="financial-plan.html#UUID-6bda6906-0b71-1fa2-65aa-f1dd14b50950_UUID-4a2f62f7-75e1-5d57-ab94-59417b612478" class="topic-link section original-topic accordion" data-origin-id="" data-publication-date="">Build a Financial Plan</a>
+											</li>
+											<li>
+												<a href="financial-plan.html#UUID-6bda6906-0b71-1fa2-65aa-f1dd14b50950_UUID-210f8a0d-d106-2102-f19a-75e72441c4d9" class="topic-link section original-topic accordion" data-origin-id="" data-publication-date="">Get Around the Financial Planner</a>
+											</li>
+											<li>
+												<a href="financial-plan.html#UUID-6bda6906-0b71-1fa2-65aa-f1dd14b50950_UUID-efbfd9e6-f82b-f392-cb4d-70afcae4484f" class="topic-link section accordion" data-origin-id="" data-publication-date="">Create and Save Financial Planner Views</a>
+											</li>
+											<li>
+												<a href="financial-plan.html#UUID-6bda6906-0b71-1fa2-65aa-f1dd14b50950_UUID-65bb809b-a8fb-cc2d-c155-944f41de52d3" class="topic-link section accordion" data-origin-id="" data-publication-date="">Import and Export Costs to/from the Financial Planner</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="financial-plan.html#UUID-6bda6906-0b71-1fa2-65aa-f1dd14b50950_section-idm234362765479529" class="topic-link section accordion" data-origin-id="" data-publication-date="">Take a course</a>
+									</li>
+									<li>
+										<a href="financial-plan.html#UUID-6bda6906-0b71-1fa2-65aa-f1dd14b50950_section-idm23491221803775" class="topic-link section accordion" data-origin-id="" data-publication-date="">Even more resources</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="microsoft-teams.html" class="topic-link section" data-origin-id="UUID-6246ceeb-7791-165c-886f-ec9e3f004bb3" data-permalink="microsoft-teams.html" data-topic-level="1" data-relative-prefix="" data-publication-date="">
+									<span class="glyphicon"></span> Microsoft Teams
+								</a>
+								<ul>
+									<li>
+										<a href="microsoft-teams.html#UUID-ecde8553-384d-d8f6-3a47-7a254a935c9e_section-idm13441412444824" class="topic-link section accordion" data-origin-id="" data-publication-date="">Watch a video</a>
+									</li>
+									<li>
+										<a href="microsoft-teams.html#UUID-ecde8553-384d-d8f6-3a47-7a254a935c9e_section-idm234912171903553" class="topic-link section accordion" data-origin-id="" data-publication-date="">
+											<span class="glyphicon"></span> Read an article
+										</a>
+										<ul>
+											<li>
+												<a href="microsoft-teams.html#UUID-ecde8553-384d-d8f6-3a47-7a254a935c9e_section-idm23491218016942" class="topic-link section accordion" data-origin-id="" data-publication-date="">Enable the OnePlan and Microsoft Teams Integration</a>
+											</li>
+											<li>
+												<a href="microsoft-teams.html#UUID-ecde8553-384d-d8f6-3a47-7a254a935c9e_section-idm234912176846395" class="topic-link section accordion" data-origin-id="" data-publication-date="">Auto Create a Team for New OnePlan Plans in Microsoft Teams</a>
+											</li>
+											<li>
+												<a href="microsoft-teams.html#UUID-ecde8553-384d-d8f6-3a47-7a254a935c9e_section-idm234912177533467" class="topic-link section accordion" data-origin-id="" data-publication-date="">Manually Create a Team for a OnePlan Plan in Microsoft Teams</a>
+											</li>
+											<li>
+												<a href="microsoft-teams.html#UUID-ecde8553-384d-d8f6-3a47-7a254a935c9e_section-idm23491217811977" class="topic-link section accordion" data-origin-id="" data-publication-date="">Create a Team for a OnePlan Group in Microsoft Teams</a>
+											</li>
+											<li>
+												<a href="microsoft-teams.html#UUID-ecde8553-384d-d8f6-3a47-7a254a935c9e_section-idm234912178552387" class="topic-link section accordion" data-origin-id="" data-publication-date="">Connect a OnePlan Plan to an Existing Team and/or Channel in Microsoft Teams</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="microsoft-teams.html#UUID-ecde8553-384d-d8f6-3a47-7a254a935c9e_section-idm234362782727249" class="topic-link section accordion" data-origin-id="" data-publication-date="">Even more resources</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="dashboard.html" class="topic-link section" data-origin-id="UUID-eb5b6d27-0dc7-34a5-60b0-22cf33942886" data-permalink="dashboard.html" data-topic-level="1" data-relative-prefix="" data-publication-date="">
+									<span class="glyphicon"></span> Dashboard
+								</a>
+								<ul>
+									<li>
+										<a href="dashboard.html#UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78_section-idm234912222654023" class="topic-link section accordion" data-origin-id="" data-publication-date="">Watch a video</a>
+									</li>
+									<li>
+										<a href="dashboard.html#UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78_section-idm234912223541952" class="topic-link section accordion" data-origin-id="" data-publication-date="">Take a feature tour</a>
+									</li>
+									<li>
+										<a href="dashboard.html#UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78_section-idm234912223070273" class="topic-link section accordion" data-origin-id="" data-publication-date="">
+											<span class="glyphicon"></span> Read an article
+										</a>
+										<ul>
+											<li>
+												<a href="dashboard.html#UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78_section-idm234912225578086" class="topic-link section accordion" data-origin-id="" data-publication-date="">OnePlan Power BI Reporting Dashboards Overview</a>
+											</li>
+											<li>
+												<a href="dashboard.html#UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78_UUID-8ca397ca-213c-a245-e913-a31f2f3e8780" class="topic-link section original-topic accordion" data-origin-id="" data-publication-date="">Configure OnePlan Reporting Dashboards</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="dashboard.html#UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78_section-idm23491222323056" class="topic-link section accordion" data-origin-id="" data-publication-date="">Take a course</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="notifications.html" class="topic-link section" data-origin-id="UUID-f22f49c1-63b5-8f49-0a62-906efdc79159" data-permalink="notifications.html" data-topic-level="1" data-relative-prefix="" data-publication-date="">Notifications</a>
+							</li>
+							<li>
+								<a href="integrations.html" class="topic-link section" data-origin-id="UUID-cba9304c-f5dc-3c6b-bf0e-db9f08fad450" data-permalink="integrations.html" data-topic-level="1" data-relative-prefix="" data-publication-date="">
+									<span class="glyphicon"></span> Integrations
+								</a>
+								<ul>
+									<li>
+										<a href="integrations.html#UUID-f66c28c7-45ac-cab5-146e-935d6468a20c_section-idm234912235879254" class="topic-link section accordion" data-origin-id="" data-publication-date="">Watch a video</a>
+									</li>
+									<li>
+										<a href="integrations.html#UUID-f66c28c7-45ac-cab5-146e-935d6468a20c_section-idm234912236607016" class="topic-link section accordion" data-origin-id="" data-publication-date="">
+											<span class="glyphicon"></span> Read an article
+										</a>
+										<ul>
+											<li>
+												<a href="integrations.html#UUID-f66c28c7-45ac-cab5-146e-935d6468a20c_section-idm234912238238728" class="topic-link section accordion" data-origin-id="" data-publication-date="">OneConnect Overview</a>
+											</li>
+											<li>
+												<a href="integrations.html#UUID-f66c28c7-45ac-cab5-146e-935d6468a20c_section-idm234364392372522" class="topic-link section accordion" data-origin-id="" data-publication-date="">OnePlan Integration Settings</a>
+											</li>
+											<li>
+												<a href="integrations.html#UUID-f66c28c7-45ac-cab5-146e-935d6468a20c_section-idm234364393177168" class="topic-link section accordion" data-origin-id="" data-publication-date="">Link your OnePlan Group to your OneConnect Group</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="integrations.html#UUID-f66c28c7-45ac-cab5-146e-935d6468a20c_section-idm234364383091454" class="topic-link section accordion" data-origin-id="" data-publication-date="">Even more resources</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="what-are-work-types-and-how-do-i-use-them-.html" class="topic-link section" data-origin-id="UUID-7843c140-bffc-00ff-76e9-381d72dc8f53" data-permalink="what-are-work-types-and-how-do-i-use-them-.html" data-topic-level="1" data-relative-prefix="" data-publication-date="">
+									<span class="glyphicon"></span> Work Types
+								</a>
+								<ul>
+									<li>
+										<a href="what-are-work-types-and-how-do-i-use-them-.html#UUID-443c0dc7-f096-cbef-ac89-381571d11be7_section-idm234912252268522" class="topic-link section accordion" data-origin-id="" data-publication-date="">Watch a video</a>
+									</li>
+									<li>
+										<a href="what-are-work-types-and-how-do-i-use-them-.html#UUID-443c0dc7-f096-cbef-ac89-381571d11be7_section-idm234912252093377" class="topic-link section accordion" data-origin-id="" data-publication-date="">
+											<span class="glyphicon"></span> Read an article
+										</a>
+										<ul>
+											<li>
+												<a href="what-are-work-types-and-how-do-i-use-them-.html#UUID-443c0dc7-f096-cbef-ac89-381571d11be7_UUID-49bc5276-b86a-d3c6-04b4-b72433aa51b8" class="topic-link section original-topic accordion" data-origin-id="" data-publication-date="">Use Work Types in the Work Planner</a>
+											</li>
+											<li>
+												<a href="what-are-work-types-and-how-do-i-use-them-.html#UUID-443c0dc7-f096-cbef-ac89-381571d11be7_UUID-c073bf3a-7a5d-fd48-32eb-c4c96bb5cf5f" class="topic-link section accordion" data-origin-id="" data-publication-date="">Pull Work Items from a Work Type Log into the Main Schedule</a>
+											</li>
+											<li>
+												<a href="what-are-work-types-and-how-do-i-use-them-.html#UUID-443c0dc7-f096-cbef-ac89-381571d11be7_UUID-1da243de-eb02-afa5-0dde-aae47732ea8a" class="topic-link section accordion" data-origin-id="" data-publication-date="">Select Work Types for Your Plan</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="project-professional.html" class="topic-link section" data-origin-id="UUID-ca3a71d1-1f2f-f779-c1c3-97fe6a559239" data-permalink="project-professional.html" data-topic-level="1" data-relative-prefix="" data-publication-date="">
+									<span class="glyphicon"></span> Project Professional
+								</a>
+								<ul>
+									<li>
+										<a href="project-professional.html#UUID-62b1fe80-14ef-fb6f-4f46-4d1cdeb81adc_section-idm13441411616486" class="topic-link section accordion" data-origin-id="" data-publication-date="">Watch a video</a>
+									</li>
+									<li>
+										<a href="project-professional.html#UUID-62b1fe80-14ef-fb6f-4f46-4d1cdeb81adc_section-idm234912265047249" class="topic-link section accordion" data-origin-id="" data-publication-date="">
+											<span class="glyphicon"></span> Read an article
+										</a>
+										<ul>
+											<li>
+												<a href="project-professional.html#UUID-62b1fe80-14ef-fb6f-4f46-4d1cdeb81adc_section-idm234364448431894" class="topic-link section accordion" data-origin-id="" data-publication-date="">Use the OnePlan for Project Connector</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="use-the-work-plan-board.html" class="topic-link section" data-origin-id="UUID-d03dbb64-7ba1-ec39-576e-0670ad5fab30" data-permalink="use-the-work-plan-board.html" data-topic-level="1" data-relative-prefix="" data-publication-date="">
+									<span class="glyphicon"></span> Work Plan Board
+								</a>
+								<ul>
+									<li>
+										<a href="use-the-work-plan-board.html#UUID-25efc85a-6d91-86ad-9853-eedc1e60802c_section-idm234912259263927" class="topic-link section accordion" data-origin-id="" data-publication-date="">
+											<span class="glyphicon"></span> Read an article
+										</a>
+										<ul>
+											<li>
+												<a href="use-the-work-plan-board.html#UUID-25efc85a-6d91-86ad-9853-eedc1e60802c_UUID-3e922ed6-d568-00f6-5ec1-650075a3c381" class="topic-link section original-topic" data-origin-id="" data-publication-date="">Use the Work Plan Board</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="use-the-work-plan-board.html#UUID-25efc85a-6d91-86ad-9853-eedc1e60802c_section-idm234912259373668" class="topic-link section accordion" data-origin-id="" data-publication-date="">Take a course</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="use-the-oneplan-work-plan.html" class="topic-link section" data-origin-id="UUID-84217b87-7a81-f01d-d1d5-50a352197f12" data-permalink="use-the-oneplan-work-plan.html" data-topic-level="1" data-relative-prefix="" data-publication-date="">
+									<span class="glyphicon"></span> Work Plan List
+								</a>
+								<ul>
+									<li>
+										<a href="use-the-oneplan-work-plan.html#UUID-9de0b2b2-7093-c3ff-2fc1-792e60c5290f_section-idm234911879461241" class="topic-link section accordion" data-origin-id="" data-publication-date="">Watch a video</a>
+									</li>
+									<li>
+										<a href="use-the-oneplan-work-plan.html#UUID-9de0b2b2-7093-c3ff-2fc1-792e60c5290f_section-idm234911879995083" class="topic-link section accordion" data-origin-id="" data-publication-date="">Take a feature tour</a>
+									</li>
+									<li>
+										<a href="use-the-oneplan-work-plan.html#UUID-9de0b2b2-7093-c3ff-2fc1-792e60c5290f_section-idm234911882512249" class="topic-link section accordion" data-origin-id="" data-publication-date="">
+											<span class="glyphicon"></span> Read an article
+										</a>
+										<ul>
+											<li>
+												<a href="use-the-oneplan-work-plan.html#UUID-9de0b2b2-7093-c3ff-2fc1-792e60c5290f_UUID-971af697-887e-1a2d-cf39-5680a766502a" class="topic-link section original-topic accordion" data-origin-id="" data-publication-date="">Work Plan List Overview</a>
+											</li>
+											<li>
+												<a href="use-the-oneplan-work-plan.html#UUID-9de0b2b2-7093-c3ff-2fc1-792e60c5290f_UUID-95301b09-53b3-e8ef-93ef-478e8409545a" class="topic-link section original-topic accordion" data-origin-id="" data-publication-date="">Add Work Items to the Work Plan List</a>
+											</li>
+											<li>
+												<a href="use-the-oneplan-work-plan.html#UUID-9de0b2b2-7093-c3ff-2fc1-792e60c5290f_UUID-79883e5d-f995-81be-eb76-aeec1d4e7c00" class="topic-link section accordion" data-origin-id="" data-publication-date="">Assign Resources to Work Items in the Work Plan List</a>
+											</li>
+											<li>
+												<a href="use-the-oneplan-work-plan.html#UUID-9de0b2b2-7093-c3ff-2fc1-792e60c5290f_UUID-7f5dce17-f85e-2ed0-14ca-afe4c4b90658" class="topic-link section accordion" data-origin-id="" data-publication-date="">Save Changes in the Work Plan</a>
+											</li>
+											<li>
+												<a href="use-the-oneplan-work-plan.html#UUID-9de0b2b2-7093-c3ff-2fc1-792e60c5290f_UUID-49bc5276-b86a-d3c6-04b4-b72433aa51b8" class="topic-link section original-topic accordion" data-origin-id="" data-publication-date="">Use Work Types in the Work Planner</a>
+											</li>
+											<li>
+												<a href="use-the-oneplan-work-plan.html#UUID-9de0b2b2-7093-c3ff-2fc1-792e60c5290f_UUID-f83f4dcb-e7c2-c2ea-e9a6-8a8531d11749" class="topic-link section accordion" data-origin-id="" data-publication-date="">Task Dependencies</a>
+											</li>
+											<li>
+												<a href="use-the-oneplan-work-plan.html#UUID-9de0b2b2-7093-c3ff-2fc1-792e60c5290f_UUID-516fc7db-d554-f513-9ec9-0f7a52df9572" class="topic-link section accordion" data-origin-id="" data-publication-date="">Constraints</a>
+											</li>
+											<li>
+												<a href="use-the-oneplan-work-plan.html#UUID-9de0b2b2-7093-c3ff-2fc1-792e60c5290f_UUID-feb8b782-532f-8fb9-256d-25e470b971a7" class="topic-link section original-topic accordion" data-origin-id="" data-publication-date="">Modify and Save Views in the Work Plan List</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="use-the-oneplan-work-plan.html#UUID-9de0b2b2-7093-c3ff-2fc1-792e60c5290f_section-idm234911884576333" class="topic-link section accordion" data-origin-id="" data-publication-date="">Take a course</a>
+									</li>
+									<li>
+										<a href="use-the-oneplan-work-plan.html#UUID-9de0b2b2-7093-c3ff-2fc1-792e60c5290f_section-idm234911908130997" class="topic-link section accordion" data-origin-id="" data-publication-date="">Even more resources</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</aside>
+					<div class="site-content">
+						<h1 class="publication-title">New In Product Help</h1>
+						<div class="toolbar">
+							<div class="toolbar-tools">
+								<div id="navbar" class="navbar-collapse collapse"></div>
+								<div class="tool-print">
+									<i class="fa fa-print" aria-hidden="true">print</i>
+								</div>
+								<div class="tool-search">
+									<i class="fa fa-search" aria-hidden="true"></i>
+								</div>
+								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".site-sidebar" aria-expanded="false" aria-controls="navbar">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+							</div>
+							<div class="breadcrumb-container">
+								<ul class="breadcrumb">
+									<li class="breadcrumb-link">
+										<a href="index-en.html">New In Product Help</a>
+									</li>
+									<li class="breadcrumb-node">Resource Plan</li>
+								</ul>
+							</div>
+						</div>
+						<main>
+							<div id="top-pager">
+								<ul class="pager">
+									<li class="previous">
+										<a accesskey="p" class="prev pull-left prev visible-lg visible-md" id="header-navigation-prev" href="professional-services-portfolio.html#UUID-912f47b2-b0ff-2ae6-cdb4-80b9948c7eb9_section-idm13441408822162">Prev</a>
+									</li>
+									<li class="next">
+										<a accesskey="n" class="pull-right next visible-lg visible-md" id="header-navigation-next" href="use-the-oneplan-resource-plan.html#UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm234911926628021">Next</a>
+									</li>
+								</ul>
+							</div>
+							<article class="topic content-container" id="content-wrapper">
+								<div id="topic-content" class="topic-content">
+									<section xml:lang="en" lang="en" dir="ltr" class="section" data-origin-id="UUID-35dec534-f8c9-4209-f2c0-d8f71af3fd04" data-permalink="use-the-oneplan-resource-plan.html" data-topic-level="1" data-relative-prefix="" data-publication-date="" id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5">
+										<div class="titlepage">
+											<div>
+												<div class="title">
+													<h2 class="title" style="clear: both">Resource Plan</h2>
+												</div>
+											</div>
+										</div>
+										<p>The OnePlan Resource Planner is a comprehensive resource scheduling and forecasting tool designed to track, optimize, and manage work allocation among various roles within an organization over a specific time frame. It accounts for both committed and planned work hours of all resources within your organization that have been added to OnePlan's Resource Center.</p>
+										<section dir="ltr" class="section accordion" data-origin-id="" data-publication-date="" id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm234911926628021">
+											<div class="accordion-icon"></div>
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<div class="titlepage">
+														<a data-toggle="collapse" href="#UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm234911926628021_body" data-parent="#UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm234911926628021">
+															<div>
+																<div class="title">
+																	<h3 class="title">Watch a video</h3>
+																</div>
+															</div>
+														</a>
+													</div>
+												</div>
+												<div class="panel-body collapse" id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm234911926628021_body">
+													<div class="mediaobject">
+														<div class="video-container">
+															<div class="videoobject">
+																<iframe title="" style="border:0;" allow="fullscreen *" src="https://player.vimeo.com/video/791263430"></iframe>
+															</div>
+														</div>
+													</div>
+													<div class="mediaobject">
+														<div class="video-container">
+															<div class="videoobject">
+																<iframe title="" style="border:0;" allow="fullscreen *" src="https://player.vimeo.com/video/790470410"></iframe>
+															</div>
+														</div>
+													</div>
+													<div class="mediaobject">
+														<div class="video-container">
+															<div class="videoobject">
+																<iframe title="" style="border:0;" allow="fullscreen *" src="https://player.vimeo.com/video/792275326"></iframe>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</section>
+										<section dir="ltr" class="section accordion" data-origin-id="" data-publication-date="" id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm234911926938406">
+											<div class="accordion-icon"></div>
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<div class="titlepage">
+														<a data-toggle="collapse" href="#UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm234911926938406_body" data-parent="#UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm234911926938406">
+															<div>
+																<div class="title">
+																	<h3 class="title">Take a feature tour</h3>
+																</div>
+															</div>
+														</a>
+													</div>
+												</div>
+												<div class="panel-body collapse" id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm234911926938406_body">
+													<div>
+														<script async src="https://js.storylane.io/js/v2/storylane.js"></script>
+														<div class="sl-embed" style="position:relative;padding-bottom:calc(57.99% + 25px);width:100%;height:0;transform:scale(1)">
+														  <iframe loading="lazy" class="sl-demo" src="https://app.storylane.io/demo/og9h9rrzqnae?embed=inline" name="sl-embed" allow="fullscreen" allowfullscreen style="position:absolute;top:0;left:0;width:100%!important;height:100%!important;border:1px solid rgba(63,95,172,0.35);box-shadow: 0px 0px 18px rgba(26, 19, 72, 0.15);border-radius:10px;box-sizing:border-box;"></iframe>
+														</div>
+													  </div>
+												</div>
+											</div>
+										</section>
+										<section dir="ltr" class="section accordion" data-origin-id="" data-publication-date="" id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm23491192789264">
+											<div class="accordion-icon"></div>
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<div class="titlepage">
+														<a data-toggle="collapse" href="#UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm23491192789264_body" data-parent="#UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm23491192789264">
+															<div>
+																<div class="title">
+																	<h3 class="title">Read an article</h3>
+																</div>
+															</div>
+														</a>
+													</div>
+												</div>
+												<div class="panel-body collapse" id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm23491192789264_body">
+													<section xml:lang="en" lang="en" dir="ltr" class="section original-topic accordion" data-origin-id="" data-publication-date="" id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_UUID-c6fda736-f5e9-8887-b7ba-169fb9e1c570">
+														<div class="accordion-icon"></div>
+														<div class="panel panel-default">
+															<div class="panel-heading">
+																<div class="titlepage">
+																	<a data-toggle="collapse" href="#UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_UUID-c6fda736-f5e9-8887-b7ba-169fb9e1c570_body" data-parent="#UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_UUID-c6fda736-f5e9-8887-b7ba-169fb9e1c570">
+																		<div>
+																			<div class="title">
+																				<h4 class="title">Resource Plans Overview</h4>
+																			</div>
+																		</div>
+																	</a>
+																</div>
+															</div>
+															<div class="panel-body collapse" id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_UUID-c6fda736-f5e9-8887-b7ba-169fb9e1c570_body">
+																<div class="panel-inner">
+																	<p>This article an overview of the OnePlan Resource Plans. OnePlan has both plan-level and organization-wide resource planning capabilities.</p>
+																	<section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm4588983422051233045672950303">
+																		<div class="titlepage">
+																			<div>
+																				<div class="title">
+																					<h5 class="title">Global Resource Plan</h5>
+																				</div>
+																			</div>
+																		</div>
+																		<p>The Global Resource Plan shows all resource allocation across all the plans. This is a useful page for managers to review allocation across multiple plans.</p>
+																		<p>If your organization is using the Negotiations feature, the email notifications contain a link to the Resource Plan page, filtered for that plan's resources. You can also navigate to the page directly via the Resource Plan icon on the OnePlan navigation menu.</p>
+																		<div class="mediaobject">
+																			<img src="image/img-796ca829fb0c2b4c1ddfd8b129f8f3c3.png" style="" alt="392d6f7b-e800-472f-8e97-4f75912553aa.png"></img>
+																		</div>
+																		<p>Global Resource Plan Overview Video (03:52)</p>
+																		<div class="mediaobject">
+																			<div class="video-container">
+																				<div class="videoobject">
+																					<iframe title="" style="border:0;" allow="fullscreen *" src="https://player.vimeo.com/video/791263430"></iframe>
+																				</div>
+																			</div>
+																		</div>
+																	</section>
+																	<section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm4486156311124833045673168749">
+																		<div class="titlepage">
+																			<div>
+																				<div class="title">
+																					<h5 class="title">Plan-Level Resource Plan</h5>
+																				</div>
+																			</div>
+																		</div>
+																		<p>The plan-level Resource Plan shows resource allocation for a particular plan.</p>
+																		<div class="mediaobject">
+																			<img src="image/img-c992bc23fef013d3a9b5dced6733759c.png" style="" alt="Screenshot_2022-05-11_110401.png"></img>
+																		</div>
+																		<p>Plan-Level Resource Plan Overview Video (04:39)</p>
+																		<div class="mediaobject">
+																			<div class="video-container">
+																				<div class="videoobject">
+																					<iframe title="" style="border:0;" allow="fullscreen *" src="https://player.vimeo.com/video/790470410"></iframe>
+																				</div>
+																			</div>
+																		</div>
+																	</section>
+																	<section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_id_360060283111_id_pre-filters">
+																		<div class="titlepage">
+																			<div>
+																				<div class="title">
+																					<h5 class="title">Pre-filters</h5>
+																				</div>
+																			</div>
+																		</div>
+																		<p>Select a pre-filter to review desired resource types. Pre-filters are configured by your administrator. Pre-filters can be required or optional. When pre-filters are required, no resources will be displayed in the Global Resource Plan page until a pre-filter is applied.</p>
+																		<div class="mediaobject">
+																			<img src="image/img-8c73398da8c1aebcc49d2449f1578dac.png" style="" alt="fee39593-b7d2-47d3-bcb7-d0e695cdd390.png"></img>
+																		</div>
+																		<section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm4526981837297634046609546246">
+																			<div class="titlepage">
+																				<div>
+																					<div class="title">
+																						<h6 class="title">Resource Type Pre-Filter</h6>
+																					</div>
+																				</div>
+																			</div>
+																			<p>You can filter the Global Resource Planner by Resource Type so you can view either individual resource allocations or team allocations.</p>
+																			<div dir="ltr" class="important">
+																				<h3 class="title">Important</h3>
+																				<p>You can only view Resources or Teams allocations. You cannot view both at the same time.</p>
+																			</div>
+																			<div class="mediaobject">
+																				<img src="image/img-96498df7236b782417194f27bd48acad.png" style="" alt="DEC_23_Global_Resource_Plan_Resource_Type_Filter.png"></img>
+																			</div>
+																		</section>
+																		<section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm4652813986291234046609729041">
+																			<div class="titlepage">
+																				<div>
+																					<div class="title">
+																						<h6 class="title">Resource Manager Pre-Filter</h6>
+																					</div>
+																				</div>
+																			</div>
+																			<p>The resource manager pre-filter is a server-side filter that loads resources into the Resource Plan area and/or Resource Center area based on user permissions and 
+																				<span class="bold">
+																					<strong>Resource Managers</strong>
+																				</span> admin settings. See 
+																				<a class="link" href="https://support.oneplan.ai/hc/en-us/articles/4415142203917-How-the-Resource-Manager-pre-filter-works" target="_blank" rel="noopener">How the Resource Manager pre-filter works</a> for more information.
+																			</p>
+																		</section>
+																	</section>
+																	<section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_id_360060283111_id_icon-menu">
+																		<div class="titlepage">
+																			<div>
+																				<div class="title">
+																					<h5 class="title">Icon Menu</h5>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="mediaobject">
+																			<img src="image/img-1591b6f0663c46a22c7fe53e553a67c3.png" style="" alt="GLobal_IconsMenu.png"></img>
+																		</div>
+																		<p>Icons listed in order from left to right:</p>
+																		<div class="informaltable table-responsive">
+																			<table class="informaltable frame-void rules-rows" style="width:100%;">
+																				<thead>
+																					<tr>
+																						<th class="th">
+																							<p>Icon</p>
+																						</th>
+																						<th class="th">
+																							<p>Name</p>
+																						</th>
+																						<th class="th">
+																							<p>Description</p>
+																						</th>
+																					</tr>
+																				</thead>
+																				<tbody>
+																					<tr>
+																						<td class="td">
+																							<p>
+																								<span class="inlinemediaobject">
+																									<img src="image/img-9accd39331f07ab5d9447335a3b0c85c.png" alt="Screenshot_2022-05-11_103850.png"></img>
+																								</span>
+																							</p>
+																						</td>
+																						<td class="td">
+																							<p>Cost Types Menu</p>
+																						</td>
+																						<td class="td">
+																							<p>Toggle between Resource Plan cost types. Cost Types are configured per business use case. These allow for analysis of how resources are initially planned compared to how they are actually assigned and work.</p>
+																						</td>
+																					</tr>
+																					<tr>
+																						<td class="td">
+																							<p>
+																								<span class="inlinemediaobject">
+																									<img src="image/img-be427b46e5bd3197e5e99f9fa634946c.png" alt="AddBookingIcon.png"></img>
+																								</span>
+																							</p>
+																						</td>
+																						<td class="td">
+																							<p>Add Booking</p>
+																						</td>
+																						<td class="td">
+																							<p>Click this icon to launch the booking form.</p>
+																						</td>
+																					</tr>
+																					<tr>
+																						<td class="td">
+																							<p>
+																								<span class="inlinemediaobject">
+																									<img src="image/img-bfc3e6c5c357d899fe225a8a0479b424.png" alt="Screenshot_2022-05-11_103910.png"></img>
+																								</span>
+																							</p>
+																						</td>
+																						<td class="td">
+																							<p>Candidates List</p>
+																						</td>
+																						<td class="td">
+																							<p>Click the icon to toggle showing the Candidates List on the bottom half of the screen. See 
+																								<a class="link linktype-component" href="use-the-oneplan-resource-plan.html#UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_UUID-d190a2ae-3fdf-d85e-8da6-88bcddd3d4cf" title="Resource Plan Candidates List Overview">How do I use the Resource Pane?</a> for more details.
+																							</p>
+																						</td>
+																					</tr>
+																					<tr>
+																						<td class="td">
+																							<p>
+																								<span class="inlinemediaobject">
+																									<img src="image/img-8dd10591d79444a10a2ea230977dfe31.png" alt="Screenshot_2022-05-11_103920.png"></img>
+																								</span>
+																							</p>
+																						</td>
+																						<td class="td">
+																							<p>Views</p>
+																						</td>
+																						<td class="td">
+																							<p>Select the View menu drop down to change views, save views, and delete views.</p>
+																						</td>
+																					</tr>
+																					<tr>
+																						<td class="td">
+																							<p>
+																								<span class="inlinemediaobject">
+																									<img src="image/img-0cfe0d4254e5c206db954e5189d12028.png" alt="Screenshot_2022-05-11_103930.png"></img>
+																								</span>
+																							</p>
+																						</td>
+																						<td class="td">
+																							<p>Planning Units Mode Menu</p>
+																						</td>
+																						<td class="td">
+																							<p>Select Hours, % (Percent), or FTE (Full Time Equivalent).</p>
+																						</td>
+																					</tr>
+																					<tr>
+																						<td class="td">
+																							<p>
+																								<span class="inlinemediaobject">
+																									<img src="image/img-e9c67b60acc18529a3ee8f6747fc03a5.png" alt="Screenshot_2022-05-11_103939.png"></img>
+																								</span>
+																							</p>
+																						</td>
+																						<td class="td">
+																							<p>Modify View Menu</p>
+																						</td>
+																						<td class="td">
+																							<p>Settings in this menu include:</p>
+																							<div class="itemizedlist">
+																								<ul class="itemizedlist" style="list-style-type: disc; ">
+																									<li class="listitem">
+																										<p>
+																											<span class="bold">
+																												<strong>Dates</strong>
+																											</span>: Select the desired date range of periods. Note that the "Totals" column will calculate based off the date range selected if the planning unit mode is % or FTE.
+																										</p>
+																									</li>
+																									<li class="listitem">
+																										<p>
+																											<span class="bold">
+																												<strong>Filter</strong>
+																											</span>: Select a filters to narrow what shows in the page. Select 
+																											<span class="bold">
+																												<strong>Clear Filters</strong>
+																											</span> to remove all filter selections.
+																										</p>
+																									</li>
+																									<li class="listitem">
+																										<p>
+																											<span class="bold">
+																												<strong>Group By</strong>
+																											</span>: Select a field to group the resources by that field. Resource-level choice fields (such as Department and Role) are available for grouping.
+																										</p>
+																									</li>
+																									<li class="listitem">
+																										<p>
+																											<span class="bold">
+																												<strong>Compare To</strong>
+																											</span>: Select cost type comparisons to view in the grid.
+																										</p>
+																									</li>
+																								</ul>
+																							</div>
+																						</td>
+																					</tr>
+																					<tr>
+																						<td class="td">
+																							<p>
+																								<span class="inlinemediaobject">
+																									<img src="image/img-6468ab5cbf99629e45fa8176ccdfc55e.png" alt="Screenshot_2022-05-11_103947.png"></img>
+																								</span>
+																							</p>
+																						</td>
+																						<td class="td">
+																							<p>Resource Plan Advanced Menu</p>
+																						</td>
+																						<td class="td">
+																							<p>Options in this menu include:</p>
+																							<div class="itemizedlist">
+																								<ul class="itemizedlist" style="list-style-type: disc; ">
+																									<li class="listitem">
+																										<p>
+																											<span class="bold">
+																												<strong>Delegates</strong>
+																											</span>: Only available if negotiations are enabled. The Resource Manager can assign delegates to approve on their behalf, such as their team or department.
+																										</p>
+																									</li>
+																									<li class="listitem">
+																										<p>
+																											<span class="bold">
+																												<strong>Legend</strong>
+																											</span>: Describes the meaning of the color heat map for the resource plan details. The colors are based on their percentage of availability utilized.
+																										</p>
+																									</li>
+																									<li class="listitem">
+																										<p>
+																											<span class="bold">
+																												<strong>Copy Value</strong>
+																											</span>s: Click to copy resource plan data from one cost type to another. See 
+																											<a class="xref linktype-fork linktextconsumer" href="/document/preview/20039#UUID-db449893-e24a-0399-9799-ee68c5baecc6" target="_blank">Copy Resource Plan Values</a> for more information.
+																											<span id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_N680faba36ca67" class="linktextprovider" style="display:none !important;">Copy Resource Plan Values</span>
+																										</p>
+																									</li>
+																								</ul>
+																							</div>
+																						</td>
+																					</tr>
+																					<tr>
+																						<td class="td">
+																							<p>
+																								<span class="inlinemediaobject">
+																									<img src="image/img-d52fc6f422f7f8809d1882a12623a377.png" alt="Refresh.png"></img>
+																								</span>
+																							</p>
+																						</td>
+																						<td class="td">
+																							<p>Refresh</p>
+																						</td>
+																						<td class="td">
+																							<p>Click to update the data in your resource plan.</p>
+																						</td>
+																					</tr>
+																				</tbody>
+																			</table>
+																		</div>
+																	</section>
+																	<section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_id_360060283111_id_resource-plan-details">
+																		<div class="titlepage">
+																			<div>
+																				<div class="title">
+																					<h5 class="title">Resource Plan Details</h5>
+																				</div>
+																			</div>
+																		</div>
+																		<p>The bookings are grouped under each resource. Public rows (if the public/private feature is enabled) show.</p>
+																		<p>The summary rows show the total allocation for each resource. The colors are based on their percentage of availability utilized (how much of their time is taken).</p>
+																		<p>Resource Plan Color Legend:</p>
+																		<div class="itemizedlist">
+																			<ul class="itemizedlist" style="list-style-type: disc; ">
+																				<li class="listitem">
+																					<p>Green Cell: Less than 100% Availability Used</p>
+																				</li>
+																				<li class="listitem">
+																					<p>Light Green Cell: 100% Availability Used</p>
+																				</li>
+																				<li class="listitem">
+																					<p>Yellow Cell: Greater than 100% --- to --- Less than or Equal to 110% Availability Used</p>
+																				</li>
+																				<li class="listitem">
+																					<p>Orange Cell: Greater than 110% --- to --- Less than 120% Availability Used</p>
+																				</li>
+																				<li class="listitem">
+																					<p>Red Cell: Greater than 120% Availability Used</p>
+																				</li>
+																				<li class="listitem">
+																					<p>Green Tab: Resource requirement 100% fulfilled</p>
+																				</li>
+																				<li class="listitem">
+																					<p>Yellow Tab: Resource requirement is greater than 80% -- to -- less than 100% fulfilled</p>
+																				</li>
+																				<li class="listitem">
+																					<p>Orange Tab: Resource requirement is greater than 60% -- to -- less than 80% fulfilled</p>
+																				</li>
+																				<li class="listitem">
+																					<p>Red Tab: Resource requirement less than 60% fulfilled</p>
+																				</li>
+																			</ul>
+																		</div>
+																		<div class="mediaobject">
+																			<img src="image/img-a804d04f9a3b897229916e231d34371b.png" style="" alt="Resource_Plan_Color_Legend.png"></img>
+																		</div>
+																	</section>
+																	<section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm13304568532822">
+																		<div class="titlepage">
+																			<div>
+																				<div class="title">
+																					<h5 class="title">Resource Plan Details and Candidates List</h5>
+																				</div>
+																			</div>
+																		</div>
+																		<p>If you show the Candidates List in the lower half of the screen, each resource's summary row shows remaining availability. The color legend is the same as noted above. See 
+																			<a class="xref linktype-fork" href="use-the-oneplan-resource-plan.html#UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_UUID-d190a2ae-3fdf-d85e-8da6-88bcddd3d4cf" title="Resource Plan Candidates List Overview">
+																				<span class="xreftitle">Resource Plan Candidates List Overview</span>
+																			</a> for more information about the candidates list.
+																		</p>
+																		<div class="mediaobject">
+																			<img src="image/img-040778c06021b544ec0f6093901d117e.png" style="" alt="7053d035-72c1-4c04-92f5-925a4b8e7b29.png"></img>
+																		</div>
+																	</section>
+																	<section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_id_360060283111_id_resource-approvals-with-negotiations">
+																		<div class="titlepage">
+																			<div>
+																				<div class="title">
+																					<h5 class="title">Resource Approvals with Negotiations</h5>
+																				</div>
+																			</div>
+																		</div>
+																		<p>When the Negotiations feature is enabled, the additional status and approval columns show. See 
+																			<a class="link linktype-component linktextconsumer" href="/document/preview/3213#UUID-fa46fd32-4fcb-a191-adb6-713e860176d2" target="_blank">How is resource planning done with the Negotiations feature enabled?</a> for more information about the notifications and approvals with negotiations.
+																			<span id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_N680faba36dff2" class="linktextprovider" style="display:none !important;">How is resource planning done with the Negotiations feature enabled?</span>
+																		</p>
+																		<div class="mediaobject">
+																			<img src="image/img-a4831b808ce9012679b18b015b89ceec.png" style="" alt="27ba1604-025e-417e-b428-ce96f1aa87fd.png"></img>
+																		</div>
+																	</section>
+																</div>
+															</div>
+														</div>
+													</section>
+													<section xml:lang="en" lang="en" dir="ltr" class="section internal accordion" data-origin-id="" data-publication-date="" id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_UUID-3829406b-32b6-d4c9-ef5b-53c86823ac68">
+														<div class="accordion-icon"></div>
+														<div class="panel panel-default">
+															<div class="panel-heading">
+																<div class="titlepage">
+																	<a data-toggle="collapse" href="#UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_UUID-3829406b-32b6-d4c9-ef5b-53c86823ac68_body" data-parent="#UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_UUID-3829406b-32b6-d4c9-ef5b-53c86823ac68">
+																		<div>
+																			<div class="title">
+																				<h4 class="title">Resource Plan Cost Types</h4>
+																			</div>
+																		</div>
+																	</a>
+																</div>
+															</div>
+															<div class="panel-body collapse" id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_UUID-3829406b-32b6-d4c9-ef5b-53c86823ac68_body">
+																<div class="panel-inner">
+																	<p>This article explains resource cost types used in the OnePlan Resource Planner.</p>
+																	<div class="mediaobject">
+																		<div class="video-container">
+																			<div class="videoobject">
+																				<iframe title="" style="border:0;" allow="fullscreen *" src="https://player.vimeo.com/video/791979373"></iframe>
+																			</div>
+																		</div>
+																	</div>
+																	<p>Select the Cost Types drop down menu to toggle to another cost type. Cost types allow organizations to calculate, evaluate and monitor how resources are being allocated. There are possible (and often likely) differences between how our resources’ time is initially planned, booked onto specific work, and then actually spent. The Resource Plan allows multiple cost types so you may analyze the differences. You can toggle from one cost type to another.</p>
+																	<p>The reason these groupings are called “cost” types is because the resource plan hours may be converted to costs when they are imported into the financial plan. The rate for each resource, according to their role or other cost category factor would be multiplied by the number of hours to get the financial value of that resource’s time.</p>
+																	<p>Your organization may have similar or different cost types depending on business use cases and configuration. See 
+																		<a class="xref linktype-fork linktextconsumer" href="/document/preview/20000#UUID-63d1d9d6-472d-4e2f-4a62-f3dda3366db9" target="_blank">Cost Type Settings</a> to configure custom cost types.
+																		<span id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_N680faba36f582" class="linktextprovider" style="display:none !important;">Cost Type Settings</span>
+																	</p>
+																	<p>Here are some example use cases that may apply.</p>
+																	<div class="itemizedlist">
+																		<ul class="itemizedlist" style="list-style-type: disc; ">
+																			<li class="listitem">
+																				<p>
+																					<span class="bold">
+																						<strong>Committed Hours</strong>
+																					</span> would be the initial plan generally estimated at a high level. This is also referred to as top-down planning.
+																				</p>
+																			</li>
+																			<li class="listitem">
+																				<p>
+																					<span class="bold">
+																						<strong>Scheduled Hours</strong>
+																					</span> cost type would be the totals from the detailed task schedule. You could import the task schedule hours into this resource plan cost type.
+																				</p>
+																			</li>
+																			<li class="listitem">
+																				<p>
+																					<span class="bold">
+																						<strong>Timesheet Hours</strong>
+																					</span> cost type would be the time spent on this plan. You could import the timesheet hours into this resource plan cost type.
+																				</p>
+																			</li>
+																		</ul>
+																	</div>
+																	<p>
+																		<span class="bold">
+																			<strong>NOTE:</strong>
+																		</span> Resources must be assigned a role to import their timesheet hours into the resource plan.
+																	</p>
+																	<div class="mediaobject">
+																		<img src="image/img-a7f5b6c6b05d99ba99788c3621801131.png" style="" alt="Cost_Types.png"></img>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</section>
+													<section xml:lang="en" lang="en" dir="ltr" class="section accordion" data-origin-id="" data-publication-date="" id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_UUID-46f35fea-3342-bdc8-8088-6ebe753f7afd">
+														<div class="accordion-icon"></div>
+														<div class="panel panel-default">
+															<div class="panel-heading">
+																<div class="titlepage">
+																	<a data-toggle="collapse" href="#UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_UUID-46f35fea-3342-bdc8-8088-6ebe753f7afd_body" data-parent="#UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_UUID-46f35fea-3342-bdc8-8088-6ebe753f7afd">
+																		<div>
+																			<div class="title">
+																				<h4 class="title">Resource Planning Units Mode</h4>
+																			</div>
+																		</div>
+																	</a>
+																</div>
+															</div>
+															<div class="panel-body collapse" id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_UUID-46f35fea-3342-bdc8-8088-6ebe753f7afd_body">
+																<div class="panel-inner">
+																	<p>This article describes the different planning units modes available in the OnePlan Resource Planner.</p>
+																	<section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm4670267493846433037082866367">
+																		<div class="titlepage">
+																			<div>
+																				<div class="title">
+																					<h5 class="title">Planning Units Modes Definitions</h5>
+																				</div>
+																			</div>
+																		</div>
+																		<p>
+																			<span class="bold">
+																				<strong>Select Hours</strong>
+																			</span>: The number of hours a resource is assigned to a task.
+																		</p>
+																		<p>
+																			<span class="bold">
+																				<strong>% (Percent)</strong>
+																			</span>: The percentage of a resource's time is dedicated to a specific task.
+																		</p>
+																		<p>
+																			<span class="bold">
+																				<strong>FTE (Full Time Equivalent)</strong>
+																			</span>: The amount of capacity or availability of an individual to work during a specified time period.
+																		</p>
+																	</section>
+																	<section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm4574083614163233037083041978">
+																		<div class="titlepage">
+																			<div>
+																				<div class="title">
+																					<h5 class="title">Switching between Modes</h5>
+																				</div>
+																			</div>
+																		</div>
+																		<p>To switch between planning units, click on the Planning Units menu and select the desired mode from the drop down. The Resource Plan will recalculate the allocation values based on the planning units selected.</p>
+																		<div class="mediaobject">
+																			<img src="image/img-a4424eb63d42dd9732d655871a0ed4f0.png" style="" alt="Screenshot_2022-05-17_100223.png"></img>
+																		</div>
+																	</section>
+																</div>
+															</div>
+														</div>
+													</section>
+													<section xml:lang="en" lang="en" dir="ltr" class="section original-topic accordion" data-origin-id="" data-publication-date="" id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_UUID-713ca4e3-991b-3df6-7372-c60bfe590b07">
+														<div class="accordion-icon"></div>
+														<div class="panel panel-default">
+															<div class="panel-heading">
+																<div class="titlepage">
+																	<a data-toggle="collapse" href="#UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_UUID-713ca4e3-991b-3df6-7372-c60bfe590b07_body" data-parent="#UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_UUID-713ca4e3-991b-3df6-7372-c60bfe590b07">
+																		<div>
+																			<div class="title">
+																				<h4 class="title">Build a Resource Plan</h4>
+																			</div>
+																		</div>
+																	</a>
+																</div>
+															</div>
+															<div class="panel-body collapse" id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_UUID-713ca4e3-991b-3df6-7372-c60bfe590b07_body">
+																<div class="panel-inner">
+																	<p>This article explains how to build a OnePlan Resource Plan at the plan level.</p>
+																	<div dir="ltr" class="note">
+																		<h3 class="title">Note</h3>
+																		<p>The plan-level resource plan will then roll up to the Global Resource Plan for the Resource Manager to review.</p>
+																	</div>
+																	<p>A Resource Plan is for high-level allocation of resources to your plan. This is not yet detailed task planning. For example, rather than build out a detailed schedule of tasks for John, you would instead commit John 50% of his time for the next four months.</p>
+																	<p>Later, after the Resource Plan is built, you will import the Labor costs into your Financial Plan, based on the resource plan. Also, for portfolio analysis, you will be able to assess which plans to move forward and when based on the resource needs across all plans compared to the overall availability of your resources.</p>
+																	<div dir="ltr" class="important">
+																		<h3 class="title">Important</h3>
+																		<p>This article assumes the Negotiations feature is DISABLED / not in use. See 
+																			<a class="xref linktype-fork linktextconsumer" href="/document/preview/16540#UUID-46266fb1-02e4-fd67-ded9-1d8a29d69dd0" target="_blank">How is resource planning done with the Negotiations feature enabled?</a> for the specific differences if the Negotiations feature is enabled.
+																			<span style="display:none !important;" id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_N680faba370cbd" class="linktextprovider">How is resource planning done with the Negotiations feature enabled?</span>
+																		</p>
+																	</div>
+																	<section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_id_360060283071_id_navigate-to-the-financials-module">
+																		<div class="titlepage">
+																			<div>
+																				<div class="title">
+																					<h5 class="title">1. Navigate to the Resource Plan Module</h5>
+																				</div>
+																			</div>
+																		</div>
+																		<p>Navigate to the Resource Plan page for your plan, if not already there, by clicking Resource Plan in the Header.</p>
+																		<div class="mediaobject">
+																			<img src="image/img-03595f570cc655d2d88193c725604011.png" style="" alt="f5e98b48-9b50-46b9-9d87-84a0989af4b4.png"></img>
+																		</div>
+																	</section>
+																	<section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_id_360060283071_id_select-your-cost-type">
+																		<div class="titlepage">
+																			<div>
+																				<div class="title">
+																					<h5 class="title">2. Select the Resource Plan Cost Type</h5>
+																				</div>
+																			</div>
+																		</div>
+																		<p>Before booking resources to your plan, be sure you are viewing the correct cost type if your environment has multiple. Select the desired cost type from the drop-down menu.</p>
+																		<div dir="ltr" class="note">
+																			<h3 class="title">Note</h3>
+																			<p>Resources must be assigned a role to import their timesheet (actual) hours into the resource plan.</p>
+																		</div>
+																		<div class="mediaobject">
+																			<img src="image/img-b5f649a11f1b9a588b27bed3ad986003.png" style="" alt="ac0aef5f-677c-4402-ba1b-d9b475bb65c5.png"></img>
+																		</div>
+																	</section>
+																	<section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_id_360060283071_id_select-time-period-length-amp-date-range">
+																		<div class="titlepage">
+																			<div>
+																				<div class="title">
+																					<h5 class="title">3. Select the Period Length and Date Range</h5>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="procedure" id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_procedure-idm462151898167683405855367287">
+																			<ol class="procedure" type="1">
+																				<li class="step">
+																					<p>Click the Resource Plan View Options menu in the header. Then select 
+																						<span class="bold">
+																							<strong>Dates</strong>
+																						</span>.
+																					</p>
+																				</li>
+																				<li class="step">
+																					<p>Select the desired period length (monthly vs quarterly vs yearly) and date range to which you will be adding resource allocations.</p>
+																					<div dir="ltr" class="note">
+																						<h3 class="title">Note</h3>
+																						<p>If you enter hours values into larger periods, such as into quarters or years, then switch to months, the values will be split across the months based on the calendar working days per month/periods.</p>
+																					</div>
+																				</li>
+																				<li class="step">
+																					<p>Click 
+																						<span class="bold">
+																							<strong>Apply</strong>
+																						</span> to apply the set date range to the resource plan view.
+																					</p>
+																				</li>
+																			</ol>
+																		</div>
+																		<div class="mediaobject">
+																			<img src="image/img-c75eaa0148917bed1f23f88e41ed371e.png" style="" alt="ade760a9-db46-4503-9180-c147c9adbaa3.png"></img>
+																		</div>
+																	</section>
+																	<section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm4621519220832034058444252732">
+																		<div class="titlepage">
+																			<div>
+																				<div class="title">
+																					<h5 class="title">4. Add Resources or Teams to the Resource Plan</h5>
+																				</div>
+																			</div>
+																		</div>
+																		<p>In OnePlan, there are two ways to add resources or teams to your Resource Plan:</p>
+																		<section dir="ltr" class="section accordion" data-origin-id="" data-publication-date="" id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm4574054692846434058447128427">
+																			<div class="accordion-icon"></div>
+																			<div class="panel panel-default">
+																				<div class="panel-heading">
+																					<div class="titlepage">
+																						<a data-toggle="collapse" href="#UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm4574054692846434058447128427_body" data-parent="#UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm4574054692846434058447128427">
+																							<div>
+																								<div class="title">
+																									<h6 class="title">Add a Booking to a Resource Plan</h6>
+																								</div>
+																							</div>
+																						</a>
+																					</div>
+																				</div>
+																				<div class="panel-body collapse" id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm4574054692846434058447128427_body">
+																					<div class="panel-inner">
+																						<p>Bookings in OnePlan is a way to quickly allocate resources or teams to your resource plan. Bookings are set for a certain time period and will allocate the resource or team evenly across that time period.</p>
+																						<p>Click 
+																							<span class="bold">
+																								<strong>Add Booking</strong>
+																							</span>
+																							<span class="inlinemediaobject">
+																								<img src="image/img-4ffaf9555d4c0da590f7f0ef5dbeb7ea.png" alt="AddBookingIcon.png"></img>
+																							</span>. The Booking form will open. Complete the form.
+																						</p>
+																						<div class="itemizedlist">
+																							<ul class="itemizedlist" style="list-style-type: disc; ">
+																								<li class="listitem">
+																									<p>
+																										<span class="bold">
+																											<strong>Select Resources</strong>
+																										</span>: Begin typing the resource (either named or generic) or team name. Available matching resources and teams will show. Make your selection. You can select multiple resources and teams so you can make bookings for multiple resources at once.
+																									</p>
+																								</li>
+																								<li class="listitem">
+																									<p>
+																										<span class="emphasis">
+																											<em>(if applicable)</em>
+																										</span>
+																										<span class="bold">
+																											<strong>Select Plan:</strong>
+																										</span> Select the plan where you would like to add the booking.
+																									</p>
+																								</li>
+																								<li class="listitem">
+																									<p>
+																										<span class="bold">
+																											<strong>Booking Dates</strong>
+																										</span>: Set the date range for the allocation. Select a 
+																										<span class="bold">
+																											<strong>From</strong>
+																										</span> and 
+																										<span class="bold">
+																											<strong>To</strong>
+																										</span> month and year.
+																									</p>
+																								</li>
+																								<li class="listitem">
+																									<p>
+																										<span class="bold">
+																											<strong>Allocation Type</strong>
+																										</span>: Enter the value in ONE of the allocation types: 
+																										<span class="bold">
+																											<strong>Hours Per Month</strong>
+																										</span>, 
+																										<span class="bold">
+																											<strong>% Allocation</strong>
+																										</span>, or 
+																										<span class="bold">
+																											<strong>Total Hours</strong>
+																										</span>. If you select Total Hours, the hours will be divided evenly across the time selected between the booking dates.
+																									</p>
+																								</li>
+																								<li class="listitem">
+																									<p>
+																										<span class="bold">
+																											<strong>Edit Custom Fields</strong>
+																										</span>: Eelect custom fields to apply when creating or allocating bookings.
+																									</p>
+																								</li>
+																							</ul>
+																						</div>
+																						<p>Click 
+																							<span class="bold">
+																								<strong>Add</strong>
+																							</span> when done.
+																						</p>
+																						<div class="mediaobject">
+																							<img src="image/img-244dd1e77b37fe244adcab2dd1261393.png" style="" alt="AddBookingForm.png"></img>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</section>
+																		<section dir="ltr" class="section accordion" data-origin-id="" data-publication-date="" id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm4594819328582434058449558004">
+																			<div class="accordion-icon"></div>
+																			<div class="panel panel-default">
+																				<div class="panel-heading">
+																					<div class="titlepage">
+																						<a data-toggle="collapse" href="#UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm4594819328582434058449558004_body" data-parent="#UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm4594819328582434058449558004">
+																							<div>
+																								<div class="title">
+																									<h6 class="title">Add a Resource to a Resource Plan</h6>
+																								</div>
+																							</div>
+																						</a>
+																					</div>
+																				</div>
+																				<div class="panel-body collapse" id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm4594819328582434058449558004_body">
+																					<div class="panel-inner">
+																						<div class="procedure">
+																							<ol class="procedure" type="1">
+																								<li class="step">
+																									<p>Open the Candidates List. Find and select the desired resource (whether a named resource or generic), or team. See 
+																										<a class="xref linktype-component linktextconsumer" href="/document/preview/19507#UUID-844a9e4b-e1d2-955a-1b75-d999ec288741" target="_blank">Find Resources with the Candidates List</a>.
+																										<span id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_N680faba3719d2" class="linktextprovider" style="display:none !important;">Find Resources with the Candidates List</span>
+																									</p>
+																								</li>
+																								<li class="step">
+																									<p>Click the 
+																										<span class="bold">
+																											<strong>Add</strong>
+																										</span> button.
+																									</p>
+																								</li>
+																								<li class="step">
+																									<p>The resource will be added to the resource plan above. Allocate the newly added resource as needed.</p>
+																								</li>
+																							</ol>
+																						</div>
+																						<div class="mediaobject">
+																							<img src="image/img-369483998a0cb255174a6994c84078fd.png" style="" alt="8338f188-27d5-4c3e-bc94-e2f06666dbea.png"></img>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</section>
+																	</section>
+																	<section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm459481953396963405854468419">
+																		<div class="titlepage">
+																			<div>
+																				<div class="title">
+																					<h5 class="title">5. Add Resource or Team Allocations to the Resource Plan</h5>
+																				</div>
+																			</div>
+																		</div>
+																		<p>There are two ways to add time allocations for resources or teams in your resource plan:</p>
+																		<section dir="ltr" class="section accordion" data-origin-id="" data-publication-date="" id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm4621519264558434058548964333">
+																			<div class="accordion-icon"></div>
+																			<div class="panel panel-default">
+																				<div class="panel-heading">
+																					<div class="titlepage">
+																						<a data-toggle="collapse" href="#UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm4621519264558434058548964333_body" data-parent="#UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm4621519264558434058548964333">
+																							<div>
+																								<div class="title">
+																									<h6 class="title">Manually Enter Time Allocations into the Resource Plan</h6>
+																								</div>
+																							</div>
+																						</a>
+																					</div>
+																				</div>
+																				<div class="panel-body collapse" id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm4621519264558434058548964333_body">
+																					<div class="panel-inner">
+																						<div class="procedure" id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_procedure-idm454152589830723405856239125">
+																							<ol class="procedure" type="1">
+																								<li class="step">
+																									<p>Verify you have the preferred planning mode selected (Hours, %, or FTE). This determines how the allocation values are displayed and calculated in the resource plan.</p>
+																									<div class="mediaobject">
+																										<img src="image/img-34830b8a972b2cac7af05495216a3e24.png" style="" alt="DEC_23_Select_Planning_Mode_in_Resource_Center.png"></img>
+																									</div>
+																								</li>
+																								<li class="step">
+																									<p>Add allocations manually into the Resource Plan. Click into a cell in the resource plan grid and type in the allocation.</p>
+																									<div class="mediaobject">
+																										<img src="image/img-85fb5cf072417e2f2cf08e8853189b6e.png" style="" alt="DEC_23_Manually_Enter_Time_for_Resource.png"></img>
+																									</div>
+																									<div dir="ltr" class="note">
+																										<h3 class="title">Note</h3>
+																										<p>When you add time allocations to teams of resources, the time will automatically be split among the team based on how their individual time is allocated to the team itself (see 
+																											<a class="link" href="https://support.oneplan.ai/hc/en-us/articles/22287952247437" target="_blank" rel="noopener">Allocate Resources to Teams (Total Percentage and Time-Phased Allocation)</a> for more information.)
+																										</p>
+																										<div class="mediaobject">
+																											<img src="image/img-aab0f05e3cb4fe8b978c23695fe2d0d5.png" alt="DEC_23_Team_Allocated_to_Resource_Plan.png"></img>
+																										</div>
+																										<p>You can manually change/override the automatic split by clicking into a cell in the resource plan and manually typing in the preferred allocation.</p>
+																										<div class="mediaobject">
+																											<img src="image/img-95d27574fa8b0fe049771a4a6d16d36e.png" alt="DEC_23_Manually_Editing_Team_Allocation_Split.png"></img>
+																										</div>
+																									</div>
+																								</li>
+																							</ol>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</section>
+																		<section dir="ltr" class="section accordion" data-origin-id="" data-publication-date="" id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm4526114104587234058549311698">
+																			<div class="accordion-icon"></div>
+																			<div class="panel panel-default">
+																				<div class="panel-heading">
+																					<div class="titlepage">
+																						<a data-toggle="collapse" href="#UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm4526114104587234058549311698_body" data-parent="#UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm4526114104587234058549311698">
+																							<div>
+																								<div class="title">
+																									<h6 class="title">Use the Allocation feature to Bulk Add Time Allocations</h6>
+																								</div>
+																							</div>
+																						</a>
+																					</div>
+																				</div>
+																				<div class="panel-body collapse" id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm4526114104587234058549311698_body">
+																					<div class="panel-inner">
+																						<p>If desired, you may allocate time to your resources via the booking form rather than manually entering values. Select the row menu for a resource in the resource plan.</p>
+																						<div class="procedure" id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_procedure-idm4574054692368034058595307898">
+																							<ol class="procedure" type="1">
+																								<li class="step">
+																									<p>Click the Row Options menu (ellipsis) for the desired resource. Then select 
+																										<span class="bold">
+																											<strong>Allocate</strong>
+																										</span>. The 
+																										<span class="bold">
+																											<strong>Bookings </strong>
+																										</span>form will open.
+																									</p>
+																									<div class="mediaobject">
+																										<img src="image/img-73a15ef0dac36f8fa7ec0c21cc38e243.png" style="" alt="DEC_23_Click_Allocatio_Option_for_Resource_Row.png"></img>
+																									</div>
+																								</li>
+																								<li class="step">
+																									<p>Complete the Bookings form.</p>
+																									<div class="itemizedlist">
+																										<ul class="itemizedlist" style="list-style-type: disc; ">
+																											<li class="listitem">
+																												<p>
+																													<span class="bold">
+																														<strong>Select Resource</strong>
+																													</span>: Begin typing the resource (either named or generic) or team name. Available matching resources and teams will show. Make your selection.
+																												</p>
+																											</li>
+																											<li class="listitem">
+																												<p>
+																													<span class="emphasis">
+																														<em>(if applicable)</em>
+																													</span>
+																													<span class="bold">
+																														<strong>Select Plan:</strong>
+																													</span> Select the plan where you would like to add the booking.
+																												</p>
+																											</li>
+																											<li class="listitem">
+																												<p>
+																													<span class="bold">
+																														<strong>Booking Dates</strong>
+																													</span>: Set the date range for the allocation. Select a 
+																													<span class="bold">
+																														<strong>From</strong>
+																													</span> and 
+																													<span class="bold">
+																														<strong>To</strong>
+																													</span> month and year.
+																												</p>
+																											</li>
+																											<li class="listitem">
+																												<p>
+																													<span class="bold">
+																														<strong>Allocation Type</strong>
+																													</span>: Enter the value in ONE of the allocation types: 
+																													<span class="bold">
+																														<strong>Hours Per Month</strong>
+																													</span>, 
+																													<span class="bold">
+																														<strong>% Allocation</strong>
+																													</span>, or 
+																													<span class="bold">
+																														<strong>Total Hours</strong>
+																													</span>. If you select Total Hours, the hours will be divided evenly across the time selected between the booking dates.
+																												</p>
+																											</li>
+																										</ul>
+																									</div>
+																								</li>
+																								<li class="step">
+																									<p>Click 
+																										<span class="bold">
+																											<strong>Add</strong>
+																										</span>to add the resource allocation.
+																									</p>
+																									<div dir="ltr" class="note">
+																										<h3 class="title">Note</h3>
+																										<p>Whatever is entered in the booking form will overwrite any existing resource allocation for the time between the booking dates.</p>
+																									</div>
+																									<div class="mediaobject">
+																										<img src="image/img-244dd1e77b37fe244adcab2dd1261393.png" style="" alt="AddBookingForm.png"></img>
+																									</div>
+																								</li>
+																							</ol>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</section>
+																	</section>
+																	<section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_id_360060283071_id_totals">
+																		<div class="titlepage">
+																			<div>
+																				<div class="title">
+																					<h5 class="title">6. Review Resource Totals</h5>
+																				</div>
+																			</div>
+																		</div>
+																		<p>There is a Totals column that shows the "total" per resource.</p>
+																		<div dir="ltr" class="note">
+																			<h3 class="title">Note</h3>
+																			<p>The value in the total column is based on the periods shown in the view and the type of planning mode (hours, %, or FTE). Any periods not selected will not be included in the total.</p>
+																		</div>
+																		<div class="mediaobject">
+																			<img src="image/img-0929767298e6154baf22de12107b6643.png" style="" alt="f09f5f62-9338-4c26-9371-64ad5c5a2134.png"></img>
+																		</div>
+																		<p>If you have % selected, the value for the totals column would include the months/periods with no values &amp; those with values.</p>
+																		<div class="mediaobject">
+																			<img src="image/img-58f021c5bef37bc9892b929ff891c536.png" style="" alt="1c133c15-6435-40b7-b934-2e5c0a7245d4.png"></img>
+																		</div>
+																	</section>
+																	<section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm45639481889552340585816332">
+																		<div class="titlepage">
+																			<div>
+																				<div class="title">
+																					<h5 class="title">7. Update the Status of Resource Rows</h5>
+																				</div>
+																			</div>
+																		</div>
+																		<p>Each resource plan rows has statuses, either 
+																			<span class="bold">
+																				<strong>Proposed</strong>
+																			</span> or 
+																			<span class="bold">
+																				<strong>Committed</strong>
+																			</span>. When a row is first added, the default status is 
+																			<span class="bold">
+																				<strong>Proposed</strong>
+																			</span>, which shows as a blue dot. Then, when ready, the row can be changed to 
+																			<span class="bold">
+																				<strong>Committed</strong>
+																			</span>, which shows as a green check mark. There are additional row statuses for organizations using the Negotiation feature.
+																		</p>
+																		<p>To update the row status for a resource, click on the status icon next to the desired resource, then select the desired status from the drop-down.</p>
+																		<div class="mediaobject">
+																			<img src="image/img-228a85d48671e30cdb8dead79efccb29.png" style="" alt="8f07784c-47f1-4361-8e65-06f70407825f.png"></img>
+																		</div>
+																	</section>
+																	<section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm4510771188723234058583675386">
+																		<div class="titlepage">
+																			<div>
+																				<div class="title">
+																					<h5 class="title">8. Set a Resource Row as Public or Private</h5>
+																				</div>
+																			</div>
+																		</div>
+																		<p>If the Public/Private feature is enabled, an additional column shows whether each row is 
+																			<span class="bold">
+																				<strong>Private</strong>
+																			</span> or 
+																			<span class="bold">
+																				<strong>Public</strong>
+																			</span>.
+																		</p>
+																		<div class="mediaobject">
+																			<img src="image/img-0b5a7b39397fed5b6ed78ef4e61c4a06.png" style="" alt="09633c71-e705-4a37-b1ce-8b7a8f02bfa2.png"></img>
+																		</div>
+																		<p>When a row is 
+																			<span class="bold">
+																				<strong>Private</strong>
+																			</span>, that means that the row is not visible in reports or the Global Resource Plan. Think of 
+																			<span class="bold">
+																				<strong>Private</strong>
+																			</span> rows as drafts. They are only available for the plan managers and owners to view and edit.
+																		</p>
+																		<p>
+																			<span class="bold">
+																				<strong>Private</strong>
+																			</span> rows are indicated by 
+																			<span class="inlinemediaobject">
+																				<img src="image/img-4b17f335670e8d0ed585d4c280d0d3f8.png" alt="Private_Row.png"></img>
+																			</span>.
+																		</p>
+																		<p>When a row is 
+																			<span class="bold">
+																				<strong>Public</strong>
+																			</span>, that means that row is available for reporting and visible in the Global Resource Plan. Think of 
+																			<span class="bold">
+																				<strong>Public</strong>
+																			</span> rows as published data. They are available for anyone (with the proper permissions) to see.
+																		</p>
+																		<p>
+																			<span class="bold">
+																				<strong>Public</strong>
+																			</span> rows are indicated by 
+																			<span class="inlinemediaobject">
+																				<img src="image/img-394ba4c5ba741da69a2b7a811c23d265.png" alt="Publich_Row.png"></img>
+																			</span>.
+																		</p>
+																		<p>Click on the icon to toggle between 
+																			<span class="bold">
+																				<strong>Private</strong>
+																			</span> and 
+																			<span class="bold">
+																				<strong>Public</strong>
+																			</span> for each row.
+																		</p>
+																		<p>You can change all rows from 
+																			<span class="bold">
+																				<strong>Private</strong>
+																			</span> to 
+																			<span class="bold">
+																				<strong>Public</strong>
+																			</span> at once by clicking the 
+																			<span class="bold">
+																				<strong>Public/Private</strong>
+																			</span> icon in the column header.
+																		</p>
+																		<div class="mediaobject">
+																			<img src="image/img-c47f0a35f8eb781bb17c98b03167109d.png" style="" alt="DEC_23_Make_All_Rows_Public_or_Private.png"></img>
+																		</div>
+																	</section>
+																	<section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm4569266139163234058581266164">
+																		<div class="titlepage">
+																			<div>
+																				<div class="title">
+																					<h5 class="title">9. Add Notes and Comments to Resource Rows</h5>
+																				</div>
+																			</div>
+																		</div>
+																		<section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm4526110818656034059981929968">
+																			<div class="titlepage">
+																				<div>
+																					<div class="title">
+																						<h6 class="title">Add a Comment to a Resource Row</h6>
+																					</div>
+																				</div>
+																			</div>
+																			<p>Comments allow you and your colleagues to have an asynchronous discussion on resource allocations in your resource plan. These comments will remain in a thread, and the thread will appear on the Home Page "Conversations" panel for quick access.</p>
+																			<p>To add a comment to a resource row, click the Row Options menu (ellipsis) for the desired resource. Then select 
+																				<span class="bold">
+																					<strong>Comments</strong>
+																				</span>. The Comments thread will open on the right side of the screen. You will be able to see the existing conversation and can add a comment to the thread.
+																			</p>
+																			<div class="mediaobject">
+																				<img src="image/img-d0faf328f62c79cbf1c6e306795aeffe.png" style="" alt="DEC_23_Add_a_Comment_to_a_Resource_Row.png"></img>
+																			</div>
+																			<p>Once there are comments on a resource row, a speech bubble will appear next to the resource name.</p>
+																			<div class="mediaobject">
+																				<img src="image/img-2617934eadec17da0450b57de8af969b.png" style="" alt="DEC_23_Comment_Added_to_Row.png"></img>
+																			</div>
+																		</section>
+																		<section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm4532055093220834059981625327">
+																			<div class="titlepage">
+																				<div>
+																					<div class="title">
+																						<h6 class="title">Add a Note to a Resource Row</h6>
+																					</div>
+																				</div>
+																			</div>
+																			<p>Notes allow you to add additional information to your resource allocations. Notes live in the resource plan, and nowhere else in OnePlan.</p>
+																			<p>To add a note to a resource row, click the Row Options menu (ellipsis) for the desired resource. Then select 
+																				<span class="bold">
+																					<strong>Notes</strong>
+																				</span>. The 
+																				<span class="bold">
+																					<strong>Notes</strong>
+																				</span> form will open. Type out your notes in the 
+																				<span class="bold">
+																					<strong>Notes</strong>
+																				</span> form, then click 
+																				<span class="bold">
+																					<strong>Save</strong>
+																				</span>.
+																			</p>
+																			<div class="mediaobject">
+																				<img src="image/img-fb61768dc0afae34d43f0fd5aae8726d.png" style="" alt="DEC_23_Add_Notes_to_Resource_Row.png"></img>
+																			</div>
+																			<p>Once there are notes on a resource row, a sticky note will appear next to the resource name.</p>
+																			<div class="mediaobject">
+																				<img src="image/img-1214ebcb860722eaac96b71a9e110d60.png" style="" alt="DEC_23_Note_Added_to_Resource_Row.png"></img>
+																			</div>
+																		</section>
+																	</section>
+																	<section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm4650398127203234058584589084">
+																		<div class="titlepage">
+																			<div>
+																				<div class="title">
+																					<h5 class="title">10. Delete a Resource from your Resource Plan</h5>
+																				</div>
+																			</div>
+																		</div>
+																		<p>To remove a resource from your resource plan, click the Row Options menu (ellipsis) for the desired resource. Then select 
+																			<span class="bold">
+																				<strong>Delete</strong>
+																			</span>. A confirmation will pop up. Click 
+																			<span class="bold">
+																				<strong>Yes</strong>
+																			</span> to delete the resource.
+																		</p>
+																		<div class="mediaobject">
+																			<img src="image/img-4041ca327898256801657041fb8c6d23.png" style="" alt="DEC_23_Delete_Resource_from_Resource_Plan.png"></img>
+																		</div>
+																	</section>
+																</div>
+															</div>
+														</div>
+													</section>
+													<section xml:lang="en" lang="en" dir="ltr" class="section original-topic accordion" data-origin-id="" data-publication-date="" id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_UUID-d190a2ae-3fdf-d85e-8da6-88bcddd3d4cf">
+														<div class="accordion-icon"></div>
+														<div class="panel panel-default">
+															<div class="panel-heading">
+																<div class="titlepage">
+																	<a data-toggle="collapse" href="#UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_UUID-d190a2ae-3fdf-d85e-8da6-88bcddd3d4cf_body" data-parent="#UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_UUID-d190a2ae-3fdf-d85e-8da6-88bcddd3d4cf">
+																		<div>
+																			<div class="title">
+																				<h4 class="title">Resource Plan Candidates List Overview</h4>
+																			</div>
+																		</div>
+																	</a>
+																</div>
+															</div>
+															<div class="panel-body collapse" id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_UUID-d190a2ae-3fdf-d85e-8da6-88bcddd3d4cf_body">
+																<div class="panel-inner">
+																	<p>This article provides an overview of the Candidates List features as part of building, analyzing, and modifying resource plans in OnePlan.</p>
+																	<div class="mediaobject">
+																		<div class="video-container">
+																			<div class="videoobject">
+																				<iframe title="" style="border:0;" allow="fullscreen *" src="https://player.vimeo.com/video/791943604"></iframe>
+																			</div>
+																		</div>
+																	</div>
+																	<p>Who does these actions varies between organizations. Sometimes it’s the plan owner, project manager, scrum master, etc. Sometimes it is the department or functional manager who determines the best assigned persons to a plan.</p>
+																	<section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_id_360059844392_id_show-hide-the-resource-pane">
+																		<div class="titlepage">
+																			<div>
+																				<div class="title">
+																					<h5 class="title">Show/Hide the Candidates List</h5>
+																				</div>
+																			</div>
+																		</div>
+																		<p>The Candidates List may be toggled on/off by clicking on the 
+																			<span class="bold">
+																				<strong>Candidates List</strong>
+																			</span> icon in the icon menu.
+																		</p>
+																		<div dir="ltr" class="note">
+																			<h3 class="title">Note</h3>
+																			<p>When opening the candidates grid, no resources will be loaded by default. If you have resource managers set up, clicking 
+																				<span class="bold">
+																					<strong>My Resources</strong>
+																				</span> will show just the resources you are the manager of. If you select a filter that returns more than 500 resources, only the first 500 will be loaded. You will be notified to apply more filters to narrow your results. This ensures fast loading of the candidate grid when the logged-in user has permissions to all users in the system.
+																			</p>
+																		</div>
+																		<div class="mediaobject">
+																			<img src="image/img-2db6168a4ce67df11b0b795612800fd2.png" style="" alt="Open_Candidates_LIst.png"></img>
+																		</div>
+																	</section>
+																	<section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_id_360060283111_id_resource-plan-details-amp-resource-pane">
+																		<div class="titlepage">
+																			<div>
+																				<div class="title">
+																					<h5 class="title">Resource Plan Details and Candidates List</h5>
+																				</div>
+																			</div>
+																		</div>
+																		<p>If you show the Candidates List in the lower half of the screen, each resource or team's summary row shows the remaining availability.</p>
+																		<div class="mediaobject">
+																			<img src="image/img-040778c06021b544ec0f6093901d117e.png" style="" alt="7053d035-72c1-4c04-92f5-925a4b8e7b29.png"></img>
+																		</div>
+																	</section>
+																	<section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm4599003762464033398228678073">
+																		<div class="titlepage">
+																			<div>
+																				<div class="title">
+																					<h5 class="title">Candidates List Header Icons and Menus</h5>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="mediaobject">
+																			<img src="image/img-1072a4dc7d0ad285938d96cde11455c1.png" style="" alt="Candidates_List_Header.png"></img>
+																		</div>
+																		<div class="itemizedlist">
+																			<ul class="itemizedlist" style="list-style-type: disc; ">
+																				<li class="listitem">
+																					<p>
+																						<span class="bold">
+																							<strong>Add Resource</strong>
+																						</span>: Select a resource from the candidates list. Then click the 
+																						<span class="bold">
+																							<strong>Add Resource</strong>
+																						</span> icon to add the selected resource to the resource plan.
+																					</p>
+																				</li>
+																				<li class="listitem">
+																					<p>
+																						<span class="bold">
+																							<strong>Find Resource Search Bar</strong>
+																						</span>: Search for resources by name using this search bar.
+																					</p>
+																				</li>
+																				<li class="listitem">
+																					<p>
+																						<span class="bold">
+																							<strong>Resource Type Menu</strong>
+																						</span>: Select which type of resource you would like to view - either individual resources, or teams of resources.
+																					</p>
+																				</li>
+																				<li class="listitem">
+																					<p>
+																						<span class="bold">
+																							<strong>Find Resource Menu</strong>
+																						</span>: Select a search method from the drop-down. See 
+																						<a class="xref linktype-fork linktextconsumer" href="/document/preview/19513#UUID-9492eabd-5dc3-7f3d-3bfb-61b9f65c8ed6" target="_blank">Find Resources with the Candidates List</a> for more information.
+																						<span id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_N680faba372e5b" class="linktextprovider" style="display:none !important;">Find Resources with the Candidates List</span>
+																					</p>
+																				</li>
+																				<li class="listitem">
+																					<p>
+																						<span class="bold">
+																							<strong>Replace Resource</strong>
+																						</span>: Replace or Fulfill resources in the resource plan. See 
+																						<a class="xref linktype-fork linktextconsumer" href="/document/preview/19515#UUID-c5c4de12-f7ed-3743-c514-09412bf674d7" target="_blank">Replace a Resource with the Candidates List</a> and 
+																						<a class="xref linktype-fork linktextconsumer" href="/document/preview/19514#UUID-9d58c31e-23d2-38fb-17de-04e9f82f2c9d" target="_blank">Fulfill a Resource with the Candidates List</a> for detailed instructions.
+																						<span id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_N680faba373bc9" class="linktextprovider" style="display:none !important;">Replace a Resource with the Candidates List</span>
+																						<span id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_N680faba375084" class="linktextprovider" style="display:none !important;">Fulfill a Resource with the Candidates List</span>
+																					</p>
+																				</li>
+																				<li class="listitem">
+																					<p>
+																						<span class="bold">
+																							<strong>Group By</strong>
+																						</span>: Group the resources in the candidates list by a resource filed from the drop-down.
+																					</p>
+																				</li>
+																				<li class="listitem">
+																					<p>
+																						<span class="bold">
+																							<strong>Filter</strong>
+																						</span>: Filter the resources shown in the candidates list using a filter from the drop-down.
+																					</p>
+																				</li>
+																				<li class="listitem">
+																					<p>
+																						<span class="bold">
+																							<strong>Charts</strong>
+																						</span>: Select a visualization to view resource capacity. Options include the List (default), and the Capacity v. Demand chart. The Capacity v. Demand chart shows resource availability in a stacked bar chart.
+																					</p>
+																					<div class="mediaobject">
+																						<img src="image/img-3f257811d4b04a7fd3f0caef89451f02.png" style="" alt="Capacity_v_Demand_Chart.png"></img>
+																					</div>
+																				</li>
+																			</ul>
+																		</div>
+																	</section>
+																</div>
+															</div>
+														</div>
+													</section>
+													<p>Want to read more about the Resource Plans? Check out our 
+														<a class="link" href="https://support.oneplan.ai/hc/en-us/sections/360013294651-Resource-Plans" target="_blank" rel="noopener">knowledge base</a>.
+													</p>
+												</div>
+											</div>
+										</section>
+										<section dir="ltr" class="section accordion" data-origin-id="" data-publication-date="" id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm2349119280109">
+											<div class="accordion-icon"></div>
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<div class="titlepage">
+														<a data-toggle="collapse" href="#UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm2349119280109_body" data-parent="#UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm2349119280109">
+															<div>
+																<div class="title">
+																	<h3 class="title">Take a course</h3>
+																</div>
+															</div>
+														</a>
+													</div>
+												</div>
+												<div class="panel-body collapse" id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm2349119280109_body">
+													<p>
+														<a class="link" href="https://oneplanacademy.com/resource-plan-training/" target="_blank" rel="noopener">OnePlan Academy Resource Plan Courses</a>
+													</p>
+													<p>Want more tutorials to learn how to use OnePlan? Check out 
+														<a class="link" href="https://oneplanacademy.com/" target="_blank" rel="noopener">OnePlan Academy</a>.
+													</p>
+												</div>
+											</div>
+										</section>
+										<section dir="ltr" class="section accordion" data-origin-id="" data-publication-date="" id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm234353934286616">
+											<div class="accordion-icon"></div>
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<div class="titlepage">
+														<a data-toggle="collapse" href="#UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm234353934286616_body" data-parent="#UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm234353934286616">
+															<div>
+																<div class="title">
+																	<h3 class="title">Even more resources</h3>
+																</div>
+															</div>
+														</a>
+													</div>
+												</div>
+												<div class="panel-body collapse" id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm234353934286616_body">
+													<p>For even more information on the OnePlan Resource Plans, check out the following resources:</p>
+													<div class="itemizedlist">
+														<ul class="itemizedlist" style="list-style-type: disc; ">
+															<li class="listitem">
+																<p>
+																	<a class="link" href="https://support.oneplan.ai/hc/en-us/articles/24400768395661-Execution-Resource-Plan" target="_blank" rel="noopener">Execution - Resource Plan</a>
+																</p>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</section>
+									</section>
+									<div class="footer-content">
+										<div class="glossary-definitions"></div>
+									</div>
+									<footer></footer>
+								</div>
+							</article>
+							<article id="search-result-wrapper">
+								<div class="search-container" style="display: none;">
+									<h2>Search results</h2>
+									<ul class="searchresults"></ul>
+									<p class="noresults">No results found</p>
+								</div>
+							</article>
+						</main>
+						<div id="bottom-pager">
 							<ul class="pager">
-								<li class="previous"><a accesskey="p" class="prev pull-left prev visible-lg visible-md"
-										id="header-navigation-prev"
-										href="accounts-portfolio.html#UUID-39a4199e-0054-8629-c750-daf815f18b89_section-idm13441408822162">Prev</a>
+								<li class="previous">
+									<a accesskey="p" class="prev pull-left prev visible-lg visible-md" id="header-navigation-prev" href="professional-services-portfolio.html#UUID-912f47b2-b0ff-2ae6-cdb4-80b9948c7eb9_section-idm13441408822162">Prev</a>
 								</li>
-								<li class="next"><a accesskey="n" class="pull-right next visible-lg visible-md"
-										id="header-navigation-next"
-										href="use-the-oneplan-resource-plan.html#UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm13441412068914">Next</a>
+								<li class="next">
+									<a accesskey="n" class="pull-right next visible-lg visible-md" id="header-navigation-next" href="use-the-oneplan-resource-plan.html#UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm234911926628021">Next</a>
 								</li>
 							</ul>
 						</div>
-						<article class="topic content-container" id="content-wrapper">
-							<div id="topic-content" class="topic-content">
-								<section xml:lang="en" lang="en" dir="ltr" class="section"
-									data-origin-id="UUID-35dec534-f8c9-4209-f2c0-d8f71af3fd04"
-									data-permalink="use-the-oneplan-resource-plan.html" data-topic-level="1"
-									data-relative-prefix="" data-publication-date=""
-									id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5">
-									<div class="titlepage">
-										<div>
-											<div class="title">
-												<h2 class="title" style="clear: both">Use the OnePlan Resource Plan</h2>
-											</div>
-										</div>
-									</div>
-									<section dir="ltr" class="section" data-origin-id="" data-publication-date=""
-										id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm13441412068914">
-										<div class="titlepage">
-											<div>
-												<div class="title">
-													<h3 class="title">What is the Resource Plan Feature in OnePlan?</h3>
-												</div>
-											</div>
-										</div>
-										<p>The OnePlan Resource Planner is a comprehensive resource scheduling and
-											forecasting tool designed to track, optimize, and manage work allocation
-											among various roles within an organization over a specific time frame. It
-											accounts for both committed and planned work hours of all resources within
-											your organization that have been added to OnePlan's Resource Center.</p>
-									</section>
-									<section dir="ltr" class="section" data-origin-id="" data-publication-date=""
-										id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm13441412085830">
-										<div class="titlepage">
-											<div>
-												<div class="title">
-													<h3 class="title">Example Use Case</h3>
-												</div>
-											</div>
-										</div>
-										<p>Let's say you have a new project that needs to start in August 2024, and you
-											need a Project Manager and a Developer assigned to work on the project for
-											the next 3 months. Using the Resource Planner, you check for available
-											Project Managers and Developers with the skills you need to deliver the
-											tasks. Using the Resource Planner, as a resource manager, you can update
-											their committed hours and notify the resources – and the Project Manager -
-											of their new assignment. The Resource Planner helps you track their progress
-											and adjust their workload if needed.</p>
-										<p>Remember the Resource Planner is a tool to help with efficient resource
-											allocation. You should always discuss actual commitments with your team
-											members before assigning them to a new project.</p>
-									</section>
-									<section xml:lang="en" lang="en" dir="ltr" class="section original-topic"
-										data-origin-id="" data-publication-date=""
-										id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_UUID-c6fda736-f5e9-8887-b7ba-169fb9e1c570">
-										<div class="titlepage">
-											<div>
-												<div class="title">
-													<h3 class="title">Resource Plans Overview</h3>
-												</div>
-											</div>
-										</div>
-										<p>This article an overview of the OnePlan Resource Plans. OnePlan has both
-											plan-level and organization-wide resource planning capabilities.</p>
-										<section dir="ltr" class="section" data-origin-id="" data-publication-date=""
-											id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm4588983422051233045672950303">
-											<div class="titlepage">
-												<div>
-													<div class="title">
-														<h4 class="title">Global Resource Plan</h4>
-													</div>
-												</div>
-											</div>
-											<p>The Global Resource Plan shows all resource allocation across all the
-												plans. This is a useful page for managers to review allocation across
-												multiple plans.</p>
-											<p>If your organization is using the Negotiations feature, the email
-												notifications contain a link to the Resource Plan page, filtered for
-												that plan's resources. You can also navigate to the page directly via
-												the Resource Plan icon on the OnePlan navigation menu.</p>
-											<div class="mediaobject"><img src="image/1668fed6e4265f.png" style=""
-													alt="392d6f7b-e800-472f-8e97-4f75912553aa.png"></img></div>
-											<p>Global Resource Plan Overview Video (03:52)</p>
-											<div class="mediaobject">
-												<div class="video-container">
-													<div class="videoobject"><iframe title="" style="border:0;"
-															allow="fullscreen *"
-															src="https://player.vimeo.com/video/791263430"></iframe>
-													</div>
-												</div>
-											</div>
-										</section>
-										<section dir="ltr" class="section" data-origin-id="" data-publication-date=""
-											id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm4486156311124833045673168749">
-											<div class="titlepage">
-												<div>
-													<div class="title">
-														<h4 class="title">Plan-Level Resource Plan</h4>
-													</div>
-												</div>
-											</div>
-											<p>The plan-level Resource Plan shows resource allocation for a particular
-												plan.</p>
-											<div class="mediaobject"><img src="image/1668fed6e45ac5.png" style=""
-													alt="Screenshot_2022-05-11_110401.png"></img></div>
-											<p>Plan-Level Resource Plan Overview Video (04:39)</p>
-											<div class="mediaobject">
-												<div class="video-container">
-													<div class="videoobject"><iframe title="" style="border:0;"
-															allow="fullscreen *"
-															src="https://player.vimeo.com/video/790470410"></iframe>
-													</div>
-												</div>
-											</div>
-										</section>
-										<section dir="ltr" class="section internal" data-origin-id=""
-											data-publication-date=""
-											id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_id_360060283111_id_pre-filters">
-											<div class="titlepage">
-												<div>
-													<div class="title">
-														<h4 class="title">Pre-filters</h4>
-													</div>
-												</div>
-											</div>
-											<p>Select a pre-filter to review desired resource types. Pre-filters are
-												configured by your administrator. Pre-filters can be required or
-												optional. When pre-filters are required, no resources will be displayed
-												in the Global Resource Plan page until a pre-filter is applied.</p>
-											<div class="mediaobject"><img src="image/1668fed6e484cc.png" style=""
-													alt="fee39593-b7d2-47d3-bcb7-d0e695cdd390.png"></img></div>
-											<section dir="ltr" class="section" data-origin-id=""
-												data-publication-date=""
-												id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm4526981837297634046609546246">
-												<div class="titlepage">
-													<div>
-														<div class="title">
-															<h5 class="title">Resource Type Pre-Filter</h5>
-														</div>
-													</div>
-												</div>
-												<p>You can filter the Global Resource Planner by Resource Type so you
-													can view either individual resource allocations or team allocations.
-												</p>
-												<div dir="ltr" class="important">
-													<h3 class="title">Important</h3>
-													<p>You can only view Resources or Teams allocations. You cannot view
-														both at the same time.</p>
-												</div>
-												<div class="mediaobject"><img src="image/1668fed6e4ba70.png" style=""
-														alt="DEC_23_Global_Resource_Plan_Resource_Type_Filter.png"></img>
-												</div>
-											</section>
-											<section dir="ltr" class="section" data-origin-id=""
-												data-publication-date=""
-												id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm4652813986291234046609729041">
-												<div class="titlepage">
-													<div>
-														<div class="title">
-															<h5 class="title">Resource Manager Pre-Filter</h5>
-														</div>
-													</div>
-												</div>
-												<p>The resource manager pre-filter is a server-side filter that loads
-													resources into the Resource Plan area and/or Resource Center area
-													based on user permissions and <span class="bold"><strong>Resource
-															Managers</strong></span> admin settings. See <a class="link"
-														href="https://support.oneplan.ai/hc/en-us/articles/4415142203917-How-the-Resource-Manager-pre-filter-works"
-														target="_blank" rel="noopener">How the Resource Manager
-														pre-filter works</a> for more information.</p>
-											</section>
-										</section>
-										<section dir="ltr" class="section internal" data-origin-id=""
-											data-publication-date=""
-											id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_id_360060283111_id_icon-menu">
-											<div class="titlepage">
-												<div>
-													<div class="title">
-														<h4 class="title">Icon Menu</h4>
-													</div>
-												</div>
-											</div>
-											<div class="mediaobject"><img src="image/1668fed6e4ebb9.png" style=""
-													alt="GLobal_IconsMenu.png"></img></div>
-											<p>Icons listed in order from left to right:</p>
-											<div class="informaltable table-responsive">
-												<table class="informaltable frame-void rules-rows" style="width:100%;">
-													<thead>
-														<tr>
-															<th class="th">
-																<p>Icon</p>
-															</th>
-															<th class="th">
-																<p>Name</p>
-															</th>
-															<th class="th">
-																<p>Description</p>
-															</th>
-														</tr>
-													</thead>
-													<tbody>
-														<tr>
-															<td class="td">
-																<p><span class="inlinemediaobject"><img
-																			src="image/1668fed6e51d5f.png"
-																			alt="Screenshot_2022-05-11_103850.png"></img></span>
-																</p>
-															</td>
-															<td class="td">
-																<p>Cost Types Menu</p>
-															</td>
-															<td class="td">
-																<p>Toggle between Resource Plan cost types. Cost Types
-																	are configured per business use case. These allow
-																	for analysis of how resources are initially planned
-																	compared to how they are actually assigned and work.
-																</p>
-															</td>
-														</tr>
-														<tr>
-															<td class="td">
-																<p><span class="inlinemediaobject"><img
-																			src="image/1668fed6e54c64.png"
-																			alt="AddBookingIcon.png"></img></span></p>
-															</td>
-															<td class="td">
-																<p>Add Booking</p>
-															</td>
-															<td class="td">
-																<p>Click this icon to launch the booking form.</p>
-															</td>
-														</tr>
-														<tr>
-															<td class="td">
-																<p><span class="inlinemediaobject"><img
-																			src="image/1668fed6e578b0.png"
-																			alt="Screenshot_2022-05-11_103910.png"></img></span>
-																</p>
-															</td>
-															<td class="td">
-																<p>Candidates List</p>
-															</td>
-															<td class="td">
-																<p>Click the icon to toggle showing the Candidates List
-																	on the bottom half of the screen. See <a
-																		class="link linktype-component linktextconsumer"
-																		href="/document/preview/3212#UUID-d190a2ae-3fdf-d85e-8da6-88bcddd3d4cf"
-																		target="_blank">How do I use the Resource
-																		Pane?</a> for more details.<span
-																		id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_N668fed6a3fd4c"
-																		class="linktextprovider"
-																		style="display:none !important;">Resource Plan
-																		Candidates List Overview</span></p>
-															</td>
-														</tr>
-														<tr>
-															<td class="td">
-																<p><span class="inlinemediaobject"><img
-																			src="image/1668fed6e5a52d.png"
-																			alt="Screenshot_2022-05-11_103920.png"></img></span>
-																</p>
-															</td>
-															<td class="td">
-																<p>Views</p>
-															</td>
-															<td class="td">
-																<p>Select the View menu drop down to change views, save
-																	views, and delete views.</p>
-															</td>
-														</tr>
-														<tr>
-															<td class="td">
-																<p><span class="inlinemediaobject"><img
-																			src="image/1668fed6e5cfb1.png"
-																			alt="Screenshot_2022-05-11_103930.png"></img></span>
-																</p>
-															</td>
-															<td class="td">
-																<p>Planning Units Mode Menu</p>
-															</td>
-															<td class="td">
-																<p>Select Hours, % (Percent), or FTE (Full Time
-																	Equivalent).</p>
-															</td>
-														</tr>
-														<tr>
-															<td class="td">
-																<p><span class="inlinemediaobject"><img
-																			src="image/1668fed6e5fbd6.png"
-																			alt="Screenshot_2022-05-11_103939.png"></img></span>
-																</p>
-															</td>
-															<td class="td">
-																<p>Modify View Menu</p>
-															</td>
-															<td class="td">
-																<p>Settings in this menu include:</p>
-																<div class="itemizedlist">
-																	<ul class="itemizedlist"
-																		style="list-style-type: disc; ">
-																		<li class="listitem">
-																			<p><span
-																					class="bold"><strong>Dates</strong></span>:
-																				Select the desired date range of
-																				periods. Note that the "Totals" column
-																				will calculate based off the date range
-																				selected if the planning unit mode is %
-																				or FTE.</p>
-																		</li>
-																		<li class="listitem">
-																			<p><span
-																					class="bold"><strong>Filter</strong></span>:
-																				Select a filters to narrow what shows in
-																				the page. Select <span
-																					class="bold"><strong>Clear
-																						Filters</strong></span> to
-																				remove all filter selections.</p>
-																		</li>
-																		<li class="listitem">
-																			<p><span class="bold"><strong>Group
-																						By</strong></span>: Select a
-																				field to group the resources by that
-																				field. Resource-level choice fields
-																				(such as Department and Role) are
-																				available for grouping.</p>
-																		</li>
-																		<li class="listitem">
-																			<p><span class="bold"><strong>Compare
-																						To</strong></span>: Select cost
-																				type comparisons to view in the grid.
-																			</p>
-																		</li>
-																	</ul>
-																</div>
-															</td>
-														</tr>
-														<tr>
-															<td class="td">
-																<p><span class="inlinemediaobject"><img
-																			src="image/1668fed6e6289e.png"
-																			alt="Screenshot_2022-05-11_103947.png"></img></span>
-																</p>
-															</td>
-															<td class="td">
-																<p>Resource Plan Advanced Menu</p>
-															</td>
-															<td class="td">
-																<p>Options in this menu include:</p>
-																<div class="itemizedlist">
-																	<ul class="itemizedlist"
-																		style="list-style-type: disc; ">
-																		<li class="listitem">
-																			<p><span
-																					class="bold"><strong>Delegates</strong></span>:
-																				Only available if negotiations are
-																				enabled. The Resource Manager can assign
-																				delegates to approve on their behalf,
-																				such as their team or department.</p>
-																		</li>
-																		<li class="listitem">
-																			<p><span
-																					class="bold"><strong>Legend</strong></span>:
-																				Describes the meaning of the color heat
-																				map for the resource plan details. The
-																				colors are based on their percentage of
-																				availability utilized.</p>
-																		</li>
-																		<li class="listitem">
-																			<p><span class="bold"><strong>Copy
-																						Value</strong></span>s: Click to
-																				copy resource plan data from one cost
-																				type to another. See <a
-																					class="xref linktype-fork linktextconsumer"
-																					href="/document/preview/20039#UUID-db449893-e24a-0399-9799-ee68c5baecc6"
-																					target="_blank">Copy Resource Plan
-																					Values</a> for more
-																				information.<span
-																					id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_N668fed6a436be"
-																					class="linktextprovider"
-																					style="display:none !important;">Copy
-																					Resource Plan Values</span></p>
-																		</li>
-																	</ul>
-																</div>
-															</td>
-														</tr>
-														<tr>
-															<td class="td">
-																<p><span class="inlinemediaobject"><img
-																			src="image/1668fed6c32dc5.png"
-																			alt="Refresh.png"></img></span></p>
-															</td>
-															<td class="td">
-																<p>Refresh</p>
-															</td>
-															<td class="td">
-																<p>Click to update the data in your resource plan.</p>
-															</td>
-														</tr>
-													</tbody>
-												</table>
-											</div>
-										</section>
-										<section dir="ltr" class="section internal" data-origin-id=""
-											data-publication-date=""
-											id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_id_360060283111_id_resource-plan-details">
-											<div class="titlepage">
-												<div>
-													<div class="title">
-														<h4 class="title">Resource Plan Details</h4>
-													</div>
-												</div>
-											</div>
-											<p>The bookings are grouped under each resource. Public rows (if the
-												public/private feature is enabled) show.</p>
-											<p>The summary rows show the total allocation for each resource. The colors
-												are based on their percentage of availability utilized (how much of
-												their time is taken).</p>
-											<p>Resource Plan Color Legend:</p>
-											<div class="itemizedlist">
-												<ul class="itemizedlist" style="list-style-type: disc; ">
-													<li class="listitem">
-														<p>Green Cell: Less than 100% Availability Used</p>
-													</li>
-													<li class="listitem">
-														<p>Light Green Cell: 100% Availability Used</p>
-													</li>
-													<li class="listitem">
-														<p>Yellow Cell: Greater than 100% --- to --- Less than or Equal
-															to 110% Availability Used</p>
-													</li>
-													<li class="listitem">
-														<p>Orange Cell: Greater than 110% --- to --- Less than 120%
-															Availability Used</p>
-													</li>
-													<li class="listitem">
-														<p>Red Cell: Greater than 120% Availability Used</p>
-													</li>
-													<li class="listitem">
-														<p>Green Tab: Resource requirement 100% fulfilled</p>
-													</li>
-													<li class="listitem">
-														<p>Yellow Tab: Resource requirement is greater than 80% -- to --
-															less than 100% fulfilled</p>
-													</li>
-													<li class="listitem">
-														<p>Orange Tab: Resource requirement is greater than 60% -- to --
-															less than 80% fulfilled</p>
-													</li>
-													<li class="listitem">
-														<p>Red Tab: Resource requirement less than 60% fulfilled</p>
-													</li>
-												</ul>
-											</div>
-											<div class="mediaobject"><img src="image/1668fed6e66e9c.png" style=""
-													alt="Resource_Plan_Color_Legend.png"></img></div>
-										</section>
-										<section dir="ltr" class="section internal" data-origin-id=""
-											data-publication-date=""
-											id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm13304568532822">
-											<div class="titlepage">
-												<div>
-													<div class="title">
-														<h4 class="title">Resource Plan Details and Candidates List</h4>
-													</div>
-												</div>
-											</div>
-											<p>If you show the Candidates List in the lower half of the screen, each
-												resource's summary row shows remaining availability. The color legend is
-												the same as noted above. See <a
-													class="xref linktype-fork linktextconsumer"
-													href="/document/preview/16541#UUID-f8ea8604-cef0-9dcf-745b-abe590b1205b"
-													target="_blank">Resource Plan Candidates List Overview</a> for more
-												information about the candidates list.<span
-													id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_N668fed6a45ee3"
-													class="linktextprovider" style="display:none !important;">Resource
-													Plan Candidates List Overview</span></p>
-											<div class="mediaobject"><img src="image/1668fed6e69dbc.png" style=""
-													alt="7053d035-72c1-4c04-92f5-925a4b8e7b29.png"></img></div>
-										</section>
-										<section dir="ltr" class="section internal" data-origin-id=""
-											data-publication-date=""
-											id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_id_360060283111_id_resource-approvals-with-negotiations">
-											<div class="titlepage">
-												<div>
-													<div class="title">
-														<h4 class="title">Resource Approvals with Negotiations</h4>
-													</div>
-												</div>
-											</div>
-											<p>When the Negotiations feature is enabled, the additional status and
-												approval columns show. See <a
-													class="link linktype-component linktextconsumer"
-													href="/document/preview/3213#UUID-fa46fd32-4fcb-a191-adb6-713e860176d2"
-													target="_blank">How is resource planning done with the Negotiations
-													feature enabled?</a> for more information about the notifications
-												and approvals with negotiations.<span
-													id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_N668fed6a46d14"
-													class="linktextprovider" style="display:none !important;">How is
-													resource planning done with the Negotiations feature enabled?</span>
-											</p>
-											<div class="mediaobject"><img src="image/1668fed6e6e201.png" style=""
-													alt="27ba1604-025e-417e-b428-ce96f1aa87fd.png"></img></div>
-										</section>
-									</section>
-									<section dir="ltr" class="section" data-origin-id="" data-publication-date=""
-										id="UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm234353934286616">
-										<div class="titlepage">
-											<div>
-												<div class="title">
-													<h3 class="title">Related Resources</h3>
-												</div>
-											</div>
-										</div>
-										<p>For more information on the OnePlan Resource Plans, check out the following
-											resources:</p>
-										<div class="itemizedlist">
-											<ul class="itemizedlist" style="list-style-type: disc; ">
-												<li class="listitem">
-													<p><a class="link"
-															href="https://support.oneplan.ai/hc/en-us/articles/24400768395661-Execution-Resource-Plan"
-															target="_blank" rel="noopener">Execution - Resource Plan</a>
-													</p>
-												</li>
-												<li class="listitem">
-													<p><a class="link"
-															href="https://support.oneplan.ai/hc/en-us/articles/360060282991-Use-the-One-Plan-Resource-Planner-Basics"
-															target="_blank" rel="noopener">Use the One Plan Resource
-															Planner Basics</a></p>
-												</li>
-												<li class="listitem">
-													<p><a class="link"
-															href="https://support.oneplan.ai/hc/en-us/articles/360060283071-Build-a-Resource-Plan"
-															target="_blank" rel="noopener">Build a Resource Plan</a></p>
-												</li>
-												<li class="listitem">
-													<p><a class="link"
-															href="https://support.oneplan.ai/hc/en-us/articles/360060283091-How-is-resource-planning-done-with-the-Negotiations-feature-enabled"
-															target="_blank" rel="noopener">How is resource planning done
-															with the Negotiations feature enabled?</a></p>
-												</li>
-												<li class="listitem">
-													<p><a class="link"
-															href="https://support.oneplan.ai/hc/en-us/articles/24003258787853-Compare-Resource-Plan-Types"
-															target="_blank" rel="noopener">Compare Resource Plan
-															Types</a></p>
-												</li>
-												<li class="listitem">
-													<p><a class="link"
-															href="https://support.oneplan.ai/hc/en-us/articles/6111801876621-Add-a-Booking-to-a-Resource-Plan"
-															target="_blank" rel="noopener">Add a Booking to a Resource
-															Plan</a></p>
-												</li>
-												<li class="listitem">
-													<p><a class="link"
-															href="https://support.oneplan.ai/hc/en-us/articles/6111801924237-Add-a-Resource-to-a-Resource-Plan"
-															target="_blank" rel="noopener">Add a Resource to a Resource
-															Plan</a></p>
-												</li>
-												<li class="listitem">
-													<p><a class="link"
-															href="https://support.oneplan.ai/hc/en-us/articles/6111753960717-Copy-Resource-Plan-Values"
-															target="_blank" rel="noopener">Copy Resource Plan Values</a>
-													</p>
-												</li>
-												<li class="listitem">
-													<p><a class="link"
-															href="https://support.oneplan.ai/hc/en-us/articles/6111753993357-Import-a-Resource-Plan"
-															target="_blank" rel="noopener">Import a Resource Plan</a>
-													</p>
-												</li>
-												<li class="listitem">
-													<p><a class="link"
-															href="https://support.oneplan.ai/hc/en-us/articles/360059844392-Resource-Plan-Candidates-List-Overview"
-															target="_blank" rel="noopener">Resource Plan Candidates List
-															Overview</a></p>
-												</li>
-												<li class="listitem">
-													<p><a class="link" href="http://Resource Plan Training"
-															target="_blank" rel="noopener">OnePlan Academy Resource Plan
-															Training</a></p>
-												</li>
-											</ul>
-										</div>
-									</section>
-								</section>
-								<div class="footer-content">
-									<div class="glossary-definitions"></div>
+						<footer class="site-footer">
+							<div class="inner">
+								<div>
+									<h3>Quick Links</h3>
+									<p><a href="https://support.oneplan.ai/hc/en-us/sections/360013711432-Release-Notes">Release Notes</a></p>
+									<p><a href="https://oneplanacademy.com/">Academy</a></p>
+									<p><a href="https://support.oneplan.ai/hc/en-us">Knowledge Base</a></p>
+									<p><a href="https://support.oneplan.ai/hc/en-us/community/topics">Community</a></p>
+									<p><a href="https://support.oneplan.ai/hc/en-us/requests/new">Support</a></p>
 								</div>
-								<footer></footer>
+								<div class="copyright"> © 2025 OnePlan </div>
 							</div>
-						</article>
-						<article id="search-result-wrapper">
-							<div class="search-container" style="display: none;">
-								<h2>Search results</h2>
-								<ul class="searchresults"></ul>
-								<p class="noresults">No results found</p>
-							</div>
-						</article>
-					</main>
-					<div id="bottom-pager">
-						<ul class="pager">
-							<li class="previous"><a accesskey="p" class="prev pull-left prev visible-lg visible-md"
-									id="header-navigation-prev"
-									href="accounts-portfolio.html#UUID-39a4199e-0054-8629-c750-daf815f18b89_section-idm13441408822162">Prev</a>
-							</li>
-							<li class="next"><a accesskey="n" class="pull-right next visible-lg visible-md"
-									id="header-navigation-next"
-									href="use-the-oneplan-resource-plan.html#UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm13441412068914">Next</a>
-							</li>
-						</ul>
+						</footer>
 					</div>
-					<footer class="site-footer">
-						<div class="inner">
-							<div class="copyright"> © 2024 OnePlan </div>
-							<div class="publication-date"><span class="publication-date-text">Publication
-									date</span><span class="pubdate-delimiter">: </span><span
-									class="formatted-date"></span></div>
-						</div>
-					</footer>
 				</div>
 			</div>
 		</div>
-	</div>
-</body>
-
+	</body>
 </html>

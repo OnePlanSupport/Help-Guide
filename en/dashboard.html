@@ -1,481 +1,2204 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" dir="ltr">
+<html
+	xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<meta http-equiv="x-ua-compatible" content="IE=edge"></meta>
+		<meta name="format-detection" content="telephone=no"></meta>
+		<meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+		<meta name="search" content="default"></meta>
+		<meta name="use.ic" content="no"></meta>
+		<meta name="tocstandalone" content="no"></meta>
+		<meta name="theme" content="1"></meta>
+		<meta name="search.placeholder" content="Search"></meta>
+		<meta name="search.results" content="Search results"></meta>
+		<meta name="no.search.results" content="No results found"></meta>
+		<script type="text/javascript">
+var theme = '1';
 
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<meta http-equiv="x-ua-compatible" content="IE=edge">
-	</meta>
-	<meta name="format-detection" content="telephone=no">
-	</meta>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	</meta>
-	<meta name="search" content="default">
-	</meta>
-	<meta name="use.ic" content="no">
-	</meta>
-	<meta name="tocstandalone" content="no">
-	</meta>
-	<meta name="theme" content="1">
-	</meta>
-	<meta name="search.placeholder" content="Search">
-	</meta>
-	<meta name="search.results" content="Search results">
-	</meta>
-	<meta name="no.search.results" content="No results found">
-	</meta>
-	<script type="text/javascript">
-		var theme = '1';
+			
+			window.versionsfile = '';
 
 
-		window.versionsfile = '';
-
-
-		window.indexDict = new Array();
-		window.store = {};
-		window.portalLanguage = 'en';
-		window.enterKey = 'select';
-
-
-		var fuse_threshold = 0.3;
-
-		var local_csh = false;
-
-		var anchoroption = true;
-		var instantsearch_minlength = 1;
-
-		var useanchorlinks = false;
-
-		var collapseTocSectionOnLinkTitleClick = false;
-	</script>
-	<title>Dashboard</title>
-	<link rel="stylesheet" type="text/css" href="../css/docbook.css">
-	</link>
-	<link rel="stylesheet" type="text/css" href="../css/font-awesome.css">
-	</link>
-	<link rel="stylesheet" type="text/css" href="../css/roboto.font.css">
-	</link>
-	<link rel="stylesheet" type="text/css" href="../css/theme1.css">
-	</link>
-	<link rel="stylesheet" type="text/css" href="../css/theme1-colors.css">
-	</link>
-	<link rel="stylesheet" type="text/css" href="../css/content-theme2.css">
-	</link>
-	<link rel="stylesheet" type="text/css" href="../css/sm-core-css.css">
-	</link>
-	<link rel="stylesheet" type="text/css" href="../css/sm-simple.css">
-	</link>
-	<link rel="stylesheet" type="text/css" href="../css/style-print.css">
-	</link>
-	<link rel="stylesheet" type="text/css" href="../css/style-common.css">
-	</link>
-	<link rel="stylesheet" type="text/css" href="../css/style-modern-tables.css">
-	</link>
-	<link rel="stylesheet" type="text/css" href="../css/graphical-lists.css">
-	</link>
-	<link rel="stylesheet" type="text/css" href="../css/666a07334256c.css">
-	</link>
-	<script src="../js/jquery-3/jquery-3.4.1.min.js" type="text/javascript"></script>
-	<script src="../js/jquery-migrate-3.4.1.min.js" type="text/javascript"></script>
-	<script src="../js/materialize.min.js" type="text/javascript"></script>
-	<script src="../js/bootstrap.min.js" type="text/javascript"></script>
-	<script src="../js/purl.js" type="text/javascript"></script>
-	<script src="../js/jquery.smartmenus.js" type="text/javascript"></script>
-	<script src="../js/html5-2-mp-common.js" type="text/javascript"></script>
-	<script src="../js/html5-2.js" type="text/javascript"></script>
-	<script src="../js/checklist.js" type="text/javascript"></script>
-	<script src="../js/clipboard.min.js" type="text/javascript"></script>
-	<script src="../js/fuse.min.js" type="text/javascript"></script>
-	<script src="../js/jquery.mark.min.js" type="text/javascript"></script>
-	<script src="../js/html5.fuse.search.js" type="text/javascript"></script>
-	<script src="js/fuzzydata.js" type="text/javascript"></script>
-	<script src="../js/csh.js" type="text/javascript"></script>
-	<meta xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:util="http://www.paligo.net/xsl1/functions/utility"
-		name="generator" content="Paligo">
-	</meta>
-	<link rel="prev" href="microsoft-teams.html#UUID-ecde8553-384d-d8f6-3a47-7a254a935c9e_section-idm234362782727249"
-		title="Related Resources">
-	</link>
-	<link rel="next" href="dashboard.html#UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78_section-idm23436430742111"
-		title="Diving Into the Report Pack">
-	</link>
-	<script type="text/javascript"
-		src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"
-		async="async"></script>
-	<link rel="icon" href="/favicon.ico" type="image/x-icon">
-	</link>
-	<script type="text/javascript" src="../js/cookie-consent.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function () {
-			$(".mediaobject img").addClass('materialboxed');
-			//Exclude images with links
-			$(".mediaobject a img").removeClass('materialboxed');
-			if (!document.documentMode) {
-				$('.materialboxed').materialbox();
-			}
-		});
-	</script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/googlecode.min.css">
-	</link>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function () {
-
-			$('pre:not(.embedcode)').each(function () {
-				/**
-				 * @type {string}
-				 */
-				var language = $(this).data('language');
-
-				if (language === 'plaintext' || language === 'text') {
-					$(this).addClass(language).addClass('hljs');
-					return true;
-				}
-				else {
-					var clone = this.cloneNode(true);
-					hljs.highlightBlock(clone);
-					$(this).empty().append($(clone).contents());
-					$(this).attr("class", $(clone).attr("class"));
-				}
-			});
-		});
-	</script>
-</head>
-
-<body class="theme1 collapsible-sidebar-nav current-toc-section-focus" data-link-prefix="">
-	<style type="text/css">
-		div.skipnav {}
-
-		div.skipnav a {
-			position: fixed;
-			left: -10000px;
-			top: 1.5em;
-			width: 1px;
-			height: 1px;
-			overflow: hidden;
-		}
-
-		div.skipnav a:focus,
-		div.skipnav a:active,
-		div.skipnav a:hover {
-			background: white;
-			color: black;
-			box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
-			position: fixed;
-			left: 2em;
-			top: 1.5em;
-			width: auto;
-			height: auto;
-			overflow: visible;
-			text-decoration: underline;
-			z-index: 99999;
-			/* has to be higher than the side panel */
-		}
-	</style>
-	<div class="skipnav"><a href="#content-wrapper">Skip to main content</a></div>
-	<header class="site-header">
-		<nav class="site-header-navbar navbar navbar-fixed-top">
-			<div class="navbar-container">
-				<div class="navbar-header"><button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-						data-target=".site-sidebar" aria-expanded="false" aria-controls="navbar"><span
-							class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
-							class="icon-bar"></span><span class="icon-bar"></span></button>
-					<div id="logotype-container" class="pull-left"><a class="navbar-brand"
-							href="https://support.oneplan.ai/hc/en-us" target="_blank" rel="noopener"><img
-								id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype"
-								data-role="logotype" class="logo"></img></a></div>
-				</div>
-				<div class="navbar-collapse collapse" id="navbar"></div>
-			</div>
-		</nav>
-	</header>
-	<div class="site-body">
-		<div class="site-body-container">
-			<div class="site-body-row">
+			window.indexDict = new Array();
+			window.store = {};
+			window.portalLanguage = 'en';
+			window.enterKey = 'select';
+			
+			
+				var fuse_threshold = 0.3;
+			
+					var local_csh = false;
 				
-				<div class="site-content">
-					<h1 class="publication-title">New In Product Help</h1>
-					
-					<main>
-						<div id="top-pager">
+					var anchoroption = true;
+				var instantsearch_minlength = 1;
+						
+			var useanchorlinks = false;
+			
+					var collapseTocSectionOnLinkTitleClick = false;
+				</script>
+		<title>Dashboard</title>
+		<link rel="stylesheet" type="text/css" href="../css/docbook.css"></link>
+		<link rel="stylesheet" type="text/css" href="../css/font-awesome.css"></link>
+		<link rel="stylesheet" type="text/css" href="../css/roboto.font.css"></link>
+		<link rel="stylesheet" type="text/css" href="../css/theme1.css"></link>
+		<link rel="stylesheet" type="text/css" href="../css/theme1-colors.css"></link>
+		<link rel="stylesheet" type="text/css" href="../css/content-theme2.css"></link>
+		<link rel="stylesheet" type="text/css" href="../css/sm-core-css.css"></link>
+		<link rel="stylesheet" type="text/css" href="../css/sm-simple.css"></link>
+		<link rel="stylesheet" type="text/css" href="../css/style-print.css"></link>
+		<link rel="stylesheet" type="text/css" href="../css/style-common.css"></link>
+		<link rel="stylesheet" type="text/css" href="../css/style-modern-tables.css"></link>
+		<link rel="stylesheet" type="text/css" href="../css/graphical-lists.css"></link>
+		<link rel="stylesheet" type="text/css" href="../css/666a07334256c.css"></link>
+		<script src="../js/jquery-3/jquery-3.4.1.min.js" type="text/javascript"></script>
+		<script src="../js/jquery-migrate-3.4.1.min.js" type="text/javascript"></script>
+		<script src="../js/materialize.min.js" type="text/javascript"></script>
+		<script src="../js/bootstrap.min.js" type="text/javascript"></script>
+		<script src="../js/purl.js" type="text/javascript"></script>
+		<script src="../js/jquery.smartmenus.js" type="text/javascript"></script>
+		<script src="../js/html5-2-mp-common.js" type="text/javascript"></script>
+		<script src="../js/html5-2.js" type="text/javascript"></script>
+		<script src="../js/checklist.js" type="text/javascript"></script>
+		<script src="../js/clipboard.min.js" type="text/javascript"></script>
+		<script src="../js/fuse.min.js" type="text/javascript"></script>
+		<script src="../js/jquery.mark.min.js" type="text/javascript"></script>
+		<script src="../js/html5.fuse.search.js" type="text/javascript"></script>
+		<script src="js/fuzzydata.js" type="text/javascript"></script>
+		<script src="../js/csh.js" type="text/javascript"></script>
+		<script src="../js/highlight-mergehtml-plugin.js" type="text/javascript"></script>
+		<meta name="generator" content="Paligo"></meta>
+		<link rel="prev" href="microsoft-teams.html#UUID-ecde8553-384d-d8f6-3a47-7a254a935c9e_section-idm234362782727249" title="Even more resources"></link>
+		<link rel="next" href="dashboard.html#UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78_section-idm234912222654023" title="Watch a video"></link>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script>
+		<link rel="icon" href="/favicon.ico" type="image/x-icon"></link>
+		<script type="text/javascript" src="../js/cookie-consent.js"></script>
+		<script type="text/javascript">
+				$(document).ready(function () {
+				$(".mediaobject img").addClass('materialboxed');
+				//Exclude images with links
+				$(".mediaobject a img").removeClass('materialboxed');
+				if (!document.documentMode) {
+				$('.materialboxed').materialbox();
+				}});
+			</script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/googlecode.min.css"></link>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+		<script type="text/javascript">
+			$(document).on('ready ajaxComplete', function() {
+				
+				hljs.addPlugin(mergeHTMLPlugin);
+				hljs.configure({'ignoreUnescapedHTML': true});
+				
+				$('pre:not(.embedcode)').each(function() {
+					/**
+					 * @type {string}
+					 */
+					var language = $(this).data('language');
+
+					if (language === 'plaintext' || language === 'text') {
+						$(this).addClass(language).addClass('hljs');
+						return true;
+					}
+					else {
+						var clone = this.cloneNode(true);
+						hljs.highlightElement(clone);
+						$(this).empty().append($(clone).contents());
+						$(this).attr("class", $(clone).attr("class"));
+					}
+				});
+			});
+			</script>
+	</head>
+	<body class="theme1 current-toc-section-focus" data-link-prefix="">
+		<style type="text/css">
+            div.skipnav {
+            }
+            div.skipnav a {
+                position: fixed;
+                left: -10000px;
+                top: 1.5em;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            div.skipnav a:focus, div.skipnav a:active, div.skipnav a:hover {
+                background: white;
+                color: black;
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+                position: fixed;
+                left: 2em;
+                top: 1.5em;
+                width: auto;
+                height: auto;
+                overflow: visible;
+                text-decoration: underline;
+                z-index: 99999; /* has to be higher than the side panel */
+    }
+          </style>
+		<div class="skipnav">
+			<a href="#content-wrapper">Skip to main content</a>
+		</div>
+		<header class="site-header">
+			<nav class="site-header-navbar navbar navbar-fixed-top">
+				<div class="navbar-container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".site-sidebar" aria-expanded="false" aria-controls="navbar">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<div id="logotype-container" class="pull-left">
+							<a class="navbar-brand" href="https://support.oneplan.ai/hc/en-us" target="_blank" rel="noopener">
+								<img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" class="logo"></img>
+							</a>
+						</div>
+					</div>
+					<div class="navbar-collapse collapse" id="navbar"></div>
+				</div>
+			</nav>
+		</header>
+		<div class="site-body">
+			<div class="site-body-container">
+				<div class="site-body-row">
+					<aside class="site-sidebar">
+						<div class="site-sidebar-header">
+							<button type="button" class="navbar-toggle" aria-controls="nav-site-sidebar">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a href="https://support.oneplan.ai/hc/en-us" target="_blank" rel="noopener">
+								<img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" class="logo"></img>
+							</a>
+						</div>
+						<form class="site-sidebar-search" autocomplete="off">
+							<input type="text" placeholder="Search" class="form-control search-field" id="aa-search-input"></input>
+						</form>
+						<ul class="toc nav nav-site-sidebar">
+							<li>
+								<a href="help-guide.html" class="topic-link section" data-origin-id="UUID-a6f89488-1d48-d521-ecff-d733fe12d3fb" data-permalink="help-guide.html" data-topic-level="1" data-relative-prefix="" data-publication-date="">
+									<span class="glyphicon"></span> Help Guide
+								</a>
+								<ul>
+									<li>
+										<a href="help-guide.html#UUID-4d47b750-62fa-547b-0c76-fd32ee4971bb_section-idm13441410485012" class="topic-link section" data-origin-id="" data-publication-date="">What is the Help Guide Feature in OnePlan?</a>
+									</li>
+									<li>
+										<a href="help-guide.html#UUID-4d47b750-62fa-547b-0c76-fd32ee4971bb_section-idm13441410510810" class="topic-link section" data-origin-id="" data-publication-date="">Example Use Case</a>
+									</li>
+									<li>
+										<a href="help-guide.html#UUID-4d47b750-62fa-547b-0c76-fd32ee4971bb_section-idm234414105245563" class="topic-link section" data-origin-id="" data-publication-date="">Use the Help Guide</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="use-the-oneplan-homepage.html" class="topic-link section" data-origin-id="UUID-5a5eacb7-a067-d4ca-b0db-717a9e7787d1" data-permalink="use-the-oneplan-homepage.html" data-topic-level="1" data-relative-prefix="" data-publication-date="">
+									<span class="glyphicon"></span> Home Page
+								</a>
+								<ul>
+									<li>
+										<a href="use-the-oneplan-homepage.html#UUID-cf1b9171-bc33-25ac-3883-8c60dbeff524_section-idm234352292202433" class="topic-link section accordion" data-origin-id="" data-publication-date="">Watch a video</a>
+									</li>
+									<li>
+										<a href="use-the-oneplan-homepage.html#UUID-cf1b9171-bc33-25ac-3883-8c60dbeff524_section-idm234848152330569" class="topic-link section accordion" data-origin-id="" data-publication-date="">Take a feature tour</a>
+									</li>
+									<li>
+										<a href="use-the-oneplan-homepage.html#UUID-cf1b9171-bc33-25ac-3883-8c60dbeff524_section-idm234848153754945" class="topic-link section accordion" data-origin-id="" data-publication-date="">
+											<span class="glyphicon"></span> Read an article
+										</a>
+										<ul>
+											<li>
+												<a href="use-the-oneplan-homepage.html#UUID-cf1b9171-bc33-25ac-3883-8c60dbeff524_UUID-3c84c99e-6606-eafb-20dc-4ac544866c1e" class="topic-link section original-topic accordion" data-origin-id="" data-publication-date="">Home Page Insights</a>
+											</li>
+											<li>
+												<a href="use-the-oneplan-homepage.html#UUID-cf1b9171-bc33-25ac-3883-8c60dbeff524_UUID-65e08ccc-79dd-1e0c-c8e0-ef0f121d13dd" class="topic-link section accordion" data-origin-id="" data-publication-date="">Home Page Plans</a>
+											</li>
+											<li>
+												<a href="use-the-oneplan-homepage.html#UUID-cf1b9171-bc33-25ac-3883-8c60dbeff524_UUID-fa7cbb31-5352-673d-c67b-33e883a41f5b" class="topic-link section accordion" data-origin-id="" data-publication-date="">Home Page Recent Conversations</a>
+											</li>
+											<li>
+												<a href="use-the-oneplan-homepage.html#UUID-cf1b9171-bc33-25ac-3883-8c60dbeff524_UUID-3ae55a46-9ed6-0a3c-fc86-dc6bbf9e8bd2" class="topic-link section accordion" data-origin-id="" data-publication-date="">Home Page Due Soon</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="use-the-oneplan-homepage.html#UUID-cf1b9171-bc33-25ac-3883-8c60dbeff524_section-idm234352293924861" class="topic-link section accordion" data-origin-id="" data-publication-date="">Take a course</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="my-work-overview.html" class="topic-link section" data-origin-id="UUID-a3dc1a61-9b55-be7b-1aa4-ed86da1cc04e" data-permalink="my-work-overview.html" data-topic-level="1" data-relative-prefix="" data-publication-date="">
+									<span class="glyphicon"></span> My Work
+								</a>
+								<ul>
+									<li>
+										<a href="my-work-overview.html#UUID-182c8f04-4a81-7580-5b4e-e045fecb28c2_section-idm234911808393589" class="topic-link section accordion" data-origin-id="" data-publication-date="">Watch a video</a>
+									</li>
+									<li>
+										<a href="my-work-overview.html#UUID-182c8f04-4a81-7580-5b4e-e045fecb28c2_section-idm234911809232976" class="topic-link section accordion" data-origin-id="" data-publication-date="">Take a feature tour</a>
+									</li>
+									<li>
+										<a href="my-work-overview.html#UUID-182c8f04-4a81-7580-5b4e-e045fecb28c2_section-idm234911808999185" class="topic-link section accordion" data-origin-id="" data-publication-date="">
+											<span class="glyphicon"></span> Read an article
+										</a>
+										<ul>
+											<li>
+												<a href="my-work-overview.html#UUID-182c8f04-4a81-7580-5b4e-e045fecb28c2_UUID-b2c9bafd-2a21-4471-58a7-24a833f2787a" class="topic-link section original-topic accordion" data-origin-id="" data-publication-date="">My Work Overview</a>
+											</li>
+											<li>
+												<a href="my-work-overview.html#UUID-182c8f04-4a81-7580-5b4e-e045fecb28c2_UUID-5e8c1760-1ad8-1766-4280-179ade45bc38" class="topic-link section accordion" data-origin-id="" data-publication-date="">Select the Date Period in My Work</a>
+											</li>
+											<li>
+												<a href="my-work-overview.html#UUID-182c8f04-4a81-7580-5b4e-e045fecb28c2_UUID-87b2daf9-36af-112d-fd58-62905d5b1df9" class="topic-link section accordion" data-origin-id="" data-publication-date="">Add a Work Item in My Work</a>
+											</li>
+											<li>
+												<a href="my-work-overview.html#UUID-182c8f04-4a81-7580-5b4e-e045fecb28c2_UUID-a8dd74f1-02e5-4a9b-ff70-c75e77c36d0b" class="topic-link section accordion" data-origin-id="" data-publication-date="">Manage My Work in Lists</a>
+											</li>
+											<li>
+												<a href="my-work-overview.html#UUID-182c8f04-4a81-7580-5b4e-e045fecb28c2_UUID-e99de707-28d9-ffa6-3e99-60cb93891996" class="topic-link section accordion" data-origin-id="" data-publication-date="">Manage My Work in Boards</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="my-work-overview.html#UUID-182c8f04-4a81-7580-5b4e-e045fecb28c2_section-idm234911809654923" class="topic-link section accordion" data-origin-id="" data-publication-date="">Take a course</a>
+									</li>
+									<li>
+										<a href="my-work-overview.html#UUID-182c8f04-4a81-7580-5b4e-e045fecb28c2_section-idm234911858237299" class="topic-link section accordion" data-origin-id="" data-publication-date="">Even more resources</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="use-the-oneplan-timesheet.html" class="topic-link section" data-origin-id="UUID-d4fc435d-1149-2346-ac55-e0bd6cb5f099" data-permalink="use-the-oneplan-timesheet.html" data-topic-level="1" data-relative-prefix="" data-publication-date="">
+									<span class="glyphicon"></span> Timesheet
+								</a>
+								<ul>
+									<li>
+										<a href="use-the-oneplan-timesheet.html#UUID-6b57d504-8a21-d82d-be98-66b97325d47b_section-idm234911846632376" class="topic-link section accordion" data-origin-id="" data-publication-date="">Watch a video</a>
+									</li>
+									<li>
+										<a href="use-the-oneplan-timesheet.html#UUID-6b57d504-8a21-d82d-be98-66b97325d47b_section-idm234911846911232" class="topic-link section accordion" data-origin-id="" data-publication-date="">Take a feature tour</a>
+									</li>
+									<li>
+										<a href="use-the-oneplan-timesheet.html#UUID-6b57d504-8a21-d82d-be98-66b97325d47b_section-idm23491184705372" class="topic-link section accordion" data-origin-id="" data-publication-date="">
+											<span class="glyphicon"></span> Read an article
+										</a>
+										<ul>
+											<li>
+												<a href="use-the-oneplan-timesheet.html#UUID-6b57d504-8a21-d82d-be98-66b97325d47b_UUID-4e5374c2-c057-bfa1-b66d-7889793c9b7d" class="topic-link section original-topic accordion" data-origin-id="" data-publication-date="">Enter Time on My Timesheet</a>
+											</li>
+											<li>
+												<a href="use-the-oneplan-timesheet.html#UUID-6b57d504-8a21-d82d-be98-66b97325d47b_UUID-6f4fbdbc-4256-1c96-c57c-4bd08f3f3554" class="topic-link section accordion" data-origin-id="" data-publication-date="">Use the Stopwatch to Record Time in Your Timesheet</a>
+											</li>
+											<li>
+												<a href="use-the-oneplan-timesheet.html#UUID-6b57d504-8a21-d82d-be98-66b97325d47b_UUID-110cf635-e80e-4ed4-eda7-32da1fd0ad24" class="topic-link section accordion" data-origin-id="" data-publication-date="">Enter Time Off from the Timesheet</a>
+											</li>
+											<li>
+												<a href="use-the-oneplan-timesheet.html#UUID-6b57d504-8a21-d82d-be98-66b97325d47b_UUID-17c3384c-3c8e-1fb8-1259-2d10448c4363" class="topic-link section original-topic accordion" data-origin-id="" data-publication-date="">Review and Approve Timesheets</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="use-the-oneplan-timesheet.html#UUID-6b57d504-8a21-d82d-be98-66b97325d47b_section-idm234911847173855" class="topic-link section accordion" data-origin-id="" data-publication-date="">Take a course</a>
+									</li>
+									<li>
+										<a href="use-the-oneplan-timesheet.html#UUID-6b57d504-8a21-d82d-be98-66b97325d47b_section-idm234352316168445" class="topic-link section accordion" data-origin-id="" data-publication-date="">Even more resources</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="resource-center-overview.html" class="topic-link section" data-origin-id="UUID-479debba-5976-961a-2f64-a7fed0e53d78" data-permalink="resource-center-overview.html" data-topic-level="1" data-relative-prefix="" data-publication-date="">
+									<span class="glyphicon"></span> Resource Center
+								</a>
+								<ul>
+									<li>
+										<a href="resource-center-overview.html#UUID-0f7fda2a-f4b7-6973-99ec-63776988ade9_section-idm234352364756888" class="topic-link section accordion" data-origin-id="" data-publication-date="">Watch a video</a>
+									</li>
+									<li>
+										<a href="resource-center-overview.html#UUID-0f7fda2a-f4b7-6973-99ec-63776988ade9_section-idm234911861003203" class="topic-link section accordion" data-origin-id="" data-publication-date="">
+											<span class="glyphicon"></span> Read an article
+										</a>
+										<ul>
+											<li>
+												<a href="resource-center-overview.html#UUID-0f7fda2a-f4b7-6973-99ec-63776988ade9_UUID-e1c029b3-1102-8c71-1baa-36f2c3ec7385" class="topic-link section accordion" data-origin-id="" data-publication-date="">Add Users to OnePlan</a>
+											</li>
+											<li>
+												<a href="resource-center-overview.html#UUID-0f7fda2a-f4b7-6973-99ec-63776988ade9_UUID-55831839-df53-e679-e461-345539d6f4aa" class="topic-link section accordion" data-origin-id="" data-publication-date="">Create and Manage Teams in the Resource Center</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="resource-center-overview.html#UUID-0f7fda2a-f4b7-6973-99ec-63776988ade9_section-idm234911865036064" class="topic-link section accordion" data-origin-id="" data-publication-date="">Take a course</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="my-strategy-overview.html" class="topic-link section" data-origin-id="UUID-c11e640d-14bd-6879-00ae-b1c94179f5bf" data-permalink="my-strategy-overview.html" data-topic-level="1" data-relative-prefix="" data-publication-date="">
+									<span class="glyphicon"></span> My Strategy
+								</a>
+								<ul>
+									<li>
+										<a href="my-strategy-overview.html#UUID-505cfa30-0e26-1250-e1fc-0c0e625b5397_section-idm13441409510248" class="topic-link section accordion" data-origin-id="" data-publication-date="">Watch a video</a>
+									</li>
+									<li>
+										<a href="my-strategy-overview.html#UUID-505cfa30-0e26-1250-e1fc-0c0e625b5397_section-idm23491199303987" class="topic-link section accordion" data-origin-id="" data-publication-date="">Take a feature tour</a>
+									</li>
+									<li>
+										<a href="my-strategy-overview.html#UUID-505cfa30-0e26-1250-e1fc-0c0e625b5397_section-idm234911994726167" class="topic-link section accordion" data-origin-id="" data-publication-date="">
+											<span class="glyphicon"></span> Read an article
+										</a>
+										<ul>
+											<li>
+												<a href="my-strategy-overview.html#UUID-505cfa30-0e26-1250-e1fc-0c0e625b5397_section-idm234911994907177" class="topic-link section accordion" data-origin-id="" data-publication-date="">Intro to the My Strategy Area</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="my-strategy-overview.html#UUID-505cfa30-0e26-1250-e1fc-0c0e625b5397_section-idm2343537602357" class="topic-link section accordion" data-origin-id="" data-publication-date="">Even more resources</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="my-portfolio-overview.html" class="topic-link section" data-origin-id="UUID-5cfba4e4-433d-6e5d-be3d-bb2820cd9b02" data-permalink="my-portfolio-overview.html" data-topic-level="1" data-relative-prefix="" data-publication-date="">
+									<span class="glyphicon"></span> My Portfolio
+								</a>
+								<ul>
+									<li>
+										<a href="my-portfolio-overview.html#UUID-83be66f8-abc3-a979-bb74-694f40454d29_section-idm234353832933689" class="topic-link section accordion" data-origin-id="" data-publication-date="">Watch a video</a>
+									</li>
+									<li>
+										<a href="my-portfolio-overview.html#UUID-83be66f8-abc3-a979-bb74-694f40454d29_section-idm234912048779044" class="topic-link section accordion" data-origin-id="" data-publication-date="">Take a feature tour</a>
+									</li>
+									<li>
+										<a href="my-portfolio-overview.html#UUID-83be66f8-abc3-a979-bb74-694f40454d29_section-idm234912049027275" class="topic-link section accordion" data-origin-id="" data-publication-date="">
+											<span class="glyphicon"></span> Read an article
+										</a>
+										<ul>
+											<li>
+												<a href="my-portfolio-overview.html#UUID-83be66f8-abc3-a979-bb74-694f40454d29_section-idm23491205116401" class="topic-link section accordion" data-origin-id="" data-publication-date="">My Portfolio Overview</a>
+											</li>
+											<li>
+												<a href="my-portfolio-overview.html#UUID-83be66f8-abc3-a979-bb74-694f40454d29_UUID-070bb17b-2f9d-b09c-3fbf-8cb7400da10c" class="topic-link section original-topic accordion" data-origin-id="" data-publication-date="">Manage Plans in the My Portfolio List</a>
+											</li>
+											<li>
+												<a href="my-portfolio-overview.html#UUID-83be66f8-abc3-a979-bb74-694f40454d29_UUID-ba2f24c5-90cd-04db-90a0-c1cd9cb95fe2" class="topic-link section original-topic accordion" data-origin-id="" data-publication-date="">Portfolio Board</a>
+											</li>
+											<li>
+												<a href="my-portfolio-overview.html#UUID-83be66f8-abc3-a979-bb74-694f40454d29_UUID-a0d356ae-16fc-6338-3873-861092f7e1e4" class="topic-link section accordion" data-origin-id="" data-publication-date="">Portfolio Analysis - Roadmap</a>
+											</li>
+											<li>
+												<a href="my-portfolio-overview.html#UUID-83be66f8-abc3-a979-bb74-694f40454d29_UUID-b29caca4-2a8e-d452-9267-35485c81d10e" class="topic-link section original-topic accordion" data-origin-id="" data-publication-date="">Portfolio Dependencies: Manage Dependencies Between Plans</a>
+											</li>
+											<li>
+												<a href="my-portfolio-overview.html#UUID-83be66f8-abc3-a979-bb74-694f40454d29_UUID-528e0cca-14b3-c327-131f-75a31f24656a" class="topic-link section accordion" data-origin-id="" data-publication-date="">Save, Use, and Manage Views in the My Portfolio Area</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="my-portfolio-overview.html#UUID-83be66f8-abc3-a979-bb74-694f40454d29_section-idm234912067281814" class="topic-link section accordion" data-origin-id="" data-publication-date="">Even more resources</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="my-enterprise-architecture-overview.html" class="topic-link section" data-origin-id="UUID-dd8c07e8-28b7-23e1-9fe4-ac05d90dbc9b" data-permalink="my-enterprise-architecture-overview.html" data-topic-level="1" data-relative-prefix="" data-publication-date="">
+									<span class="glyphicon"></span> My Enterprise Architecture
+								</a>
+								<ul>
+									<li>
+										<a href="my-enterprise-architecture-overview.html#UUID-0bd6c214-1379-97dc-7bbf-f966fac21989_section-idm234352379913077" class="topic-link section accordion" data-origin-id="" data-publication-date="">Watch a video</a>
+									</li>
+									<li>
+										<a href="my-enterprise-architecture-overview.html#UUID-0bd6c214-1379-97dc-7bbf-f966fac21989_section-idm234352409672551" class="topic-link section accordion" data-origin-id="" data-publication-date="">
+											<span class="glyphicon"></span> Read an article
+										</a>
+										<ul>
+											<li>
+												<a href="my-enterprise-architecture-overview.html#UUID-0bd6c214-1379-97dc-7bbf-f966fac21989_section-idm234912076810206" class="topic-link section" data-origin-id="" data-publication-date="">Enterprise Architecture Overview</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="use-the-oneplan-innovation-portal.html" class="topic-link section" data-origin-id="UUID-979a832a-7d5a-6270-12f5-e728c3787914" data-permalink="use-the-oneplan-innovation-portal.html" data-topic-level="1" data-relative-prefix="" data-publication-date="">
+									<span class="glyphicon"></span> Innovation Portal
+								</a>
+								<ul>
+									<li>
+										<a href="use-the-oneplan-innovation-portal.html#UUID-662475de-6556-9df7-3982-d40d6067119c_section-idm13441416798444" class="topic-link section accordion" data-origin-id="" data-publication-date="">Watch a video</a>
+									</li>
+									<li>
+										<a href="use-the-oneplan-innovation-portal.html#UUID-662475de-6556-9df7-3982-d40d6067119c_section-idm234912086386407" class="topic-link section accordion" data-origin-id="" data-publication-date="">Take a feature tour</a>
+									</li>
+									<li>
+										<a href="use-the-oneplan-innovation-portal.html#UUID-662475de-6556-9df7-3982-d40d6067119c_section-idm23491208333337" class="topic-link section accordion" data-origin-id="" data-publication-date="">
+											<span class="glyphicon"></span> Read an article
+										</a>
+										<ul>
+											<li>
+												<a href="use-the-oneplan-innovation-portal.html#UUID-662475de-6556-9df7-3982-d40d6067119c_UUID-51c14702-5297-9abf-0f53-ecb05b1dc073" class="topic-link section" data-origin-id="" data-publication-date="">Submit an Idea with the Innovation App</a>
+											</li>
+											<li>
+												<a href="use-the-oneplan-innovation-portal.html#UUID-662475de-6556-9df7-3982-d40d6067119c_UUID-563e4403-6462-cb1c-86ee-eff7358cfce5" class="topic-link section" data-origin-id="" data-publication-date="">Vote on Ideas with the Innovation App</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="use-the-oneplan-innovation-portal.html#UUID-662475de-6556-9df7-3982-d40d6067119c_section-idm234362347932272" class="topic-link section accordion" data-origin-id="" data-publication-date="">Even more resources</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="my-application.html" class="topic-link section" data-origin-id="UUID-d5c6757e-103d-5d8b-8833-d51692ecb4c4" data-permalink="my-application.html" data-topic-level="1" data-relative-prefix="" data-publication-date="">
+									<span class="glyphicon"></span> Applications Portfolio
+								</a>
+								<ul>
+									<li>
+										<a href="my-application.html#UUID-eb86d8b5-091a-2a52-92e0-cccdf0a9d6d4_section-idm13441407395066" class="topic-link section" data-origin-id="" data-publication-date="">What is the Application Portfolio?</a>
+									</li>
+									<li>
+										<a href="my-application.html#UUID-eb86d8b5-091a-2a52-92e0-cccdf0a9d6d4_section-idm13441407426000" class="topic-link section" data-origin-id="" data-publication-date="">Example Use Case</a>
+									</li>
+									<li>
+										<a href="my-application.html#UUID-eb86d8b5-091a-2a52-92e0-cccdf0a9d6d4_section-idm23436270538355" class="topic-link section" data-origin-id="" data-publication-date="">Use the Applications Portfolio</a>
+									</li>
+									<li>
+										<a href="my-application.html#UUID-eb86d8b5-091a-2a52-92e0-cccdf0a9d6d4_section-idm234362706276636" class="topic-link section" data-origin-id="" data-publication-date="">
+											<span class="glyphicon"></span> Application Board
+										</a>
+										<ul>
+											<li>
+												<a href="my-application.html#UUID-eb86d8b5-091a-2a52-92e0-cccdf0a9d6d4_section-idm234362706616426" class="topic-link section" data-origin-id="" data-publication-date="">Configurable Views</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="my-products.html" class="topic-link section" data-origin-id="UUID-0f88ba4b-8ab6-12a5-91d1-7058a4410113" data-permalink="my-products.html" data-topic-level="1" data-relative-prefix="" data-publication-date="">
+									<span class="glyphicon"></span> Product Portfolio
+								</a>
+								<ul>
+									<li>
+										<a href="my-products.html#UUID-52e76968-f160-47d4-1716-5a3c52795bad_section-idm13441408327628" class="topic-link section" data-origin-id="" data-publication-date="">What is the Product Portfolio?</a>
+									</li>
+									<li>
+										<a href="my-products.html#UUID-52e76968-f160-47d4-1716-5a3c52795bad_section-idm13441408349106" class="topic-link section" data-origin-id="" data-publication-date="">Example Use Case</a>
+									</li>
+									<li>
+										<a href="my-products.html#UUID-52e76968-f160-47d4-1716-5a3c52795bad_section-idm234362724338407" class="topic-link section" data-origin-id="" data-publication-date="">Use the Products Portfolio</a>
+									</li>
+									<li>
+										<a href="my-products.html#UUID-52e76968-f160-47d4-1716-5a3c52795bad_section-idm234362724809433" class="topic-link section" data-origin-id="" data-publication-date="">My Products Board</a>
+									</li>
+									<li>
+										<a href="my-products.html#UUID-52e76968-f160-47d4-1716-5a3c52795bad_section-idm23436272522578" class="topic-link section" data-origin-id="" data-publication-date="">My Products Roadmap</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="my-value-streams.html" class="topic-link section" data-origin-id="UUID-25d3b50b-fa78-cd66-b17e-890a44f6279a" data-permalink="my-value-streams.html" data-topic-level="1" data-relative-prefix="" data-publication-date="">
+									<span class="glyphicon"></span> My Value Stream
+								</a>
+								<ul>
+									<li>
+										<a href="my-value-streams.html#UUID-f4b6651a-66bb-a119-07f5-4d01ff8acac3_section-idm234362740808945" class="topic-link section" data-origin-id="" data-publication-date="">Value Stream Portfolio</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="my-capabilities.html" class="topic-link section" data-origin-id="UUID-137d66a1-50c9-d453-1e63-e0319a13faca" data-permalink="my-capabilities.html" data-topic-level="1" data-relative-prefix="" data-publication-date="">
+									<span class="glyphicon"></span> My Capabilities
+								</a>
+								<ul>
+									<li>
+										<a href="my-capabilities.html#UUID-2a335d82-3afd-6c12-6ce0-221b7d7c0be5_section-idm234364146599903" class="topic-link section" data-origin-id="" data-publication-date="">My Capabilities Portfolio</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="my-accounts.html" class="topic-link section" data-origin-id="UUID-77d5b25e-2a5b-2828-59c4-47cf20812a4c" data-permalink="my-accounts.html" data-topic-level="1" data-relative-prefix="" data-publication-date="">
+									<span class="glyphicon"></span> Accounts Portfolio
+								</a>
+								<ul>
+									<li>
+										<a href="my-accounts.html#UUID-39a4199e-0054-8629-c750-daf815f18b89_section-idm13441408689432" class="topic-link section" data-origin-id="" data-publication-date="">What is the Accounts Portfolio OnePlan?</a>
+									</li>
+									<li>
+										<a href="my-accounts.html#UUID-39a4199e-0054-8629-c750-daf815f18b89_section-idm13441408822162" class="topic-link section" data-origin-id="" data-publication-date="">Example Use Case</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="professional-services-portfolio.html" class="topic-link section" data-origin-id="UUID-4f84e06a-b34d-697f-c64d-312dbcb17f5f" data-permalink="professional-services-portfolio.html" data-topic-level="1" data-relative-prefix="" data-publication-date="">
+									<span class="glyphicon"></span> Professional Services Portfolio
+								</a>
+								<ul>
+									<li>
+										<a href="professional-services-portfolio.html#UUID-912f47b2-b0ff-2ae6-cdb4-80b9948c7eb9_section-idm13441408689432" class="topic-link section" data-origin-id="" data-publication-date="">What is the Professional Services Portfolio?</a>
+									</li>
+									<li>
+										<a href="professional-services-portfolio.html#UUID-912f47b2-b0ff-2ae6-cdb4-80b9948c7eb9_section-idm13441408822162" class="topic-link section" data-origin-id="" data-publication-date="">Example Use Case</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="use-the-oneplan-resource-plan.html" class="topic-link section" data-origin-id="UUID-35dec534-f8c9-4209-f2c0-d8f71af3fd04" data-permalink="use-the-oneplan-resource-plan.html" data-topic-level="1" data-relative-prefix="" data-publication-date="">
+									<span class="glyphicon"></span> Resource Plan
+								</a>
+								<ul>
+									<li>
+										<a href="use-the-oneplan-resource-plan.html#UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm234911926628021" class="topic-link section accordion" data-origin-id="" data-publication-date="">Watch a video</a>
+									</li>
+									<li>
+										<a href="use-the-oneplan-resource-plan.html#UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm234911926938406" class="topic-link section accordion" data-origin-id="" data-publication-date="">Take a feature tour</a>
+									</li>
+									<li>
+										<a href="use-the-oneplan-resource-plan.html#UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm23491192789264" class="topic-link section accordion" data-origin-id="" data-publication-date="">
+											<span class="glyphicon"></span> Read an article
+										</a>
+										<ul>
+											<li>
+												<a href="use-the-oneplan-resource-plan.html#UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_UUID-c6fda736-f5e9-8887-b7ba-169fb9e1c570" class="topic-link section original-topic accordion" data-origin-id="" data-publication-date="">Resource Plans Overview</a>
+											</li>
+											<li>
+												<a href="use-the-oneplan-resource-plan.html#UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_UUID-3829406b-32b6-d4c9-ef5b-53c86823ac68" class="topic-link section internal accordion" data-origin-id="" data-publication-date="">Resource Plan Cost Types</a>
+											</li>
+											<li>
+												<a href="use-the-oneplan-resource-plan.html#UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_UUID-46f35fea-3342-bdc8-8088-6ebe753f7afd" class="topic-link section accordion" data-origin-id="" data-publication-date="">Resource Planning Units Mode</a>
+											</li>
+											<li>
+												<a href="use-the-oneplan-resource-plan.html#UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_UUID-713ca4e3-991b-3df6-7372-c60bfe590b07" class="topic-link section original-topic accordion" data-origin-id="" data-publication-date="">Build a Resource Plan</a>
+											</li>
+											<li>
+												<a href="use-the-oneplan-resource-plan.html#UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_UUID-d190a2ae-3fdf-d85e-8da6-88bcddd3d4cf" class="topic-link section original-topic accordion" data-origin-id="" data-publication-date="">Resource Plan Candidates List Overview</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="use-the-oneplan-resource-plan.html#UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm2349119280109" class="topic-link section accordion" data-origin-id="" data-publication-date="">Take a course</a>
+									</li>
+									<li>
+										<a href="use-the-oneplan-resource-plan.html#UUID-d9fd0aed-a6fc-f847-376d-ad56ebbe0de5_section-idm234353934286616" class="topic-link section accordion" data-origin-id="" data-publication-date="">Even more resources</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="time-off-overview.html" class="topic-link section" data-origin-id="UUID-4e6861df-5023-a355-fe9f-15a34ceeeb2b" data-permalink="time-off-overview.html" data-topic-level="1" data-relative-prefix="" data-publication-date="">
+									<span class="glyphicon"></span> Time Off
+								</a>
+								<ul>
+									<li>
+										<a href="time-off-overview.html#UUID-e14854f9-cabb-c616-47e3-51be609789a6_UUID-838fcfba-0067-55ce-f5b3-620ef8312f74" class="topic-link section accordion" data-origin-id="" data-publication-date="">Enter a Time Off Request</a>
+									</li>
+									<li>
+										<a href="time-off-overview.html#UUID-e14854f9-cabb-c616-47e3-51be609789a6_UUID-110cf635-e80e-4ed4-eda7-32da1fd0ad24" class="topic-link section accordion" data-origin-id="" data-publication-date="">
+											<span class="glyphicon"></span> Enter Time Off from the Timesheet
+										</a>
+										<ul>
+											<li>
+												<a href="time-off-overview.html#UUID-e14854f9-cabb-c616-47e3-51be609789a6_section-idm234628614375653" class="topic-link section" data-origin-id="" data-publication-date="">Enter a New Time Off Request</a>
+											</li>
+											<li>
+												<a href="time-off-overview.html#UUID-e14854f9-cabb-c616-47e3-51be609789a6_section-idm234628614524768" class="topic-link section" data-origin-id="" data-publication-date="">Time Off Displays in the Timesheet</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="time-off-overview.html#UUID-e14854f9-cabb-c616-47e3-51be609789a6_UUID-88ce5842-bd86-c87e-92f2-5213c13f9b26" class="topic-link section accordion" data-origin-id="" data-publication-date="">
+											<span class="glyphicon"></span> Time off request notifications and approvals
+										</a>
+										<ul>
+											<li>
+												<a href="time-off-overview.html#UUID-e14854f9-cabb-c616-47e3-51be609789a6_section-idm4502317487276832815989482658" class="topic-link section" data-origin-id="" data-publication-date="">Time off request notifications</a>
+											</li>
+											<li>
+												<a href="time-off-overview.html#UUID-e14854f9-cabb-c616-47e3-51be609789a6_section-idm4653149600918432815989607774" class="topic-link section" data-origin-id="" data-publication-date="">Approve or reject a time off request</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="visualizer-overview.html" class="topic-link section" data-origin-id="UUID-66a2aabc-41a0-9e55-b71e-822521cf5138" data-permalink="visualizer-overview.html" data-topic-level="1" data-relative-prefix="" data-publication-date="">
+									<span class="glyphicon"></span> Visualizer
+								</a>
+								<ul>
+									<li>
+										<a href="visualizer-overview.html#UUID-605468a6-f042-1cb9-79e8-b9b7a460632b_section-idm234911957755251" class="topic-link section accordion" data-origin-id="" data-publication-date="">Watch a video</a>
+									</li>
+									<li>
+										<a href="visualizer-overview.html#UUID-605468a6-f042-1cb9-79e8-b9b7a460632b_section-idm23491196478864" class="topic-link section accordion" data-origin-id="" data-publication-date="">
+											<span class="glyphicon"></span> Read an article
+										</a>
+										<ul>
+											<li>
+												<a href="visualizer-overview.html#UUID-605468a6-f042-1cb9-79e8-b9b7a460632b_UUID-72838b8d-5314-f58a-8f21-57458a948666" class="topic-link section accordion" data-origin-id="" data-publication-date="">Visualizer Overview</a>
+											</li>
+											<li>
+												<a href="visualizer-overview.html#UUID-605468a6-f042-1cb9-79e8-b9b7a460632b_UUID-f2e53039-9b62-3121-8853-349407b1f737" class="topic-link section accordion" data-origin-id="" data-publication-date="">Use the Visualizer Dependencies View</a>
+											</li>
+											<li>
+												<a href="visualizer-overview.html#UUID-605468a6-f042-1cb9-79e8-b9b7a460632b_UUID-b299c311-d93c-0229-601e-94a0345281ca" class="topic-link section accordion" data-origin-id="" data-publication-date="">Use the Visualizer Runway View</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="use-the-portfolio-modeler.html" class="topic-link section" data-origin-id="UUID-ffc5d9a3-2a14-cae3-7c64-52258ef460a7" data-permalink="use-the-portfolio-modeler.html" data-topic-level="1" data-relative-prefix="" data-publication-date="">
+									<span class="glyphicon"></span> Portfolio Modeler
+								</a>
+								<ul>
+									<li>
+										<a href="use-the-portfolio-modeler.html#UUID-50188665-c407-29a3-7e93-2c40646f3fff_section-idm13441410811232" class="topic-link section accordion" data-origin-id="" data-publication-date="">Watch a video</a>
+									</li>
+									<li>
+										<a href="use-the-portfolio-modeler.html#UUID-50188665-c407-29a3-7e93-2c40646f3fff_section-idm23491209641952" class="topic-link section accordion" data-origin-id="" data-publication-date="">Take a feature tour</a>
+									</li>
+									<li>
+										<a href="use-the-portfolio-modeler.html#UUID-50188665-c407-29a3-7e93-2c40646f3fff_section-idm13441410828372" class="topic-link section accordion" data-origin-id="" data-publication-date="">
+											<span class="glyphicon"></span> Read an article
+										</a>
+										<ul>
+											<li>
+												<a href="use-the-portfolio-modeler.html#UUID-50188665-c407-29a3-7e93-2c40646f3fff_UUID-73f33c37-581a-a7c6-266a-5a8907e45c97" class="topic-link section accordion" data-origin-id="" data-publication-date="">Create a Modeler Model</a>
+											</li>
+											<li>
+												<a href="use-the-portfolio-modeler.html#UUID-50188665-c407-29a3-7e93-2c40646f3fff_UUID-84156f7f-3244-d6bf-f651-ae3b76acf025" class="topic-link section accordion" data-origin-id="" data-publication-date="">Create a Model Scenario</a>
+											</li>
+											<li>
+												<a href="use-the-portfolio-modeler.html#UUID-50188665-c407-29a3-7e93-2c40646f3fff_UUID-6db70b7c-296b-ab06-73f4-14cc27934872" class="topic-link section accordion" data-origin-id="" data-publication-date="">Analyze Model Scenarios</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="use-the-portfolio-modeler.html#UUID-50188665-c407-29a3-7e93-2c40646f3fff_section-idm234362334625301" class="topic-link section accordion" data-origin-id="" data-publication-date="">Even more resources</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="oneplan-sofia-gpt-overview.html" class="topic-link section" data-origin-id="UUID-0f613516-4850-ba57-8884-126d305478cf" data-permalink="oneplan-sofia-gpt-overview.html" data-topic-level="1" data-relative-prefix="" data-publication-date="">
+									<span class="glyphicon"></span> Sofia GPT
+								</a>
+								<ul>
+									<li>
+										<a href="oneplan-sofia-gpt-overview.html#UUID-5579b43b-dbe1-ab9c-fb8e-5581e3464b3c_section-idm234917142344224" class="topic-link section accordion" data-origin-id="" data-publication-date="">Watch a Video</a>
+									</li>
+									<li>
+										<a href="oneplan-sofia-gpt-overview.html#UUID-5579b43b-dbe1-ab9c-fb8e-5581e3464b3c_section-idm23491714380433" class="topic-link section accordion" data-origin-id="" data-publication-date="">
+											<span class="glyphicon"></span> Read an article
+										</a>
+										<ul>
+											<li>
+												<a href="oneplan-sofia-gpt-overview.html#UUID-5579b43b-dbe1-ab9c-fb8e-5581e3464b3c_UUID-bb136174-3efe-5683-4d41-e59f13ef46e7" class="topic-link section accordion accordion" data-origin-id="" data-publication-date="">What is Sofia GPT?</a>
+											</li>
+											<li>
+												<a href="oneplan-sofia-gpt-overview.html#UUID-5579b43b-dbe1-ab9c-fb8e-5581e3464b3c_UUID-76559f5a-25a1-f671-38b9-c9b2c106cad8" class="topic-link section accordion accordion" data-origin-id="" data-publication-date="">How do I Use Sofia GPT?</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="oneplan-sofia-gpt-overview.html#UUID-5579b43b-dbe1-ab9c-fb8e-5581e3464b3c_section-idm234917145698567" class="topic-link section accordion" data-origin-id="" data-publication-date="">Even more resources</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="status-reports.html" class="topic-link section" data-origin-id="UUID-0a1a1114-e0e4-05cf-7521-255d57d48328" data-permalink="status-reports.html" data-topic-level="1" data-relative-prefix="" data-publication-date="">
+									<span class="glyphicon"></span> Status Reports
+								</a>
+								<ul>
+									<li>
+										<a href="status-reports.html#UUID-f1224cb7-50f3-9479-c5f1-8544809e0b14_section-idm13441410997380" class="topic-link section accordion" data-origin-id="" data-publication-date="">Watch a video</a>
+									</li>
+									<li>
+										<a href="status-reports.html#UUID-f1224cb7-50f3-9479-c5f1-8544809e0b14_section-idm13441411014042" class="topic-link section accordion" data-origin-id="" data-publication-date="">
+											<span class="glyphicon"></span> Read an article
+										</a>
+										<ul>
+											<li>
+												<a href="status-reports.html#UUID-f1224cb7-50f3-9479-c5f1-8544809e0b14_UUID-41c3210d-63fe-2405-970d-37e9e7ee4bd2" class="topic-link section original-topic" data-origin-id="" data-publication-date="">Create, Update, and Submit Status Reports</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="status-reports.html#UUID-f1224cb7-50f3-9479-c5f1-8544809e0b14_section-idm23436275926881" class="topic-link section accordion" data-origin-id="" data-publication-date="">Even more resources</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="plan-details-overview.html" class="topic-link section" data-origin-id="UUID-556c64d6-34ad-a3a6-c2fd-3a550957d0a5" data-permalink="plan-details-overview.html" data-topic-level="1" data-relative-prefix="" data-publication-date="">
+									<span class="glyphicon"></span> Plan Details
+								</a>
+								<ul>
+									<li>
+										<a href="plan-details-overview.html#UUID-896654bd-2d3a-73d5-bdcd-01d8999c35bd_section-idm234912156171683" class="topic-link section accordion" data-origin-id="" data-publication-date="">Watch a Video</a>
+									</li>
+									<li>
+										<a href="plan-details-overview.html#UUID-896654bd-2d3a-73d5-bdcd-01d8999c35bd_section-idm234912158889709" class="topic-link section accordion" data-origin-id="" data-publication-date="">
+											<span class="glyphicon"></span> Read an article
+										</a>
+										<ul>
+											<li>
+												<a href="plan-details-overview.html#UUID-896654bd-2d3a-73d5-bdcd-01d8999c35bd_UUID-75e343de-0946-c9f3-ec9a-f2ba82a93717" class="topic-link section accordion" data-origin-id="" data-publication-date="">Plan Details Overview</a>
+											</li>
+											<li>
+												<a href="plan-details-overview.html#UUID-896654bd-2d3a-73d5-bdcd-01d8999c35bd_UUID-728cd1f1-4c02-844a-55b7-15f11c851184" class="topic-link section original-topic accordion" data-origin-id="" data-publication-date="">Edit the Plan Details Form</a>
+											</li>
+											<li>
+												<a href="plan-details-overview.html#UUID-896654bd-2d3a-73d5-bdcd-01d8999c35bd_UUID-79d33593-ff02-33bc-7337-5fadee4bff4c" class="topic-link section accordion" data-origin-id="" data-publication-date="">Use OnePlan Stage Gate Workflows for Process Steps</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="plan-details-overview.html#UUID-896654bd-2d3a-73d5-bdcd-01d8999c35bd_section-idm234912156433617" class="topic-link section accordion" data-origin-id="" data-publication-date="">Take a course</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="financial-plan.html" class="topic-link section" data-origin-id="UUID-5cf6122f-d1a1-0ca8-fa8f-f5143438f236" data-permalink="financial-plan.html" data-topic-level="1" data-relative-prefix="" data-publication-date="">
+									<span class="glyphicon"></span> Financial Plan
+								</a>
+								<ul>
+									<li>
+										<a href="financial-plan.html#UUID-6bda6906-0b71-1fa2-65aa-f1dd14b50950_section-idm13441410138676" class="topic-link section accordion" data-origin-id="" data-publication-date="">Watch a video</a>
+									</li>
+									<li>
+										<a href="financial-plan.html#UUID-6bda6906-0b71-1fa2-65aa-f1dd14b50950_section-idm234912209397449" class="topic-link section accordion" data-origin-id="" data-publication-date="">
+											<span class="glyphicon"></span> Read an article
+										</a>
+										<ul>
+											<li>
+												<a href="financial-plan.html#UUID-6bda6906-0b71-1fa2-65aa-f1dd14b50950_UUID-4a2f62f7-75e1-5d57-ab94-59417b612478" class="topic-link section original-topic accordion" data-origin-id="" data-publication-date="">Build a Financial Plan</a>
+											</li>
+											<li>
+												<a href="financial-plan.html#UUID-6bda6906-0b71-1fa2-65aa-f1dd14b50950_UUID-210f8a0d-d106-2102-f19a-75e72441c4d9" class="topic-link section original-topic accordion" data-origin-id="" data-publication-date="">Get Around the Financial Planner</a>
+											</li>
+											<li>
+												<a href="financial-plan.html#UUID-6bda6906-0b71-1fa2-65aa-f1dd14b50950_UUID-efbfd9e6-f82b-f392-cb4d-70afcae4484f" class="topic-link section accordion" data-origin-id="" data-publication-date="">Create and Save Financial Planner Views</a>
+											</li>
+											<li>
+												<a href="financial-plan.html#UUID-6bda6906-0b71-1fa2-65aa-f1dd14b50950_UUID-65bb809b-a8fb-cc2d-c155-944f41de52d3" class="topic-link section accordion" data-origin-id="" data-publication-date="">Import and Export Costs to/from the Financial Planner</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="financial-plan.html#UUID-6bda6906-0b71-1fa2-65aa-f1dd14b50950_section-idm234362765479529" class="topic-link section accordion" data-origin-id="" data-publication-date="">Take a course</a>
+									</li>
+									<li>
+										<a href="financial-plan.html#UUID-6bda6906-0b71-1fa2-65aa-f1dd14b50950_section-idm23491221803775" class="topic-link section accordion" data-origin-id="" data-publication-date="">Even more resources</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="microsoft-teams.html" class="topic-link section" data-origin-id="UUID-6246ceeb-7791-165c-886f-ec9e3f004bb3" data-permalink="microsoft-teams.html" data-topic-level="1" data-relative-prefix="" data-publication-date="">
+									<span class="glyphicon"></span> Microsoft Teams
+								</a>
+								<ul>
+									<li>
+										<a href="microsoft-teams.html#UUID-ecde8553-384d-d8f6-3a47-7a254a935c9e_section-idm13441412444824" class="topic-link section accordion" data-origin-id="" data-publication-date="">Watch a video</a>
+									</li>
+									<li>
+										<a href="microsoft-teams.html#UUID-ecde8553-384d-d8f6-3a47-7a254a935c9e_section-idm234912171903553" class="topic-link section accordion" data-origin-id="" data-publication-date="">
+											<span class="glyphicon"></span> Read an article
+										</a>
+										<ul>
+											<li>
+												<a href="microsoft-teams.html#UUID-ecde8553-384d-d8f6-3a47-7a254a935c9e_section-idm23491218016942" class="topic-link section accordion" data-origin-id="" data-publication-date="">Enable the OnePlan and Microsoft Teams Integration</a>
+											</li>
+											<li>
+												<a href="microsoft-teams.html#UUID-ecde8553-384d-d8f6-3a47-7a254a935c9e_section-idm234912176846395" class="topic-link section accordion" data-origin-id="" data-publication-date="">Auto Create a Team for New OnePlan Plans in Microsoft Teams</a>
+											</li>
+											<li>
+												<a href="microsoft-teams.html#UUID-ecde8553-384d-d8f6-3a47-7a254a935c9e_section-idm234912177533467" class="topic-link section accordion" data-origin-id="" data-publication-date="">Manually Create a Team for a OnePlan Plan in Microsoft Teams</a>
+											</li>
+											<li>
+												<a href="microsoft-teams.html#UUID-ecde8553-384d-d8f6-3a47-7a254a935c9e_section-idm23491217811977" class="topic-link section accordion" data-origin-id="" data-publication-date="">Create a Team for a OnePlan Group in Microsoft Teams</a>
+											</li>
+											<li>
+												<a href="microsoft-teams.html#UUID-ecde8553-384d-d8f6-3a47-7a254a935c9e_section-idm234912178552387" class="topic-link section accordion" data-origin-id="" data-publication-date="">Connect a OnePlan Plan to an Existing Team and/or Channel in Microsoft Teams</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="microsoft-teams.html#UUID-ecde8553-384d-d8f6-3a47-7a254a935c9e_section-idm234362782727249" class="topic-link section accordion" data-origin-id="" data-publication-date="">Even more resources</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="dashboard.html" class="topic-link section" data-origin-id="UUID-eb5b6d27-0dc7-34a5-60b0-22cf33942886" data-permalink="dashboard.html" data-topic-level="1" data-relative-prefix="" data-publication-date="">
+									<span class="glyphicon"></span> Dashboard
+								</a>
+								<ul>
+									<li>
+										<a href="dashboard.html#UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78_section-idm234912222654023" class="topic-link section accordion" data-origin-id="" data-publication-date="">Watch a video</a>
+									</li>
+									<li>
+										<a href="dashboard.html#UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78_section-idm234912223541952" class="topic-link section accordion" data-origin-id="" data-publication-date="">Take a feature tour</a>
+									</li>
+									<li>
+										<a href="dashboard.html#UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78_section-idm234912223070273" class="topic-link section accordion" data-origin-id="" data-publication-date="">
+											<span class="glyphicon"></span> Read an article
+										</a>
+										<ul>
+											<li>
+												<a href="dashboard.html#UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78_section-idm234912225578086" class="topic-link section accordion" data-origin-id="" data-publication-date="">OnePlan Power BI Reporting Dashboards Overview</a>
+											</li>
+											<li>
+												<a href="dashboard.html#UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78_UUID-8ca397ca-213c-a245-e913-a31f2f3e8780" class="topic-link section original-topic accordion" data-origin-id="" data-publication-date="">Configure OnePlan Reporting Dashboards</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="dashboard.html#UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78_section-idm23491222323056" class="topic-link section accordion" data-origin-id="" data-publication-date="">Take a course</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="notifications.html" class="topic-link section" data-origin-id="UUID-f22f49c1-63b5-8f49-0a62-906efdc79159" data-permalink="notifications.html" data-topic-level="1" data-relative-prefix="" data-publication-date="">Notifications</a>
+							</li>
+							<li>
+								<a href="integrations.html" class="topic-link section" data-origin-id="UUID-cba9304c-f5dc-3c6b-bf0e-db9f08fad450" data-permalink="integrations.html" data-topic-level="1" data-relative-prefix="" data-publication-date="">
+									<span class="glyphicon"></span> Integrations
+								</a>
+								<ul>
+									<li>
+										<a href="integrations.html#UUID-f66c28c7-45ac-cab5-146e-935d6468a20c_section-idm234912235879254" class="topic-link section accordion" data-origin-id="" data-publication-date="">Watch a video</a>
+									</li>
+									<li>
+										<a href="integrations.html#UUID-f66c28c7-45ac-cab5-146e-935d6468a20c_section-idm234912236607016" class="topic-link section accordion" data-origin-id="" data-publication-date="">
+											<span class="glyphicon"></span> Read an article
+										</a>
+										<ul>
+											<li>
+												<a href="integrations.html#UUID-f66c28c7-45ac-cab5-146e-935d6468a20c_section-idm234912238238728" class="topic-link section accordion" data-origin-id="" data-publication-date="">OneConnect Overview</a>
+											</li>
+											<li>
+												<a href="integrations.html#UUID-f66c28c7-45ac-cab5-146e-935d6468a20c_section-idm234364392372522" class="topic-link section accordion" data-origin-id="" data-publication-date="">OnePlan Integration Settings</a>
+											</li>
+											<li>
+												<a href="integrations.html#UUID-f66c28c7-45ac-cab5-146e-935d6468a20c_section-idm234364393177168" class="topic-link section accordion" data-origin-id="" data-publication-date="">Link your OnePlan Group to your OneConnect Group</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="integrations.html#UUID-f66c28c7-45ac-cab5-146e-935d6468a20c_section-idm234364383091454" class="topic-link section accordion" data-origin-id="" data-publication-date="">Even more resources</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="what-are-work-types-and-how-do-i-use-them-.html" class="topic-link section" data-origin-id="UUID-7843c140-bffc-00ff-76e9-381d72dc8f53" data-permalink="what-are-work-types-and-how-do-i-use-them-.html" data-topic-level="1" data-relative-prefix="" data-publication-date="">
+									<span class="glyphicon"></span> Work Types
+								</a>
+								<ul>
+									<li>
+										<a href="what-are-work-types-and-how-do-i-use-them-.html#UUID-443c0dc7-f096-cbef-ac89-381571d11be7_section-idm234912252268522" class="topic-link section accordion" data-origin-id="" data-publication-date="">Watch a video</a>
+									</li>
+									<li>
+										<a href="what-are-work-types-and-how-do-i-use-them-.html#UUID-443c0dc7-f096-cbef-ac89-381571d11be7_section-idm234912252093377" class="topic-link section accordion" data-origin-id="" data-publication-date="">
+											<span class="glyphicon"></span> Read an article
+										</a>
+										<ul>
+											<li>
+												<a href="what-are-work-types-and-how-do-i-use-them-.html#UUID-443c0dc7-f096-cbef-ac89-381571d11be7_UUID-49bc5276-b86a-d3c6-04b4-b72433aa51b8" class="topic-link section original-topic accordion" data-origin-id="" data-publication-date="">Use Work Types in the Work Planner</a>
+											</li>
+											<li>
+												<a href="what-are-work-types-and-how-do-i-use-them-.html#UUID-443c0dc7-f096-cbef-ac89-381571d11be7_UUID-c073bf3a-7a5d-fd48-32eb-c4c96bb5cf5f" class="topic-link section accordion" data-origin-id="" data-publication-date="">Pull Work Items from a Work Type Log into the Main Schedule</a>
+											</li>
+											<li>
+												<a href="what-are-work-types-and-how-do-i-use-them-.html#UUID-443c0dc7-f096-cbef-ac89-381571d11be7_UUID-1da243de-eb02-afa5-0dde-aae47732ea8a" class="topic-link section accordion" data-origin-id="" data-publication-date="">Select Work Types for Your Plan</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="project-professional.html" class="topic-link section" data-origin-id="UUID-ca3a71d1-1f2f-f779-c1c3-97fe6a559239" data-permalink="project-professional.html" data-topic-level="1" data-relative-prefix="" data-publication-date="">
+									<span class="glyphicon"></span> Project Professional
+								</a>
+								<ul>
+									<li>
+										<a href="project-professional.html#UUID-62b1fe80-14ef-fb6f-4f46-4d1cdeb81adc_section-idm13441411616486" class="topic-link section accordion" data-origin-id="" data-publication-date="">Watch a video</a>
+									</li>
+									<li>
+										<a href="project-professional.html#UUID-62b1fe80-14ef-fb6f-4f46-4d1cdeb81adc_section-idm234912265047249" class="topic-link section accordion" data-origin-id="" data-publication-date="">
+											<span class="glyphicon"></span> Read an article
+										</a>
+										<ul>
+											<li>
+												<a href="project-professional.html#UUID-62b1fe80-14ef-fb6f-4f46-4d1cdeb81adc_section-idm234364448431894" class="topic-link section accordion" data-origin-id="" data-publication-date="">Use the OnePlan for Project Connector</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="use-the-work-plan-board.html" class="topic-link section" data-origin-id="UUID-d03dbb64-7ba1-ec39-576e-0670ad5fab30" data-permalink="use-the-work-plan-board.html" data-topic-level="1" data-relative-prefix="" data-publication-date="">
+									<span class="glyphicon"></span> Work Plan Board
+								</a>
+								<ul>
+									<li>
+										<a href="use-the-work-plan-board.html#UUID-25efc85a-6d91-86ad-9853-eedc1e60802c_section-idm234912259263927" class="topic-link section accordion" data-origin-id="" data-publication-date="">
+											<span class="glyphicon"></span> Read an article
+										</a>
+										<ul>
+											<li>
+												<a href="use-the-work-plan-board.html#UUID-25efc85a-6d91-86ad-9853-eedc1e60802c_UUID-3e922ed6-d568-00f6-5ec1-650075a3c381" class="topic-link section original-topic" data-origin-id="" data-publication-date="">Use the Work Plan Board</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="use-the-work-plan-board.html#UUID-25efc85a-6d91-86ad-9853-eedc1e60802c_section-idm234912259373668" class="topic-link section accordion" data-origin-id="" data-publication-date="">Take a course</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="use-the-oneplan-work-plan.html" class="topic-link section" data-origin-id="UUID-84217b87-7a81-f01d-d1d5-50a352197f12" data-permalink="use-the-oneplan-work-plan.html" data-topic-level="1" data-relative-prefix="" data-publication-date="">
+									<span class="glyphicon"></span> Work Plan List
+								</a>
+								<ul>
+									<li>
+										<a href="use-the-oneplan-work-plan.html#UUID-9de0b2b2-7093-c3ff-2fc1-792e60c5290f_section-idm234911879461241" class="topic-link section accordion" data-origin-id="" data-publication-date="">Watch a video</a>
+									</li>
+									<li>
+										<a href="use-the-oneplan-work-plan.html#UUID-9de0b2b2-7093-c3ff-2fc1-792e60c5290f_section-idm234911879995083" class="topic-link section accordion" data-origin-id="" data-publication-date="">Take a feature tour</a>
+									</li>
+									<li>
+										<a href="use-the-oneplan-work-plan.html#UUID-9de0b2b2-7093-c3ff-2fc1-792e60c5290f_section-idm234911882512249" class="topic-link section accordion" data-origin-id="" data-publication-date="">
+											<span class="glyphicon"></span> Read an article
+										</a>
+										<ul>
+											<li>
+												<a href="use-the-oneplan-work-plan.html#UUID-9de0b2b2-7093-c3ff-2fc1-792e60c5290f_UUID-971af697-887e-1a2d-cf39-5680a766502a" class="topic-link section original-topic accordion" data-origin-id="" data-publication-date="">Work Plan List Overview</a>
+											</li>
+											<li>
+												<a href="use-the-oneplan-work-plan.html#UUID-9de0b2b2-7093-c3ff-2fc1-792e60c5290f_UUID-95301b09-53b3-e8ef-93ef-478e8409545a" class="topic-link section original-topic accordion" data-origin-id="" data-publication-date="">Add Work Items to the Work Plan List</a>
+											</li>
+											<li>
+												<a href="use-the-oneplan-work-plan.html#UUID-9de0b2b2-7093-c3ff-2fc1-792e60c5290f_UUID-79883e5d-f995-81be-eb76-aeec1d4e7c00" class="topic-link section accordion" data-origin-id="" data-publication-date="">Assign Resources to Work Items in the Work Plan List</a>
+											</li>
+											<li>
+												<a href="use-the-oneplan-work-plan.html#UUID-9de0b2b2-7093-c3ff-2fc1-792e60c5290f_UUID-7f5dce17-f85e-2ed0-14ca-afe4c4b90658" class="topic-link section accordion" data-origin-id="" data-publication-date="">Save Changes in the Work Plan</a>
+											</li>
+											<li>
+												<a href="use-the-oneplan-work-plan.html#UUID-9de0b2b2-7093-c3ff-2fc1-792e60c5290f_UUID-49bc5276-b86a-d3c6-04b4-b72433aa51b8" class="topic-link section original-topic accordion" data-origin-id="" data-publication-date="">Use Work Types in the Work Planner</a>
+											</li>
+											<li>
+												<a href="use-the-oneplan-work-plan.html#UUID-9de0b2b2-7093-c3ff-2fc1-792e60c5290f_UUID-f83f4dcb-e7c2-c2ea-e9a6-8a8531d11749" class="topic-link section accordion" data-origin-id="" data-publication-date="">Task Dependencies</a>
+											</li>
+											<li>
+												<a href="use-the-oneplan-work-plan.html#UUID-9de0b2b2-7093-c3ff-2fc1-792e60c5290f_UUID-516fc7db-d554-f513-9ec9-0f7a52df9572" class="topic-link section accordion" data-origin-id="" data-publication-date="">Constraints</a>
+											</li>
+											<li>
+												<a href="use-the-oneplan-work-plan.html#UUID-9de0b2b2-7093-c3ff-2fc1-792e60c5290f_UUID-feb8b782-532f-8fb9-256d-25e470b971a7" class="topic-link section original-topic accordion" data-origin-id="" data-publication-date="">Modify and Save Views in the Work Plan List</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="use-the-oneplan-work-plan.html#UUID-9de0b2b2-7093-c3ff-2fc1-792e60c5290f_section-idm234911884576333" class="topic-link section accordion" data-origin-id="" data-publication-date="">Take a course</a>
+									</li>
+									<li>
+										<a href="use-the-oneplan-work-plan.html#UUID-9de0b2b2-7093-c3ff-2fc1-792e60c5290f_section-idm234911908130997" class="topic-link section accordion" data-origin-id="" data-publication-date="">Even more resources</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</aside>
+					<div class="site-content">
+						<h1 class="publication-title">New In Product Help</h1>
+						<div class="toolbar">
+							<div class="toolbar-tools">
+								<div id="navbar" class="navbar-collapse collapse"></div>
+								<div class="tool-print">
+									<i class="fa fa-print" aria-hidden="true">print</i>
+								</div>
+								<div class="tool-search">
+									<i class="fa fa-search" aria-hidden="true"></i>
+								</div>
+								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".site-sidebar" aria-expanded="false" aria-controls="navbar">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+							</div>
+							<div class="breadcrumb-container">
+								<ul class="breadcrumb">
+									<li class="breadcrumb-link">
+										<a href="index-en.html">New In Product Help</a>
+									</li>
+									<li class="breadcrumb-node">Dashboard</li>
+								</ul>
+							</div>
+						</div>
+						<main>
+							<div id="top-pager">
+								<ul class="pager">
+									<li class="previous">
+										<a accesskey="p" class="prev pull-left prev visible-lg visible-md" id="header-navigation-prev" href="microsoft-teams.html#UUID-ecde8553-384d-d8f6-3a47-7a254a935c9e_section-idm234362782727249">Prev</a>
+									</li>
+									<li class="next">
+										<a accesskey="n" class="pull-right next visible-lg visible-md" id="header-navigation-next" href="dashboard.html#UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78_section-idm234912222654023">Next</a>
+									</li>
+								</ul>
+							</div>
+							<article class="topic content-container" id="content-wrapper">
+								<div id="topic-content" class="topic-content">
+									<section xml:lang="en" lang="en" dir="ltr" class="section" data-origin-id="UUID-eb5b6d27-0dc7-34a5-60b0-22cf33942886" data-permalink="dashboard.html" data-topic-level="1" data-relative-prefix="" data-publication-date="" id="UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78">
+										<div class="titlepage">
+											<div>
+												<div class="title">
+													<h2 class="title" style="clear: both">Dashboard</h2>
+												</div>
+											</div>
+										</div>
+										<p>As an Executive, it is important to have insights into how the portfolio is performing. With the OnePlan's native reporting dashboards and our robust Power BI Report Pack dashboards, you have all the information you will ever need in one place.</p>
+										<section dir="ltr" class="section accordion" data-origin-id="" data-publication-date="" id="UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78_section-idm234912222654023">
+											<div class="accordion-icon"></div>
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<div class="titlepage">
+														<a data-toggle="collapse" href="#UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78_section-idm234912222654023_body" data-parent="#UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78_section-idm234912222654023">
+															<div>
+																<div class="title">
+																	<h3 class="title">Watch a video</h3>
+																</div>
+															</div>
+														</a>
+													</div>
+												</div>
+												<div class="panel-body collapse" id="UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78_section-idm234912222654023_body">
+													<div class="mediaobject">
+														<div class="video-container">
+															<div class="videoobject">
+																<iframe title="" style="border:0;" allow="fullscreen *" src="https://player.vimeo.com/video/557325295"></iframe>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</section>
+										<section dir="ltr" class="section accordion" data-origin-id="" data-publication-date="" id="UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78_section-idm234912223541952">
+											<div class="accordion-icon"></div>
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<div class="titlepage">
+														<a data-toggle="collapse" href="#UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78_section-idm234912223541952_body" data-parent="#UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78_section-idm234912223541952">
+															<div>
+																<div class="title">
+																	<h3 class="title">Take a feature tour</h3>
+																</div>
+															</div>
+														</a>
+													</div>
+												</div>
+												<div class="panel-body collapse" id="UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78_section-idm234912223541952_body">
+													<div>
+														<script async src="https://js.storylane.io/js/v2/storylane.js"></script>
+														<div class="sl-embed" style="position:relative;padding-bottom:calc(57.99% + 25px);width:100%;height:0;transform:scale(1)">
+														  <iframe loading="lazy" class="sl-demo" src="https://app.storylane.io/demo/2lrs1z8af06b?embed=inline" name="sl-embed" allow="fullscreen" allowfullscreen style="position:absolute;top:0;left:0;width:100%!important;height:100%!important;border:1px solid rgba(63,95,172,0.35);box-shadow: 0px 0px 18px rgba(26, 19, 72, 0.15);border-radius:10px;box-sizing:border-box;"></iframe>
+														</div>
+													  </div>
+												</div>
+											</div>
+										</section>
+										<section dir="ltr" class="section accordion" data-origin-id="" data-publication-date="" id="UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78_section-idm234912223070273">
+											<div class="accordion-icon"></div>
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<div class="titlepage">
+														<a data-toggle="collapse" href="#UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78_section-idm234912223070273_body" data-parent="#UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78_section-idm234912223070273">
+															<div>
+																<div class="title">
+																	<h3 class="title">Read an article</h3>
+																</div>
+															</div>
+														</a>
+													</div>
+												</div>
+												<div class="panel-body collapse" id="UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78_section-idm234912223070273_body">
+													<p>Want to learn more about OnePlan's Reporting Dashboard capabilities? Check out our 
+														<a class="link" href="https://support.oneplan.ai/hc/en-us/sections/360013294951-Reports" target="_blank" rel="noopener">Native OnePlan Dashboard documentation</a>, and our 
+														<a class="link" href="https://support.oneplan.ai/hc/en-us/sections/4410892786957-Report-Deployment" target="_blank" rel="noopener">Power BI Dashboard documentation</a>.
+													</p>
+													<section dir="ltr" class="section accordion" data-origin-id="" data-publication-date="" id="UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78_section-idm234912225578086">
+														<div class="accordion-icon"></div>
+														<div class="panel panel-default">
+															<div class="panel-heading">
+																<div class="titlepage">
+																	<a data-toggle="collapse" href="#UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78_section-idm234912225578086_body" data-parent="#UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78_section-idm234912225578086">
+																		<div>
+																			<div class="title">
+																				<h4 class="title">OnePlan Power BI Reporting Dashboards Overview</h4>
+																			</div>
+																		</div>
+																	</a>
+																</div>
+															</div>
+															<div class="panel-body collapse" id="UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78_section-idm234912225578086_body">
+																<div class="panel-inner">
+																	<section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78_section-idm23436430742111">
+																		<div class="titlepage">
+																			<div>
+																				<div class="title">
+																					<h5 class="title">Diving Into the Report Pack</h5>
+																				</div>
+																			</div>
+																		</div>
+																		<p>Click on 
+																			<span class="bold">
+																				<strong>Ideas Dashboard</strong>
+																			</span>. This Ideas Dashboard report page displays new idea intake rates, idea prioritization, budgets, and main data points.
+																		</p>
+																		<div class="mediaobject">
+																			<img src="image/img-ccebce17deda4a82cbd30437f7434fc1.png" style="" alt="Trial_Guide_-_Dashboard_-_Ideas.png"></img>
+																		</div>
+																		<p>Click on the 
+																			<span class="bold">
+																				<strong>Objective Status</strong>
+																			</span>. This Objective Status report page displays the progress of your objectives as well as their related key results.
+																		</p>
+																		<div class="mediaobject">
+																			<img src="image/img-f1b259cde2a6c713a12aa28002d401dd.png" style="" alt="Trial_Guide_-_Dashboard_-_Objective_Status.png"></img>
+																		</div>
+																		<p>Click on 
+																			<span class="bold">
+																				<strong>Portfolio Summary.</strong>
+																			</span> This dashboard displays your Portfolio's overall status, including budgets, actuals, and ROIs.
+																		</p>
+																		<div class="mediaobject">
+																			<img src="image/img-c29bc7bb39a7710efbd0b1a1d12b276f.png" style="" alt="Trial_Guide_-_Dashboard_-_Portfolio_Summary.png"></img>
+																		</div>
+																		<p>You can slice the data any way you want.</p>
+																		<p>Change the 
+																			<span class="bold">
+																				<strong>Business Unit</strong>
+																			</span> filter to 
+																			<span class="bold">
+																				<strong>IT</strong>
+																			</span> and note how the dashboard changes. The graphs and tables only display data related to the IT Business Unit.
+																		</p>
+																		<div class="mediaobject">
+																			<img src="image/img-b3e25455d05a6663b6c117f84ca79525.png" style="" alt="Trial_Guide_-_Dashboard_-_Portfolio_Summary_-_IT_Filter.png"></img>
+																		</div>
+																		<p>Go back to the 
+																			<span class="bold">
+																				<strong>Business Unit</strong>
+																			</span> filter, and click 
+																			<span class="bold">
+																				<strong>Select All</strong>
+																			</span>.
+																		</p>
+																		<div class="mediaobject">
+																			<img src="image/img-06ed60010983509efcac7d5e0dcd49df.png" style="" alt="Trial_Guide_-_Dashboard_-_Portfolio_Summary_-_All_Filter.png"></img>
+																		</div>
+																	</section>
+																	<section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78_section-idm234364310220887">
+																		<div class="titlepage">
+																			<div>
+																				<div class="title">
+																					<h5 class="title">Drill Through</h5>
+																				</div>
+																			</div>
+																		</div>
+																		<p>You can even drill into these dashboards for more information. For example, what if you want to learn more about one of the Portfolios in this dashboard?</p>
+																		<p>Right-click on 
+																			<span class="bold">
+																				<strong>Data Analytic Transformation</strong>
+																			</span>, click 
+																			<span class="bold">
+																				<strong>Drill Through</strong>
+																			</span>, and then 
+																			<span class="bold">
+																				<strong>Portfolio Details</strong>
+																			</span>.
+																		</p>
+																		<div class="mediaobject">
+																			<img src="image/img-d3e6167d618cb1606659d5b084900b98.png" style="" alt="Trial_Guide_-_Dashboard_-_Portfolio_Summary_-_Drill_Through.png"></img>
+																		</div>
+																		<p>Now you are looking at the Programs for this Portfolio.</p>
+																		<div class="mediaobject">
+																			<img src="image/img-b5749be70292943b631cb7f697a2e6d3.png" style="" alt="Trial_Guide_-_Dashboard_-_Portfolio_Summary_-_Drill_Through_-_Dashboard.png"></img>
+																		</div>
+																		<p>Let’s drill in further to the Project and Epic level.</p>
+																		<p>Right-click on 
+																			<span class="bold">
+																				<strong>Enterprise Data Platform</strong>
+																			</span>, click 
+																			<span class="bold">
+																				<strong>Drill Through</strong>
+																			</span>, and then 
+																			<span class="bold">
+																				<strong>Program Details</strong>
+																			</span>.
+																		</p>
+																		<div class="mediaobject">
+																			<img src="image/img-499461504c2466a423c808c619c8e77a.png" style="" alt="Trial_Guide_-_Dashboard_-_Portfolio_Summary_-_Drill_Through_-_Project_Dashboard.png"></img>
+																		</div>
+																		<p>Now we are looking at a list of Projects and Epic in the Enterprise Data Platform program.</p>
+																		<div class="mediaobject">
+																			<img src="image/img-2e5123b37d871b739173905d01a37008.png" style="" alt="Trial_Guide_-_Dashboard_-_Portfolio_Summary_-_Drill_Through_-_Enterprise_Data_Platform_Details.png"></img>
+																		</div>
+																		<p>You can change the data on the dashboard. Maybe you want to look at health indicators.</p>
+																		<p>Click the 
+																			<span class="bold">
+																				<strong>Status</strong>
+																			</span> radio button.
+																		</p>
+																		<div class="mediaobject">
+																			<img src="image/img-9e7d92e528f7d0ca167d978c2f96d7a1.png" style="" alt="Trial_Guide_-_Dashboard_-_Portfolio_Summary_-_Drill_Through_-_Enterprise_Data_Platform_Details_-_Status.png"></img>
+																		</div>
+																		<p>Or maybe you want to view financial information.</p>
+																		<p>Click the 
+																			<span class="bold">
+																				<strong>Financial</strong>
+																			</span> radio button.
+																		</p>
+																		<div class="mediaobject">
+																			<img src="image/img-e119b51421a178ee910547e630bddb69.png" style="" alt="Trial_Guide_-_Dashboard_-_Portfolio_Summary_-_Drill_Through_-_Enterprise_Data_Platform_Details_-_Financials.png"></img>
+																		</div>
+																		<p>Or perhaps you are interested in seeing how well the program is being executed overall.</p>
+																		<p>Click the 
+																			<span class="bold">
+																				<strong>Execution</strong>
+																			</span> radio button.
+																		</p>
+																		<div class="mediaobject">
+																			<img src="image/img-0226ae9d2604791de20d23b459427127.png" style="" alt="Trial_Guide_-_Dashboard_-_Portfolio_Summary_-_Drill_Through_-_Enterprise_Data_Platform_Details_-_Execution.png"></img>
+																		</div>
+																	</section>
+																	<section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78_section-idm234364312505546">
+																		<div class="titlepage">
+																			<div>
+																				<div class="title">
+																					<h5 class="title">Risk Management</h5>
+																				</div>
+																			</div>
+																		</div>
+																		<p>Maybe you want to look at a portfolio of risks to better understand the potential risks of the portfolio.</p>
+																		<p>Click the 
+																			<span class="bold">
+																				<strong>Risk Summary</strong>
+																			</span> tab.
+																		</p>
+																		<div class="mediaobject">
+																			<img src="image/img-e963c7ba6a47fc684b12bcaea1a85937.png" style="" alt="Trial_Guide_-_Dashboard_-_Risk_Summary.png"></img>
+																		</div>
+																		<p>You can slice this data by just clicking on a piece of the graph.</p>
+																		<p>Select the 
+																			<span class="bold">
+																				<strong>High</strong>
+																			</span> slice of pie in the 
+																			<span class="bold">
+																				<strong>Risks by Impact</strong>
+																			</span> pie chart.
+																		</p>
+																		<div class="mediaobject">
+																			<img src="image/img-4b3c753522e40688ed0322d70e297ba6.png" style="" alt="Trial_Guide_-_Dashboard_-_Risk_Summary_-_High.png"></img>
+																		</div>
+																	</section>
+																	<section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78_section-idm234364313764729">
+																		<div class="titlepage">
+																			<div>
+																				<div class="title">
+																					<h5 class="title">Trend Analysis</h5>
+																				</div>
+																			</div>
+																		</div>
+																		<p>You may also want to know how the portfolio is trending. Are we getting better or worse?</p>
+																		<p>Click on the 
+																			<span class="bold">
+																				<strong>Health Trend</strong>
+																			</span> tab.
+																		</p>
+																		<div class="mediaobject">
+																			<img src="image/img-6c1c95a035061ba19b7c92d2adadd781.png" style="" alt="Trial_Guide_-_Dashboard_-_Health_Trend.png"></img>
+																		</div>
+																		<p>In this dashboard, you can see how the different status fields have been trending over the past few months.</p>
+																		<p>Click on the 
+																			<span class="bold">
+																				<strong>Detail Trend</strong>
+																			</span> tab.
+																		</p>
+																		<div class="mediaobject">
+																			<img src="image/img-55a62793d0af30907018f456c362a4ee.png" style="" alt="Trial_Guide_-_Dashboard_-_Detail_Trend.png"></img>
+																		</div>
+																		<p>In this dashboard, I can trend on specific fields like Budget, and Effort fields.</p>
+																		<p>Click on the 
+																			<span class="bold">
+																				<strong>Work Trend</strong>
+																			</span> tab.
+																		</p>
+																		<p>In the dashboard, I can see work trends on # of late tasks, active issues, and much more.</p>
+																		<div class="mediaobject">
+																			<img src="image/img-46e5c4c83d72d2688af566b9c39b0204.png" style="" alt="Trial_Guide_-_Dashboard_-_Work_Trend.png"></img>
+																		</div>
+																	</section>
+																</div>
+															</div>
+														</div>
+													</section>
+													<section xml:lang="en" lang="en" dir="ltr" class="section original-topic accordion" data-origin-id="" data-publication-date="" id="UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78_UUID-8ca397ca-213c-a245-e913-a31f2f3e8780">
+														<div class="accordion-icon"></div>
+														<div class="panel panel-default">
+															<div class="panel-heading">
+																<div class="titlepage">
+																	<a data-toggle="collapse" href="#UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78_UUID-8ca397ca-213c-a245-e913-a31f2f3e8780_body" data-parent="#UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78_UUID-8ca397ca-213c-a245-e913-a31f2f3e8780">
+																		<div>
+																			<div class="title">
+																				<h4 class="title">Configure OnePlan Reporting Dashboards</h4>
+																			</div>
+																		</div>
+																	</a>
+																</div>
+															</div>
+															<div class="panel-body collapse" id="UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78_UUID-8ca397ca-213c-a245-e913-a31f2f3e8780_body">
+																<div class="panel-inner">
+																	<p>This article explains how to configure the OnePlan reporting dashboard in for plans in your OnePlan environment, including how to create a new Dashboard tab, add Widgets to that Dashboard, and how to customize the Widgets in the Dashboard.</p>
+																	<p>OnePlan allows you to create your own configurable dashboards—bringing real-time reporting directly into OnePlan without the need for a third-party reporting tool.</p>
+																	<div dir="ltr" class="note">
+																		<h3 class="title">Note</h3>
+																		<p>This feature is currently in 
+																			<span class="bold">
+																				<strong>Beta</strong>
+																			</span>. We're committed to enhancing this feature—future updates will introduce even more chart widgets and expanded data sources to give you greater flexibility and insight.
+																		</p>
+																	</div>
+																	<section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78_section-idm234870648736939">
+																		<div class="titlepage">
+																			<div>
+																				<div class="title">
+																					<h5 class="title">What are OnePlan Reporting Dashboards?</h5>
+																				</div>
+																			</div>
+																		</div>
+																		<p>OnePlan empowers users to create custom Dashboards tailored to their specific needs, enabling seamless, real-time reporting directly within the platform. These native Dashboards eliminate the need for external reporting tools, streamlining the process and ensuring data remains centralized and easily accessible. With configurable options, OnePlan's Dashboards provide a flexible and intuitive way to visualize and analyze critical information, making decision-making more efficient and informed.</p>
+																	</section>
+																	<section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78_section-idm234870449166832">
+																		<div class="titlepage">
+																			<div>
+																				<div class="title">
+																					<h5 class="title">Where Can I Create Reporting Dashboards?</h5>
+																				</div>
+																			</div>
+																		</div>
+																		<p>OnePlan reporting dashboards can be configured for any Plan Type or Area that has the Dashboards control activated (see 
+																			<a class="link" href="https://support.oneplan.ai/hc/en-us/articles/4407461732749-Create-and-Manage-Areas" target="_blank" rel="noopener">Create and Manage Areas</a> and 
+																			<a class="link" href="https://support.oneplan.ai/hc/en-us/articles/5868427607821-Set-up-plan-detail-form-layouts" target="_blank" rel="noopener">Set up plan detail form layouts</a> for more information). The native OnePlan Reporting Dashboards and Widgets are able to pull data from a summary plan-level, as well as from a work-level, giving you insights into the state of work happening across the organization.
+																		</p>
+																		<div class="figure" id="UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78_figure-idm234870459672061">
+																			<div class="figure-title">Figure 1. Portfolio-Level Dashboard</div>
+																			<div class="figure-contents">
+																				<div class="mediaobject">
+																					<img src="image/img-5db595825c0e291f0dbf21b1a24bda31.png" alt="Portfolio-Level Dashboard"></img>
+																					<div class="caption">
+																						<p>This is an example of a Dashboard at the Portfolio-level. This Dashboard is full of summary data to give users a top-down view of the state of their portfolio and the projects within.</p>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																		<br class="figure-break"></br>
+																		<div class="figure" id="UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78_figure-idm234870466418972">
+																			<div class="figure-title">Figure 2. Project-Level Dashboard</div>
+																			<div class="figure-contents">
+																				<div class="mediaobject">
+																					<img src="image/img-1aa13f0361505809811b65b47efe60f7.png" alt="Project-Level Dashboard"></img>
+																					<div class="caption">
+																						<p>This is an example of a Dashboard at the Project-Level. This Dashboard is full of work-level data to give users an close-up view of the state of the work items and resources withing their projects.</p>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																		<br class="figure-break"></br>
+																	</section>
+																	<section xml:lang="en" lang="en" dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78_UUID-a9320cc8-b6d1-6706-8253-e90a417c3f1d">
+																		<div class="titlepage">
+																			<div>
+																				<div class="title">
+																					<h5 class="title">Create a Reporting Dashboard Tab</h5>
+																				</div>
+																			</div>
+																		</div>
+																		<p>Dashboards in OnePlan are pages that contain several visual Widgets. See 
+																			<a class="link linktype-component linktextconsumer" href="/document/preview/56322#UUID-4a60b5a5-4693-99e9-c768-c05336743251" target="_blank">OnePlan Reporting Widgets</a> for more information on all of the Widgets available. You can configure multiple Dashboards per Plan. Each Dashboard gets a tab. There is no limit to the number of Dashboard tabs you can create.
+																			<span id="UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78_N680faba37abf4" class="linktextprovider" style="display:none !important;">Available Reporting Widgets</span>
+																		</p>
+																		<p>For this article, we will walk through an example of configuring a Portfolio-level Dashboard together. To configure this Dashboard:</p>
+																		<div class="procedure" id="UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78_procedure-idm234870474431024">
+																			<ol class="procedure" type="1">
+																				<li class="step">
+																					<p>Navigate to the Plan or Area where you want to configure the Dashboard. For this example, I want to configure the Dashboard for the 
+																						<span class="bold">
+																							<strong>My Portfolio</strong>
+																						</span> Area.
+																					</p>
+																				</li>
+																				<li class="step">
+																					<p>Go to the 
+																						<span class="bold">
+																							<strong>Dashboard</strong>
+																						</span> tab of the Area.
+																					</p>
+																				</li>
+																				<li class="step">
+																					<p>Select 
+																						<span class="bold">
+																							<strong>New</strong>
+																						</span> &gt; 
+																						<span class="bold">
+																							<strong>Dashboard</strong>
+																						</span>. The 
+																						<span class="bold">
+																							<strong>Add Tab</strong>
+																						</span> form will open.
+																					</p>
+																				</li>
+																				<li class="step">
+																					<p>Complete the 
+																						<span class="bold">
+																							<strong>Add Tab</strong>
+																						</span> form.
+																					</p>
+																					<div class="itemizedlist">
+																						<ul class="itemizedlist" style="list-style-type: disc; ">
+																							<li class="listitem">
+																								<p>
+																									<span class="bold">
+																										<strong>Name</strong>
+																									</span>: Enter a name for your Dashboard tab. For this example, I will call this tab "Portfolio Summary".
+																								</p>
+																							</li>
+																							<li class="listitem">
+																								<p>
+																									<span class="bold">
+																										<strong>Tab Type</strong>
+																									</span>: Select the type of dashboard you want to create. Options include 
+																									<span class="bold">
+																										<strong>Dashboard</strong>
+																									</span> (native OnePlan reports), and 
+																									<span class="bold">
+																										<strong>Power BI</strong>
+																									</span> (where you can embed Power BI reports). For this example, I will select 
+																									<span class="bold">
+																										<strong>Dashboard</strong>
+																									</span>.
+																								</p>
+																								<div dir="ltr" class="note">
+																									<h3 class="title">Note</h3>
+																									<p>See 
+																										<a class="link" href="https://support.oneplan.ai/hc/en-us/articles/4415311159181-Set-Up-Power-BI-Reporting-Dashboards-in-OnePlan" target="_blank" rel="noopener">Set Up Power BI Reporting Dashboards in OnePlan</a> for instructions on how to setup an embedded Power BI reporting dashboard in OnePlan.
+																									</p>
+																								</div>
+																							</li>
+																							<li class="listitem">
+																								<p>
+																									<span class="bold">
+																										<strong>Personal</strong>
+																									</span>: Check the Personal check box to make the Dashboard only available to yourself. If left unchecked, the Dashboard will be global and available for all users who can access the Plan. For this example, I will leave the check box unchecked.
+																								</p>
+																								<div dir="ltr" class="note">
+																									<h3 class="title">Note</h3>
+																									<p>This option is only available to users with Owner permissions. Users with lesser permissions can only create personal Dashboards.</p>
+																								</div>
+																							</li>
+																							<li class="listitem">
+																								<p>
+																									<span class="bold">
+																										<strong>Slicers</strong>
+																									</span>: Select fields to use as slicers for the Dashboard. Slicers are tools used to filter data in a report. They appear directly on the report page and help focus on specific information, updating the other visuals in the report to match the selected data. In this example, I will select the 
+																									<span class="bold">
+																										<strong>Goals</strong>
+																									</span>, 
+																									<span class="bold">
+																										<strong>Business Unit</strong>
+																									</span>, 
+																									<span class="bold">
+																										<strong>Category</strong>
+																									</span>, and 
+																									<span class="bold">
+																										<strong>State</strong>
+																									</span> fields to use as slicers.
+																								</p>
+																							</li>
+																						</ul>
+																					</div>
+																					<div class="mediaobject">
+																						<img src="image/img-66592bf2af0dfd888bc1d9e3aff957cc.png" style="" alt="Create_a_Dashboard_-_Add_Tab_Form.png"></img>
+																					</div>
+																				</li>
+																				<li class="step">
+																					<p>Click 
+																						<span class="bold">
+																							<strong>Next</strong>
+																						</span>.
+																					</p>
+																				</li>
+																				<li class="step">
+																					<p>Add filters to define the data that will be included in the Dashboard's reports. You can create filters based on any Plan-level field to define which plan data will be included in the Dashboard to create visualizations. For this example, I will create a filter that will bring in Plans where the 
+																						<span class="bold">
+																							<strong>Plan Type</strong>
+																						</span> equals 
+																						<span class="bold">
+																							<strong>Project</strong>
+																						</span>, 
+																						<span class="bold">
+																							<strong>Epic</strong>
+																						</span>, or 
+																						<span class="bold">
+																							<strong>Engagement</strong>
+																						</span>.
+																					</p>
+																					<div class="mediaobject">
+																						<img src="image/img-66b0eae9b2ecf4dac275d2536a750ead.png" style="" alt="Add_Dashboard_Tab_Filters.png"></img>
+																					</div>
+																				</li>
+																				<li class="step">
+																					<p>Click 
+																						<span class="bold">
+																							<strong>Save</strong>
+																						</span>. Your new Dashboard tab is complete and ready to be populated with report Widgets.
+																					</p>
+																					<div class="mediaobject">
+																						<img src="image/img-2d9bae9d5e0f2bf9c8f4d44c4c0ccd0c.png" style="" alt="Blank_New_Dashboard_Ready_for_Widgets.png"></img>
+																					</div>
+																				</li>
+																			</ol>
+																		</div>
+																	</section>
+																	<section xml:lang="en" lang="en" dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78_UUID-eb85d586-899a-24b9-c217-daa9225569a0">
+																		<div class="titlepage">
+																			<div>
+																				<div class="title">
+																					<h5 class="title">Add Widgets to the Reporting Dashboard</h5>
+																				</div>
+																			</div>
+																		</div>
+																		<p>Once the Reporting Dashboard is configured, it is time to populate the Dashboard with visual Widgets. We will continue with our configuration example from ???.</p>
+																		<div dir="ltr" class="note">
+																			<h3 class="title">Note</h3>
+																			<p>I will walk through the process of adding each category of Widget - Card, Chart, and Table. However, I will not walk though configuring each individual Widget style in this example, as configuration for the various Widget styles is very similar. See 
+																				<a class="link linktype-component linktextconsumer" href="/document/preview/56322#UUID-4a60b5a5-4693-99e9-c768-c05336743251" target="_blank">OnePlan Reporting Widgets</a> for more information on all of the Widgets available.
+																				<span style="display:none !important;" id="UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78_N680faba37c06f" class="linktextprovider">Available Reporting Widgets</span>
+																			</p>
+																		</div>
+																		<section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78_section-idm234870639644717">
+																			<div class="titlepage">
+																				<div>
+																					<div class="title">
+																						<h6 class="title">Add Card Widgets to the Dashboard</h6>
+																					</div>
+																				</div>
+																			</div>
+																			<p>A Card Widget is a visual element used to display a single value, like a KPI (Key Performance Indicator) or a summary metric. It’s perfect for showcasing specific data points such as sales totals, profit margins, or customer counts in a clear and concise manner, helping users focus on the most critical information at a glance.</p>
+																			<p>For this example, I will create a Card Widget that displays the total Budget for all of the Plans with data available in this Dashboard. Recall, we added a filter to the Dashboard to pull in data from Projects, Epics, and Engagements.</p>
+																			<div class="procedure" id="UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78_procedure-idm234870642081737">
+																				<ol class="procedure" type="1">
+																					<li class="step">
+																						<p>In the desired Dashboard tab, click 
+																							<span class="bold">
+																								<strong>New</strong>
+																							</span> &gt; 
+																							<span class="bold">
+																								<strong>Widget</strong>
+																							</span>. This will open the 
+																							<span class="bold">
+																								<strong>Add Widget</strong>
+																							</span> form.
+																						</p>
+																					</li>
+																					<li class="step">
+																						<p>Click 
+																							<span class="bold">
+																								<strong>Card</strong>
+																							</span>. This will open the 
+																							<span class="bold">
+																								<strong>Add Card Widget</strong>
+																							</span> form.
+																						</p>
+																						<div class="mediaobject">
+																							<img src="image/img-bad3b541b5abadb30fc904be3c0aa3b5.png" style="" alt="Add_Widget_Form_Select_Card.png"></img>
+																						</div>
+																					</li>
+																					<li class="step">
+																						<p>Complete the 
+																							<span class="bold">
+																								<strong>Add Card Widget</strong>
+																							</span> form.
+																						</p>
+																						<div class="itemizedlist">
+																							<ul class="itemizedlist" style="list-style-type: disc; ">
+																								<li class="listitem">
+																									<p>
+																										<span class="bold">
+																											<strong>Title Check Box</strong>
+																										</span>: Check the check box to display the Widget title in the Dashboard. For this example I will check the check box.
+																									</p>
+																								</li>
+																								<li class="listitem">
+																									<p>
+																										<span class="bold">
+																											<strong>Title</strong>
+																										</span>: Enter a title for the Widget. For this example I will enter "Total Budget".
+																									</p>
+																								</li>
+																								<li class="listitem">
+																									<p>
+																										<span class="bold">
+																											<strong>Value</strong>
+																										</span>: Choose a field you'd like to see summarized in the Widget. For example, I'll select 
+																										<span class="bold">
+																											<strong>Budget</strong>
+																										</span>. This means the Card will show the total Budget for all Projects, Epics, and Engagements in OnePlan.
+																									</p>
+																								</li>
+																								<li class="listitem">
+																									<p>
+																										<span class="bold">
+																											<strong>Aggregate</strong>
+																										</span>: Select how you want OnePlan to aggregate the data for the Card. Options include: 
+																										<span class="bold">
+																											<strong>Sum</strong>
+																										</span>, 
+																										<span class="bold">
+																											<strong>Average</strong>
+																										</span>, 
+																										<span class="bold">
+																											<strong>Minimum</strong>
+																										</span>, 
+																										<span class="bold">
+																											<strong>Maximum</strong>
+																										</span>. For this example, I will select 
+																										<span class="bold">
+																											<strong>Sum</strong>
+																										</span>, meaning I want the Card to display the sum of the Budgets of all Projects, Epics, and Engagements.
+																									</p>
+																								</li>
+																								<li class="listitem">
+																									<p>
+																										<span class="bold">
+																											<strong>Display Unit</strong>
+																										</span>: Choose the numerical format you want the Widget to use for presenting data Options inlcude 
+																										<span class="bold">
+																											<strong>None</strong>
+																										</span>, 
+																										<span class="bold">
+																											<strong>Thousands</strong>
+																										</span>, 
+																										<span class="bold">
+																											<strong>Millions</strong>
+																										</span>, and 
+																										<span class="bold">
+																											<strong>Billions</strong>
+																										</span>. For this example I will select 
+																										<span class="bold">
+																											<strong>Millions</strong>
+																										</span>.
+																									</p>
+																								</li>
+																								<li class="listitem">
+																									<p>
+																										<span class="bold">
+																											<strong>Add a Plan Filter</strong>
+																										</span>: You can further refine the data displayed in the Widget by creating another filter. For example, you may wish to create a Widget that focuses only on Project data, and excludes Epics and Engagements. For this example, I will not create a filter for this Widget.
+																									</p>
+																									<div dir="ltr" class="warning">
+																										<h3 class="title">Warning</h3>
+																										<p>Filters layer on top of each other. There are filters that apply to the entire Dashboard, and you can set filters for individual Widgets. Be careful when adding Widget-specific filters because they might conflict with the Dashboard filter. If that happens, the Widget might not show any data.</p>
+																									</div>
+																								</li>
+																							</ul>
+																						</div>
+																						<div class="mediaobject">
+																							<img src="image/img-b24139734c1692e8e1c4ebedbc2e74af.png" style="" alt="Filled_Out_Add_Card_Widget_Form.png"></img>
+																						</div>
+																					</li>
+																					<li class="step">
+																						<p>Click 
+																							<span class="bold">
+																								<strong>Add</strong>
+																							</span>. The new 
+																							<span class="bold">
+																								<strong>Card Widget</strong>
+																							</span> will be added to the Dashboard.
+																						</p>
+																						<div class="mediaobject">
+																							<img src="image/img-c4970f151cda1f6e71fec8ca62a99386.png" style="" alt="Dashboard_with_Card_Widget_Added.png"></img>
+																						</div>
+																					</li>
+																					<li class="step">
+																						<p>Click 
+																							<span class="bold">
+																								<strong>Save</strong>
+																							</span> to save the changes to your Dashboard.
+																						</p>
+																					</li>
+																				</ol>
+																			</div>
+																		</section>
+																		<section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78_section-idm234870639902862">
+																			<div class="titlepage">
+																				<div>
+																					<div class="title">
+																						<h6 class="title">Add Chart Widgets to the Dashboard</h6>
+																					</div>
+																				</div>
+																			</div>
+																			<p>A Chart Widget is a visual component that displays data graphically to help users analyze and interpret insights effectively. These Widgets can represent data in various formats, such as bar charts, line graphs, pie charts, and more, providing an interactive and customizable way to explore data trends and relationships.</p>
+																			<p>For this example, I will add a Pie Chart Widget showing Budget by Business Unit for the Plans in the My Portfolio Area.</p>
+																			<div class="procedure" id="UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78_procedure-idm2348706589334">
+																				<ol class="procedure" type="1">
+																					<li class="step">
+																						<p>In the desired Dashboard tab, click 
+																							<span class="bold">
+																								<strong>New</strong>
+																							</span> &gt; 
+																							<span class="bold">
+																								<strong>Widget</strong>
+																							</span>. This will open the 
+																							<span class="bold">
+																								<strong>Add Widget</strong>
+																							</span> form.
+																						</p>
+																					</li>
+																					<li class="step">
+																						<p>Select 
+																							<span class="bold">
+																								<strong>Chart</strong>
+																							</span>.
+																						</p>
+																						<div class="mediaobject">
+																							<img src="image/img-4fca32bccda53f6ace69bc9a900d4ceb.png" style="" alt="Add_Widget_Form_Select_Chart.png"></img>
+																						</div>
+																					</li>
+																					<li class="step">
+																						<p>Select the type of chart you would like to create. In this example, I will select 
+																							<span class="bold">
+																								<strong>Pie</strong>
+																							</span>. The 
+																							<span class="bold">
+																								<strong>Add Pie Widget</strong>
+																							</span> form will open.
+																						</p>
+																						<div class="mediaobject">
+																							<img src="image/img-5f9acc4b8e69fe24d22e8b4b08436d2d.png" style="" alt="Add_Widget_Form_Select_Pie.png"></img>
+																						</div>
+																					</li>
+																					<li class="step">
+																						<p>Complete the 
+																							<span class="bold">
+																								<strong>Add Pie Widget</strong>
+																							</span> form.
+																						</p>
+																						<div dir="ltr" class="note">
+																							<h3 class="title">Note</h3>
+																							<p>When setting up your chart, you will see a live preview that updates as you make your choices. This helps you confirm that your chart looks and displays the data exactly as you want.</p>
+																						</div>
+																						<div class="itemizedlist">
+																							<ul class="itemizedlist" style="list-style-type: disc; ">
+																								<li class="listitem">
+																									<p>
+																										<span class="bold">
+																											<strong>Title Check Box</strong>
+																										</span>: Check the check box to display the Widget title in the Dashboard. For this example I will check the check box.
+																									</p>
+																								</li>
+																								<li class="listitem">
+																									<p>
+																										<span class="bold">
+																											<strong>Legend Check Box</strong>
+																										</span>: Check the check box to display the Widget legend in the Dashboard. For this example I will check the check box.
+																									</p>
+																								</li>
+																								<li class="listitem">
+																									<p>
+																										<span class="bold">
+																											<strong>Title</strong>
+																										</span>: Enter a title for the Widget. For this example I will enter "Budget by Business Unit".
+																									</p>
+																								</li>
+																								<li class="listitem">
+																									<p>
+																										<span class="bold">
+																											<strong>Value</strong>
+																										</span>: Choose a field you'd like to see summarized in the Widget. For example, I'll select 
+																										<span class="bold">
+																											<strong>Budget</strong>
+																										</span>, as I want to look at the total Budget broken down by Business Unit.
+																									</p>
+																								</li>
+																								<li class="listitem">
+																									<p>
+																										<span class="bold">
+																											<strong>Aggregate</strong>
+																										</span>: Select how you want OnePlan to aggregate the data for the Card. Options include: 
+																										<span class="bold">
+																											<strong>Sum</strong>
+																										</span>, 
+																										<span class="bold">
+																											<strong>Average</strong>
+																										</span>, 
+																										<span class="bold">
+																											<strong>Minimum</strong>
+																										</span>, 
+																										<span class="bold">
+																											<strong>Maximum</strong>
+																										</span>. For this example, I will select 
+																										<span class="bold">
+																											<strong>Sum</strong>
+																										</span> because I want to look at the total Budget broken down by Business Unit.
+																									</p>
+																								</li>
+																								<li class="listitem">
+																									<p>
+																										<span class="bold">
+																											<strong>Group By</strong>
+																										</span>: Select how you would like the data in the Widget to be organized. For this example, In this example, I will choose 
+																										<span class="bold">
+																											<strong>Business Unit</strong>
+																										</span> to see the total Budget divided by each Business Unit.
+																									</p>
+																								</li>
+																								<li class="listitem">
+																									<p>
+																										<span class="bold">
+																											<strong>Lables</strong>
+																										</span>: Select how you want the different components of your chart labled. Options include: 
+																										<span class="bold">
+																											<strong>No Value</strong>
+																										</span> (no lable), 
+																										<span class="bold">
+																											<strong>Show Values</strong>
+																										</span> (showing the raw values), and 
+																										<span class="bold">
+																											<strong>Show Percent of Values</strong>
+																										</span> (showing the values as a percent out of 100). For this example, I will select 
+																										<span class="bold">
+																											<strong>Show Percent of Values</strong>
+																										</span>.
+																									</p>
+																								</li>
+																								<li class="listitem">
+																									<p>
+																										<span class="bold">
+																											<strong>Display Unit</strong>
+																										</span>: Choose the numerical format you want the Widget to use for presenting data Options inlcude 
+																										<span class="bold">
+																											<strong>None</strong>
+																										</span>, 
+																										<span class="bold">
+																											<strong>Thousands</strong>
+																										</span>, 
+																										<span class="bold">
+																											<strong>Millions</strong>
+																										</span>, and 
+																										<span class="bold">
+																											<strong>Billions</strong>
+																										</span>. For this example I will select 
+																										<span class="bold">
+																											<strong>None</strong>
+																										</span>, since I choose to display the lables as percents.
+																									</p>
+																								</li>
+																								<li class="listitem">
+																									<p>
+																										<span class="bold">
+																											<strong>Add a Plan Filter</strong>
+																										</span>: You can further refine the data displayed in the Widget by creating another filter. For example, you may wish to create a Widget that focuses only on Project data, and excludes Epics and Engagements. For this example, I will not create a filter for this Widget.
+																									</p>
+																									<div dir="ltr" class="warning">
+																										<h3 class="title">Warning</h3>
+																										<p>Filters layer on top of each other. There are filters that apply to the entire Dashboard, and you can set filters for individual Widgets. Be careful when adding Widget-specific filters because they might conflict with the Dashboard filter. If that happens, the Widget might not show any data.</p>
+																									</div>
+																								</li>
+																							</ul>
+																						</div>
+																						<div class="mediaobject">
+																							<img src="image/img-d51d4189b78baf69bf417a2aaf008da1.png" style="" alt="Add_Pie_Widget_Form_Filled_Out.png"></img>
+																						</div>
+																					</li>
+																					<li class="step">
+																						<p>Click 
+																							<span class="bold">
+																								<strong>Add</strong>
+																							</span>. The new 
+																							<span class="bold">
+																								<strong>Pie Chart Widget</strong>
+																							</span> will be added to the Dashboard.
+																						</p>
+																						<div class="mediaobject">
+																							<img src="image/img-f2344f99334b2106876a1a42e45cf3c6.png" style="" alt="Pie_Chart_Widget_Added_to_Dashboard.png"></img>
+																						</div>
+																					</li>
+																					<li class="step">
+																						<p>Click 
+																							<span class="bold">
+																								<strong>Save</strong>
+																							</span> to save the changes to your Dashboard.
+																						</p>
+																					</li>
+																				</ol>
+																			</div>
+																		</section>
+																		<section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78_section-idm234870640129752">
+																			<div class="titlepage">
+																				<div>
+																					<div class="title">
+																						<h6 class="title">Add Table Widgets to the Dashboard</h6>
+																					</div>
+																				</div>
+																			</div>
+																			<p>A Table Widget is a visual element used to present data in a tabular format, similar to a spreadsheet. It organizes data into rows and columns, making it easy to display detailed information, compare values, and perform data analysis at a granular level. Users can customize and interact with tables to gain deeper insights.</p>
+																			<p>For this example, I will create a Table Widget that displays a summary of Projects, Epics, and Engagements.</p>
+																			<div class="procedure" id="UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78_procedure-idm234870659016676">
+																				<ol class="procedure" type="1">
+																					<li class="step">
+																						<p>In the desired Dashboard tab, click 
+																							<span class="bold">
+																								<strong>New</strong>
+																							</span> &gt; 
+																							<span class="bold">
+																								<strong>Widget</strong>
+																							</span>. This will open the 
+																							<span class="bold">
+																								<strong>Add Widget</strong>
+																							</span> form.
+																						</p>
+																					</li>
+																					<li class="step">
+																						<p>Select 
+																							<span class="bold">
+																								<strong>Table</strong>
+																							</span>. The 
+																							<span class="bold">
+																								<strong>Add Table Widget</strong>
+																							</span> form will open.
+																						</p>
+																						<div class="mediaobject">
+																							<img src="image/img-e8cb1d92493c8f456a1ed3418b8a8e2c.png" style="" alt="Add_Widget_Form_Select_Table.png"></img>
+																						</div>
+																					</li>
+																					<li class="step">
+																						<p>Complete the 
+																							<span class="bold">
+																								<strong>Add Table Widget</strong>
+																							</span> form.
+																						</p>
+																						<div class="itemizedlist">
+																							<ul class="itemizedlist" style="list-style-type: disc; ">
+																								<li class="listitem">
+																									<p>
+																										<span class="bold">
+																											<strong>Title Check Box</strong>
+																										</span>: Check the check box to display the Widget title in the Dashboard. For this example I will check the check box
+																									</p>
+																								</li>
+																								<li class="listitem">
+																									<p>
+																										<span class="bold">
+																											<strong>Display Totals</strong>
+																										</span>: Checik the check box to display the table totals in the Dashboard. For this example I will check the check box.
+																									</p>
+																								</li>
+																								<li class="listitem">
+																									<p>
+																										<span class="bold">
+																											<strong>Title</strong>
+																										</span>: Enter a title for the Widget. For this example I will enter "Portfolio Summary".
+																									</p>
+																								</li>
+																								<li class="listitem">
+																									<p>
+																										<span class="bold">
+																											<strong>Columns</strong>
+																										</span>: Select the plan fields you would like to display as columns in the table. For this example, I will select Plan Type, Name, Estimated Start, Estimated End, Business Unit, Category, State, Status, Budget, Benefits, ROI, Associated Key Results, and Prioritization Score.
+																									</p>
+																								</li>
+																								<li class="listitem">
+																									<p>
+																										<span class="bold">
+																											<strong>Group By</strong>
+																										</span>: Select how you would like the data in the Widget to be grouped. For this example, I will leave this blank.
+																									</p>
+																								</li>
+																								<li class="listitem">
+																									<p>
+																										<span class="bold">
+																											<strong>Sort By</strong>
+																										</span>: Select how you would like the data in the Widget to be sorted. For this example, I will select 
+																										<span class="bold">
+																											<strong>Estimated Start</strong>
+																										</span>.
+																									</p>
+																								</li>
+																								<li class="listitem">
+																									<p>
+																										<span class="bold">
+																											<strong>Sort Direction</strong>
+																										</span>: Select the direction you would like the sort to go. Options include 
+																										<span class="bold">
+																											<strong>Ascending</strong>
+																										</span> or 
+																										<span class="bold">
+																											<strong>Decending</strong>
+																										</span>. For this example, I will select 
+																										<span class="bold">
+																											<strong>Ascending</strong>
+																										</span>.
+																									</p>
+																								</li>
+																								<li class="listitem">
+																									<p>
+																										<span class="bold">
+																											<strong>Add a Plan Filter</strong>
+																										</span>: You can further refine the data displayed in the Widget by creating another filter. For example, you may wish to create a Widget that focuses only on Project data, and excludes Epics and Engagements. For this example, I will not create a filter for this Widget.
+																									</p>
+																									<div dir="ltr" class="warning">
+																										<h3 class="title">Warning</h3>
+																										<p>Filters layer on top of each other. There are filters that apply to the entire Dashboard, and you can set filters for individual Widgets. Be careful when adding Widget-specific filters because they might conflict with the Dashboard filter. If that happens, the Widget might not show any data.</p>
+																									</div>
+																								</li>
+																							</ul>
+																						</div>
+																						<div class="mediaobject">
+																							<img src="image/img-bcc08c6b3547c1a3c24fcb0d1661875d.png" style="" alt="Add_Table_Widget_Form_Filled_Out.png"></img>
+																						</div>
+																					</li>
+																					<li class="step">
+																						<p>Click 
+																							<span class="bold">
+																								<strong>Add</strong>
+																							</span>. The new 
+																							<span class="bold">
+																								<strong>Table Widget </strong>
+																							</span>will be added to the Dashboard.
+																						</p>
+																						<div class="mediaobject">
+																							<img src="image/img-685c2828a4df6996ac0a00ecc4f06c14.png" style="" alt="Table_Widget_Added_to_the_Dashboard.png"></img>
+																						</div>
+																					</li>
+																					<li class="step">
+																						<p>Click 
+																							<span class="bold">
+																								<strong>Save</strong>
+																							</span> to save the changes to your Dashboard.
+																						</p>
+																					</li>
+																				</ol>
+																			</div>
+																		</section>
+																	</section>
+																	<section xml:lang="en" lang="en" dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78_UUID-3c8f5ce8-a831-9a6f-47ce-603e97f6dd7e">
+																		<div class="titlepage">
+																			<div>
+																				<div class="title">
+																					<h5 class="title">Resize and Rearrange Reporting Widgets in the Dashboard</h5>
+																				</div>
+																			</div>
+																		</div>
+																		<p>The Dashboard is fully configurable. Moving Widgets around and changing their sizes is simple.</p>
+																		<p>To resize a Widget, hover over the bottom right corner of the Widget. You should see your cursor change to the resize cursor. Click and drag the corner of the Widget until it is the size you want.</p>
+																		<div class="mediaobject">
+																			<img src="image/img-714f337ef605f2e64d3c42e668a4843d.gif" style="" alt="Resize_Widget.gif"></img>
+																		</div>
+																		<p>To rearrange a Widget, hover over the top of the Widget (by the title if that is displayed). You should see your cursor change to the move cursor. Click and drag the Widget until it is in the location you want.</p>
+																		<div class="mediaobject">
+																			<img src="image/img-f31811b6c6e688ac09365dab5fba4f2d.gif" style="" alt="Rearrange_Widgets.gif"></img>
+																		</div>
+																	</section>
+																	<section xml:lang="en" lang="en" dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78_UUID-6563d996-9717-3286-d3b9-182ea7af3665">
+																		<div class="titlepage">
+																			<div>
+																				<div class="title">
+																					<h5 class="title">Edit and Delete Reporting Widgets in the Dashboard</h5>
+																				</div>
+																			</div>
+																		</div>
+																		<p>To edit or delete a Widget, click the three dot icon in the top right corner of the Widget. Select 
+																			<span class="bold">
+																				<strong>Edit</strong>
+																			</span> to reopen the Widget configuration form. Select 
+																			<span class="bold">
+																				<strong>Delete</strong>
+																			</span> to delete the Widget from the Dashboard.
+																		</p>
+																		<div class="mediaobject">
+																			<img src="image/img-5efb4a02b3d87a43f0401f590850b2e6.png" style="" alt="Edit_or_Delete_Widgets.png"></img>
+																		</div>
+																	</section>
+																</div>
+															</div>
+														</div>
+													</section>
+												</div>
+											</div>
+										</section>
+										<section dir="ltr" class="section accordion" data-origin-id="" data-publication-date="" id="UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78_section-idm23491222323056">
+											<div class="accordion-icon"></div>
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<div class="titlepage">
+														<a data-toggle="collapse" href="#UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78_section-idm23491222323056_body" data-parent="#UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78_section-idm23491222323056">
+															<div>
+																<div class="title">
+																	<h3 class="title">Take a course</h3>
+																</div>
+															</div>
+														</a>
+													</div>
+												</div>
+												<div class="panel-body collapse" id="UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78_section-idm23491222323056_body">
+													<p>
+														<a class="link" href="https://oneplanacademy.com/courses/power-bi-reporting-basics-course/" target="_blank" rel="noopener">OnePlan Power BI Course</a>
+													</p>
+													<p>Want more tutorials to learn how to use OnePlan? Check out 
+														<a class="link" href="https://oneplanacademy.com/" target="_blank" rel="noopener">OnePlan Academy</a>.
+													</p>
+												</div>
+											</div>
+										</section>
+									</section>
+									<div class="footer-content">
+										<div class="glossary-definitions"></div>
+									</div>
+									<footer></footer>
+								</div>
+							</article>
+							<article id="search-result-wrapper">
+								<div class="search-container" style="display: none;">
+									<h2>Search results</h2>
+									<ul class="searchresults"></ul>
+									<p class="noresults">No results found</p>
+								</div>
+							</article>
+						</main>
+						<div id="bottom-pager">
 							<ul class="pager">
-								<li class="previous"><a accesskey="p" class="prev pull-left prev visible-lg visible-md"
-										id="header-navigation-prev"
-										href="microsoft-teams.html#UUID-ecde8553-384d-d8f6-3a47-7a254a935c9e_section-idm234362782727249">Prev</a>
+								<li class="previous">
+									<a accesskey="p" class="prev pull-left prev visible-lg visible-md" id="header-navigation-prev" href="microsoft-teams.html#UUID-ecde8553-384d-d8f6-3a47-7a254a935c9e_section-idm234362782727249">Prev</a>
 								</li>
-								<li class="next"><a accesskey="n" class="pull-right next visible-lg visible-md"
-										id="header-navigation-next"
-										href="dashboard.html#UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78_section-idm23436430742111">Next</a>
+								<li class="next">
+									<a accesskey="n" class="pull-right next visible-lg visible-md" id="header-navigation-next" href="dashboard.html#UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78_section-idm234912222654023">Next</a>
 								</li>
 							</ul>
 						</div>
-						<article class="topic content-container" id="content-wrapper">
-							<div id="topic-content" class="topic-content">
-								<section xml:lang="en" lang="en" dir="ltr" class="section"
-									data-origin-id="UUID-eb5b6d27-0dc7-34a5-60b0-22cf33942886"
-									data-permalink="dashboard.html" data-topic-level="1" data-relative-prefix=""
-									data-publication-date="" id="UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78">
-									<div class="titlepage">
-										<div>
-											<div class="title">
-												<h2 class="title" style="clear: both">Dashboard</h2>
-											</div>
-										</div>
-									</div>
-									<p>As an Executive, it is important to have insights into how the portfolio is
-										performing. With the OnePlan Power BI Report Pack dashboards, you have all the
-										information you will ever need in one place.</p>
-									<div class="mediaobject">
-										<div class="video-container">
-											<div class="videoobject"><iframe title="" style="border:0;"
-													allow="fullscreen *"
-													src="https://player.vimeo.com/video/557325295"></iframe></div>
-										</div>
-									</div>
-									<section dir="ltr" class="section" data-origin-id="" data-publication-date=""
-										id="UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78_section-idm23436430742111">
-										<div class="titlepage">
-											<div>
-												<div class="title">
-													<h3 class="title">Diving Into the Report Pack</h3>
-												</div>
-											</div>
-										</div>
-										<p>Click on <span class="bold"><strong>Ideas Dashboard</strong></span>. This
-											Ideas Dashboard report page displays new idea intake rates, idea
-											prioritization, budgets, and main data points.</p>
-										<div class="mediaobject"><img src="image/1668fed7015573.png" style=""
-												alt="Trial_Guide_-_Dashboard_-_Ideas.png"></img></div>
-										<p>Click on the <span class="bold"><strong>Objective Status</strong></span>.
-											This Objective Status report page displays the progress of your objectives
-											as well as their related key results.</p>
-										<div class="mediaobject"><img src="image/1668fed7018502.png" style=""
-												alt="Trial_Guide_-_Dashboard_-_Objective_Status.png"></img></div>
-										<p>Click on <span class="bold"><strong>Portfolio Summary.</strong></span> This
-											dashboard displays your Portfolio's overall status, including budgets,
-											actuals, and ROIs.</p>
-										<div class="mediaobject"><img src="image/1668fed701b754.png" style=""
-												alt="Trial_Guide_-_Dashboard_-_Portfolio_Summary.png"></img></div>
-										<p>You can slice the data any way you want.</p>
-										<p>Change the <span class="bold"><strong>Business Unit</strong></span> filter
-											to <span class="bold"><strong>IT</strong></span> and note how the dashboard
-											changes. The graphs and tables only display data related to the IT Business
-											Unit.</p>
-										<div class="mediaobject"><img src="image/1668fed701f722.png" style=""
-												alt="Trial_Guide_-_Dashboard_-_Portfolio_Summary_-_IT_Filter.png"></img>
-										</div>
-										<p>Go back to the <span class="bold"><strong>Business
-													Unit</strong></span> filter, and click <span
-												class="bold"><strong>Select All</strong></span>.</p>
-										<div class="mediaobject"><img src="image/1668fed7024247.png" style=""
-												alt="Trial_Guide_-_Dashboard_-_Portfolio_Summary_-_All_Filter.png"></img>
-										</div>
-									</section>
-									<section dir="ltr" class="section" data-origin-id="" data-publication-date=""
-										id="UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78_section-idm234364310220887">
-										<div class="titlepage">
-											<div>
-												<div class="title">
-													<h3 class="title">Drill Through</h3>
-												</div>
-											</div>
-										</div>
-										<p>You can even drill into these dashboards for more information. For example,
-											what if you want to learn more about one of the Portfolios in this
-											dashboard?</p>
-										<p>Right-click on <span class="bold"><strong>Data Analytic
-													Transformation</strong></span>, click <span
-												class="bold"><strong>Drill Through</strong></span>, and then <span
-												class="bold"><strong>Portfolio Details</strong></span>.</p>
-										<div class="mediaobject"><img src="image/1668fed7026d26.png" style=""
-												alt="Trial_Guide_-_Dashboard_-_Portfolio_Summary_-_Drill_Through.png"></img>
-										</div>
-										<p>Now you are looking at the Programs for this Portfolio.</p>
-										<div class="mediaobject"><img src="image/1668fed702b166.png" style=""
-												alt="Trial_Guide_-_Dashboard_-_Portfolio_Summary_-_Drill_Through_-_Dashboard.png"></img>
-										</div>
-										<p>Let’s drill in further to the Project and Epic level.</p>
-										<p>Right-click on <span class="bold"><strong>Enterprise Data
-													Platform</strong></span>, click <span class="bold"><strong>Drill
-													Through</strong></span>, and then <span class="bold"><strong>Program
-													Details</strong></span>.</p>
-										<div class="mediaobject"><img src="image/1668fed702faf6.png" style=""
-												alt="Trial_Guide_-_Dashboard_-_Portfolio_Summary_-_Drill_Through_-_Project_Dashboard.png"></img>
-										</div>
-										<p>Now we are looking at a list of Projects and Epic in the Enterprise Data
-											Platform program.</p>
-										<div class="mediaobject"><img src="image/1668fed7035c1b.png" style=""
-												alt="Trial_Guide_-_Dashboard_-_Portfolio_Summary_-_Drill_Through_-_Enterprise_Data_Platform_Details.png"></img>
-										</div>
-										<p>You can change the data on the dashboard. Maybe you want to look at health
-											indicators.</p>
-										<p>Click the <span class="bold"><strong>Status</strong></span> radio button.</p>
-										<div class="mediaobject"><img src="image/1668fed703bfa9.png" style=""
-												alt="Trial_Guide_-_Dashboard_-_Portfolio_Summary_-_Drill_Through_-_Enterprise_Data_Platform_Details_-_Status.png"></img>
-										</div>
-										<p>Or maybe you want to view financial information.</p>
-										<p>Click the <span class="bold"><strong>Financial</strong></span> radio button.
-										</p>
-										<div class="mediaobject"><img src="image/1668fed703ef50.png" style=""
-												alt="Trial_Guide_-_Dashboard_-_Portfolio_Summary_-_Drill_Through_-_Enterprise_Data_Platform_Details_-_Financials.png"></img>
-										</div>
-										<p>Or perhaps you are interested in seeing how well the program is being
-											executed overall.</p>
-										<p>Click the <span class="bold"><strong>Execution</strong></span> radio button.
-										</p>
-										<div class="mediaobject"><img src="image/1668fed7042067.png" style=""
-												alt="Trial_Guide_-_Dashboard_-_Portfolio_Summary_-_Drill_Through_-_Enterprise_Data_Platform_Details_-_Execution.png"></img>
-										</div>
-									</section>
-									<section dir="ltr" class="section" data-origin-id="" data-publication-date=""
-										id="UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78_section-idm234364312505546">
-										<div class="titlepage">
-											<div>
-												<div class="title">
-													<h3 class="title">Risk Management</h3>
-												</div>
-											</div>
-										</div>
-										<p>Maybe you want to look at a portfolio of risks to better understand the
-											potential risks of the portfolio.</p>
-										<p>Click the <span class="bold"><strong>Risk Summary</strong></span> tab.</p>
-										<div class="mediaobject"><img src="image/1668fed7044aa7.png" style=""
-												alt="Trial_Guide_-_Dashboard_-_Risk_Summary.png"></img></div>
-										<p>You can slice this data by just clicking on a piece of the graph.</p>
-										<p>Select the <span class="bold"><strong>High</strong></span> slice of pie in
-											the <span class="bold"><strong>Risks by Impact</strong></span> pie chart.
-										</p>
-										<div class="mediaobject"><img src="image/1668fed704c873.png" style=""
-												alt="Trial_Guide_-_Dashboard_-_Risk_Summary_-_High.png"></img></div>
-									</section>
-									<section dir="ltr" class="section" data-origin-id="" data-publication-date=""
-										id="UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78_section-idm234364313764729">
-										<div class="titlepage">
-											<div>
-												<div class="title">
-													<h3 class="title">Trend Analysis</h3>
-												</div>
-											</div>
-										</div>
-										<p>You may also want to know how the portfolio is trending. Are we getting
-											better or worse?</p>
-										<p>Click on the <span class="bold"><strong>Health Trend</strong></span> tab.</p>
-										<div class="mediaobject"><img src="image/1668fed704f259.png" style=""
-												alt="Trial_Guide_-_Dashboard_-_Health_Trend.png"></img></div>
-										<p>In this dashboard, you can see how the different status fields have been
-											trending over the past few months.</p>
-										<p>Click on the <span class="bold"><strong>Detail Trend</strong></span> tab.</p>
-										<div class="mediaobject"><img src="image/1668fed705293f.png" style=""
-												alt="Trial_Guide_-_Dashboard_-_Detail_Trend.png"></img></div>
-										<p>In this dashboard, I can trend on specific fields like Budget, and Effort
-											fields.</p>
-										<p>Click on the <span class="bold"><strong>Work Trend</strong></span> tab.</p>
-										<p>In the dashboard, I can see work trends on # of late tasks, active issues,
-											and much more.</p>
-										<div class="mediaobject"><img src="image/1668fed7055382.png" style=""
-												alt="Trial_Guide_-_Dashboard_-_Work_Trend.png"></img></div>
-									</section>
-									<section dir="ltr" class="section" data-origin-id="" data-publication-date=""
-										id="UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78_section-idm234364321652921">
-										<div class="titlepage">
-											<div>
-												<div class="title">
-													<h3 class="title">Related Resources</h3>
-												</div>
-											</div>
-										</div>
-										<p>For more information on OnePlan reporting dashboards, check out the following
-											resources:</p>
-										<div class="itemizedlist">
-											<ul class="itemizedlist" style="list-style-type: disc; ">
-												<li class="listitem">
-													<p><a class="link"
-															href="https://support.oneplan.ai/hc/en-us/articles/4415311159181-Set-up-the-Reporting-Dashboard"
-															target="_blank" rel="noopener">Set up the Reporting
-															Dashboard</a></p>
-												</li>
-												<li class="listitem">
-													<p><a class="link"
-															href="https://support.oneplan.ai/hc/en-us/articles/4415303260813-Deploy-OnePlan-reports"
-															target="_blank" rel="noopener">Deploy OnePlan reports</a>
-													</p>
-												</li>
-												<li class="listitem">
-													<p><a class="link"
-															href="https://support.oneplan.ai/hc/en-us/sections/14654321167117-Strategic-Portfolio-Management-Solution"
-															target="_blank" rel="noopener">Strategic Portfolio
-															Management Solution Reports</a></p>
-												</li>
-												<li class="listitem">
-													<p><a class="link"
-															href="https://support.oneplan.ai/hc/en-us/sections/4423177291917-Adaptive-Portfolio-Management-Solution"
-															target="_blank" rel="noopener">Adaptive Portfolio Management
-															Solution Reports</a></p>
-												</li>
-												<li class="listitem">
-													<p><a class="link"
-															href="https://support.oneplan.ai/hc/en-us/sections/4423182083085-Portfolio-Planning-Solution"
-															target="_blank" rel="noopener">Portfolio Planning Solution
-															Reports</a></p>
-												</li>
-												<li class="listitem">
-													<p><a class="link"
-															href="https://support.oneplan.ai/hc/en-us/sections/4423177293069-Financial-Planning-Solution"
-															target="_blank" rel="noopener">Financial Planning Solution
-															Reports</a></p>
-												</li>
-												<li class="listitem">
-													<p><a class="link"
-															href="https://support.oneplan.ai/hc/en-us/sections/4423177293453-Generic"
-															target="_blank" rel="noopener">Generic Reports</a></p>
-												</li>
-												<li class="listitem">
-													<p><a class="link"
-															href="https://support.oneplan.ai/hc/en-us/articles/4416938259981-Set-Up-OnePlan-Power-BI-reports-in-a-Trial-Site"
-															target="_blank" rel="noopener">Set Up OnePlan Power BI
-															reports in a Trial Site</a></p>
-												</li>
-											</ul>
-										</div>
-									</section>
-								</section>
-								<div class="footer-content">
-									<div class="glossary-definitions"></div>
+						<footer class="site-footer">
+							<div class="inner">
+								<div>
+									<h3>Quick Links</h3>
+									<p><a href="https://support.oneplan.ai/hc/en-us/sections/360013711432-Release-Notes">Release Notes</a></p>
+									<p><a href="https://oneplanacademy.com/">Academy</a></p>
+									<p><a href="https://support.oneplan.ai/hc/en-us">Knowledge Base</a></p>
+									<p><a href="https://support.oneplan.ai/hc/en-us/community/topics">Community</a></p>
+									<p><a href="https://support.oneplan.ai/hc/en-us/requests/new">Support</a></p>
 								</div>
-								<footer></footer>
+								<div class="copyright"> © 2025 OnePlan </div>
 							</div>
-						</article>
-						<article id="search-result-wrapper">
-							<div class="search-container" style="display: none;">
-								<h2>Search results</h2>
-								<ul class="searchresults"></ul>
-								<p class="noresults">No results found</p>
-							</div>
-						</article>
-					</main>
-					<div id="bottom-pager">
-						<ul class="pager">
-							<li class="previous"><a accesskey="p" class="prev pull-left prev visible-lg visible-md"
-									id="header-navigation-prev"
-									href="microsoft-teams.html#UUID-ecde8553-384d-d8f6-3a47-7a254a935c9e_section-idm234362782727249">Prev</a>
-							</li>
-							<li class="next"><a accesskey="n" class="pull-right next visible-lg visible-md"
-									id="header-navigation-next"
-									href="dashboard.html#UUID-b13d4bdd-d0ec-f3bf-c9d1-c53912952f78_section-idm23436430742111">Next</a>
-							</li>
-						</ul>
+						</footer>
 					</div>
-					<footer class="site-footer">
-						<div class="inner">
-							<div class="copyright"> © 2024 OnePlan </div>
-							<div class="publication-date"><span class="publication-date-text">Publication
-									date</span><span class="pubdate-delimiter">: </span><span
-									class="formatted-date"></span></div>
-						</div>
-					</footer>
 				</div>
 			</div>
 		</div>
-	</div>
-</body>
-
+	</body>
 </html>
